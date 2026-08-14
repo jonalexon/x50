@@ -3,1338 +3,809 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jetour X50 Ecuador | SUV Compacta · Grupo Roldán</title>
-<meta name="description" content="Jetour X50 en Ecuador: SUV compacta con ADAS de serie, pantallas duales de 10.25'', versiones MANUAL y DCT Turbo, y garantía de 10 años o 120.000 km. Respaldo de Grupo Roldán.">
-
-<!-- Tipografías (fontsource CDN) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/saira-condensed@5/600.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/saira-condensed@5/700.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/saira-condensed@5/800.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/barlow@5/400.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/barlow@5/500.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/barlow@5/600.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/barlow@5/700.css">
-
+<title>Jetour X50 Ecuador | Grupo Roldán — SUV compacto con tecnología de segmentos superiores</title>
+<meta name="description" content="Jetour X50 en Ecuador: motor 1.5 Turbo de 160 HP, caja 6DCT de doble embrague húmedo, suspensión trasera multi-link, cámara 360° y garantía de 10 años o 120.000 km. Distribuido por Grupo Roldán.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/saira-condensed/600.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/saira-condensed/700.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/saira-condensed/800.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/barlow/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/barlow/500.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/barlow/600.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/barlow/700.css">
 <style>
-/* ============================
-   SISTEMA DE DISEÑO JETOUR X50
-   ============================ */
 :root{
-  --rojo:#e10613;
-  --rojo-osc:#b30510;
-  --bg-osc:#0b0c10;
-  --bg-sec:#101114;
-  --bg-card-osc:#14161c;
-  --bg-celda:#0f1116;
-  --bg-claro:#f4f5f7;
-  --texto:#101114;
-  --texto-sec:#5d6470;
-  --texto-dark:#9aa1ad;
-  --linea:#e6e8ec;
-  --linea-dark:#22252d;
-  --linea-dark2:#2a2e37;
-  --borde-header:#1e2127;
-  --hdr-h:64px;
-  --radius:14px;
+  --red:#e10613; --red-d:#b30510;
+  --bg-dark:#0b0c10; --bg-dark2:#101114; --bg-card:#14161c;
+  --bg-light:#f4f5f7; --white:#ffffff;
+  --txt:#101114; --txt2:#5d6470; --txt3:#9aa1ad;
+  --line:#e6e8ec; --line-d:#22252d; --line-d2:#2a2e37; --line-d3:#1e2127;
+  --cell:#0f1116; --foot:#07080b;
+  --head-h:62px;
+  --f-cond:'Saira Condensed','Arial Narrow',sans-serif;
+  --f-body:'Barlow','Segoe UI',system-ui,sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:calc(var(--hdr-h) + 18px)}
-body{
-  font-family:'Barlow','Segoe UI',system-ui,sans-serif;
-  font-weight:400;
-  color:var(--texto);
-  background:#fff;
-  line-height:1.6;
-  overflow-x:hidden;
-}
-h1,h2,h3{font-family:'Saira Condensed','Arial Narrow',sans-serif;line-height:1.12}
-h1{font-weight:800;font-size:clamp(2rem,4vw,3rem)}
-h2{font-weight:700;font-size:clamp(1.5rem,3vw,2.25rem)}
-h3{font-weight:600;font-size:clamp(1.1rem,2vw,1.4rem)}
-p{font-size:.98rem}
+html{scroll-behavior:smooth}
+body{font-family:var(--f-body);font-size:16px;line-height:1.6;color:var(--txt);background:var(--bg-light);-webkit-font-smoothing:antialiased}
+::selection{background:var(--red);color:#fff}
 img{max-width:100%}
-.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
-.section{padding:64px 0}
-@media(min-width:1024px){.section{padding:88px 0}}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+section{scroll-margin-top:calc(var(--head-h) + 84px)}
+.no-bar{scrollbar-width:none}
+.no-bar::-webkit-scrollbar{display:none}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.container{max-width:1180px;margin:0 auto;padding:0 clamp(16px,4vw,32px)}
+.section{padding:clamp(56px,8vw,96px) 0}
+.light{background:var(--bg-light);color:var(--txt)}
+.dark{background:var(--bg-dark);color:#fff}
 
-.kicker{
-  display:inline-block;
-  font-family:'Saira Condensed',sans-serif;
-  font-weight:700;font-size:.85rem;
-  letter-spacing:.16em;text-transform:uppercase;
-  color:var(--rojo);margin-bottom:10px;
-}
-.sec-head h2{margin-bottom:10px}
-.sec-sub{color:var(--texto-sec);max-width:760px;margin-bottom:34px}
-.dark .sec-sub{color:var(--texto-dark)}
+/* ===== Topbar ===== */
+.topbar{background:var(--red);color:#fff;font-family:var(--f-cond);font-weight:600;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;overflow:hidden;padding:8px 0}
+.topbar span{padding:0 8px;opacity:.95}
+.topbar i{font-style:normal;opacity:.55}
 
-/* ============ TOPBAR ============ */
-.topbar{
-  background:var(--rojo);color:#fff;
-  font-family:'Saira Condensed',sans-serif;
-  font-weight:600;font-size:.85rem;letter-spacing:.06em;
-  padding:8px 16px;text-align:center;
-  white-space:nowrap;overflow-x:auto;scrollbar-width:none;
-}
-.topbar::-webkit-scrollbar{display:none}
-.topbar b{font-weight:800}
-.topbar .sep{opacity:.6;margin:0 6px}
+/* ===== Header ===== */
+.hdr{position:sticky;top:0;z-index:60;background:rgba(11,12,16,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-d3);transition:box-shadow .3s ease}
+.hdr.scrolled{box-shadow:0 10px 30px rgba(0,0,0,.45)}
+.hdr-in{height:var(--head-h);display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.brand-mark{font-family:var(--f-cond);font-weight:800;font-size:1.35rem;color:#fff;letter-spacing:.02em}
+.brand-mark em{font-style:normal;color:var(--red)}
+.brand-sub{font-family:var(--f-cond);font-weight:600;font-size:10px;letter-spacing:.32em;color:var(--txt3)}
+.hdr-chip{display:inline-flex;align-items:center;gap:7px;font-family:var(--f-cond);font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:rgba(225,6,19,.12);border:1px solid rgba(225,6,19,.4);border-radius:999px;padding:7px 14px;min-height:34px;transition:background .3s ease}
+.hdr-chip:hover{background:rgba(225,6,19,.25)}
+@media(max-width:430px){.hdr-chip{display:none}}
 
-/* ============ HEADER ============ */
-.hdr{
-  position:sticky;top:0;z-index:100;
-  background:var(--bg-osc);
-  border-bottom:1px solid var(--borde-header);
-  transition:box-shadow .3s ease;
-}
-.hdr.scrolled{box-shadow:0 12px 28px rgba(0,0,0,.5)}
-.hdr-in{height:var(--hdr-h);display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{
-  font-family:'Saira Condensed',sans-serif;
-  font-weight:800;font-size:1.3rem;letter-spacing:.04em;
-  color:#fff;text-decoration:none;display:flex;align-items:baseline;gap:7px;
-}
-.brand .rojo{color:var(--rojo)}
-.brand small{font-family:'Barlow',sans-serif;font-weight:600;font-size:.62rem;letter-spacing:.24em;color:var(--texto-dark);text-transform:uppercase}
-.hdr nav{display:none;gap:26px}
-.hdr nav a{
-  color:#c8ccd4;text-decoration:none;font-weight:600;font-size:.92rem;
-  transition:color .25s;position:relative;padding:6px 0;
-}
-.hdr nav a::after{
-  content:'';position:absolute;left:0;bottom:0;width:0;height:2px;
-  background:var(--rojo);transition:width .3s;
-}
-.hdr nav a:hover{color:#fff}
-.hdr nav a:hover::after{width:100%}
-@media(min-width:900px){.hdr nav{display:flex}}
+/* ===== Kickers & headings ===== */
+.kicker{display:inline-flex;align-items:center;gap:10px;font-family:var(--f-cond);font-weight:700;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--red)}
+.kicker::before{content:"";width:26px;height:2px;background:var(--red)}
+.dark .kicker{color:#ff5560}
+.h1{font-family:var(--f-cond);font-weight:800;font-size:clamp(2rem,4vw,3rem);line-height:1.05;letter-spacing:.01em}
+.h2{font-family:var(--f-cond);font-weight:700;font-size:clamp(1.5rem,3vw,2.25rem);line-height:1.12;margin-top:10px}
+.h3{font-family:var(--f-cond);font-weight:600;font-size:clamp(1.1rem,2vw,1.4rem)}
+.lead{font-size:clamp(1rem,1.4vw,1.1rem);color:var(--txt2);max-width:70ch;margin-top:12px}
+.dark .lead{color:var(--txt3)}
 
-/* ============ BOTONES ============ */
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:8px;
-  min-height:46px;padding:10px 24px;border-radius:10px;
-  font-family:'Saira Condensed',sans-serif;font-weight:700;
-  font-size:1.05rem;letter-spacing:.04em;text-decoration:none;
-  border:1px solid transparent;cursor:pointer;
-  transition:background .25s,border-color .25s,transform .25s;
-}
-.btn-primary{background:var(--rojo);color:#fff}
-.btn-primary:hover{background:var(--rojo-osc);transform:translateY(-1px)}
-.btn-ghost{border-color:rgba(255,255,255,.28);color:#fff}
-.btn-ghost:hover{border-color:var(--rojo)}
-.btn-sm{min-height:40px;padding:7px 16px;font-size:.95rem}
+/* ===== Hero ===== */
+.hero{position:relative;background:var(--bg-dark);color:#fff;overflow:hidden;padding:clamp(64px,9vw,110px) 0 clamp(56px,7vw,90px)}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(640px 420px at 85% 8%,rgba(225,6,19,.17),transparent 62%),
+  radial-gradient(520px 380px at 5% 95%,rgba(225,6,19,.09),transparent 60%)}
+.hero-x{position:absolute;right:-1.5rem;bottom:-3.5rem;font-family:var(--f-cond);font-weight:800;font-size:clamp(9rem,24vw,19rem);line-height:1;color:rgba(255,255,255,.035);user-select:none;pointer-events:none}
+.ring{position:absolute;border:1px solid rgba(225,6,19,.22);border-radius:50%;pointer-events:none}
+.ring.r1{width:340px;height:340px;top:-120px;left:-90px}
+.ring.r2{width:520px;height:520px;bottom:-260px;right:12%;border-color:rgba(225,6,19,.12)}
+.beam{position:absolute;height:2px;width:38%;left:-45%;top:30%;background:linear-gradient(90deg,transparent,var(--red),transparent);filter:drop-shadow(0 0 8px rgba(225,6,19,.8));animation:beam 7s linear infinite}
+.beam.b2{top:72%;width:26%;animation-delay:3.2s;opacity:.6}
+@keyframes beam{0%{left:-45%;opacity:0}8%{opacity:1}55%{opacity:1}66%{opacity:0}100%{left:110%;opacity:0}}
+.hero-in{position:relative;z-index:2;max-width:820px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-cond);font-weight:700;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--red);background:rgba(225,6,19,.09);border:1px solid rgba(225,6,19,.35);border-radius:999px;padding:8px 16px}
+.hero .h1{margin-top:22px;font-size:clamp(2.4rem,6vw,4rem)}
+.hero .h1 span{color:var(--red)}
+.hero-sub{margin-top:18px;font-size:clamp(1.02rem,1.6vw,1.18rem);color:#c3c8d2;max-width:64ch}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.badge{display:inline-flex;align-items:center;gap:7px;background:rgba(225,6,19,.09);border:1px solid rgba(225,6,19,.32);color:#ff8890;font-family:var(--f-cond);font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:8px 14px}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:12px 26px;border-radius:10px;font-family:var(--f-cond);font-weight:700;font-size:15px;letter-spacing:.1em;text-transform:uppercase;transition:transform .3s cubic-bezier(.22,1,.36,1),background .3s ease,border-color .3s ease,box-shadow .3s ease}
+.btn-primary{background:var(--red);color:#fff;box-shadow:0 10px 26px rgba(225,6,19,.3)}
+.btn-primary:hover{background:var(--red-d);transform:translateY(-2px);box-shadow:0 14px 30px rgba(225,6,19,.4)}
+.btn-ghost{background:transparent;color:#fff;border:1px solid var(--line-d2)}
+.btn-ghost:hover{border-color:var(--red);transform:translateY(-2px)}
+.btn:active{transform:scale(.97)}
 
-/* ============ HERO ============ */
-.hero{
-  position:relative;overflow:hidden;
-  background:
-    radial-gradient(640px 340px at 82% 8%, rgba(225,6,19,.20), transparent 62%),
-    radial-gradient(520px 320px at 8% 96%, rgba(225,6,19,.11), transparent 60%),
-    var(--bg-osc);
-  color:#fff;padding:72px 0 60px;
-}
-@media(min-width:1024px){.hero{padding:96px 0 72px}}
-.beam{
-  position:absolute;top:38%;left:-45%;height:2px;width:42%;
-  background:linear-gradient(90deg,transparent,rgba(225,6,19,.95),transparent);
-  filter:drop-shadow(0 0 8px rgba(225,6,19,.8));
-  animation:beam 5.5s linear infinite;pointer-events:none;
-}
-@keyframes beam{
-  0%{transform:translateX(0);opacity:0}
-  8%{opacity:1}
-  85%{opacity:1}
-  100%{transform:translateX(340%);opacity:0}
-}
-.orb{
-  position:absolute;border-radius:50%;pointer-events:none;
-  background:radial-gradient(circle,rgba(225,6,19,.22),transparent 68%);
-}
-.orb-1{width:340px;height:340px;top:-120px;right:-90px}
-.orb-2{width:220px;height:220px;bottom:-90px;left:16%;opacity:.6}
-.hero-inner{position:relative;z-index:2;max-width:860px}
-.hero .kicker{color:#fff;background:rgba(225,6,19,.16);border:1px solid rgba(225,6,19,.5);padding:6px 14px;border-radius:999px}
-.hero h1{margin:18px 0 14px;font-size:clamp(2.4rem,6vw,4rem);letter-spacing:.01em}
-.hero h1 .rojo{color:var(--rojo)}
-.hero .lead{color:#c8ccd4;font-size:clamp(1rem,1.6vw,1.15rem);max-width:680px;margin-bottom:24px}
-.badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px}
-.badge{
-  display:inline-flex;align-items:center;gap:7px;
-  background:rgba(225,6,19,.09);color:#ff8a90;
-  border:1px solid rgba(225,6,19,.35);
-  font-size:.8rem;font-weight:600;letter-spacing:.02em;
-  padding:7px 13px;border-radius:999px;
-}
-.badge em{font-style:normal;color:#fff}
-.hero-ctas{display:flex;flex-wrap:wrap;gap:14px}
+/* ===== Stats ===== */
+.stats{background:var(--line-d);padding:0}
+.stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding:clamp(22px,3vw,34px) 0}
+.stat{background:var(--cell);border:1px solid var(--line-d2);border-radius:12px;padding:20px 18px;text-align:left}
+.stat b{display:block;font-family:var(--f-cond);font-weight:800;font-size:clamp(1.7rem,3vw,2.5rem);color:#fff;line-height:1}
+.stat i{font-style:normal;font-family:var(--f-cond);font-weight:700;font-size:clamp(.95rem,1.4vw,1.2rem);color:var(--red);margin-left:4px}
+.stat span{display:block;margin-top:8px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--txt3)}
+@media(min-width:680px){.stats-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1040px){.stats-grid{grid-template-columns:repeat(6,1fr)}}
 
-/* ============ STATS ============ */
-.stats{
-  position:relative;z-index:2;
-  display:grid;grid-template-columns:repeat(2,1fr);
-  gap:1px;background:var(--linea-dark);
-  border:1px solid var(--linea-dark);border-radius:var(--radius);
-  overflow:hidden;margin-top:46px;
-}
-@media(min-width:720px){.stats{grid-template-columns:repeat(3,1fr)}}
-@media(min-width:1024px){.stats{grid-template-columns:repeat(6,1fr)}}
-.stat{background:var(--bg-celda);padding:18px 16px;display:flex;flex-direction:column;gap:4px}
-.stat .num{
-  font-family:'Saira Condensed',sans-serif;font-weight:800;
-  font-size:clamp(1.7rem,3.2vw,2.4rem);color:#fff;line-height:1;
-}
-.stat .num small{color:var(--rojo);font-size:.55em;font-weight:700;margin-left:4px}
-.stat .lbl{color:var(--texto-dark);font-size:.78rem;line-height:1.35}
+/* ===== Presentación ===== */
+.intro-grid{display:grid;gap:34px}
+@media(min-width:960px){.intro-grid{grid-template-columns:1.4fr .9fr;align-items:start}}
+.intro-text p{margin-top:18px;font-size:clamp(1rem,1.4vw,1.1rem);color:#2c313a}
+.intro-text p:first-of-type{margin-top:22px}
+.intro-text strong{color:var(--txt)}
+.pillars{display:grid;gap:14px}
+.pillar{background:#fff;border:1px solid var(--line);border-left:4px solid var(--red);border-radius:14px;padding:18px 20px;box-shadow:0 4px 14px rgba(16,17,20,.05);transition:transform .3s ease,box-shadow .3s ease}
+.pillar:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(16,17,20,.09)}
+.pillar b{font-family:var(--f-cond);font-weight:800;font-size:1.5rem;color:var(--red);display:block;line-height:1}
+.pillar h3{margin-top:8px}
+.pillar p{font-size:14px;color:var(--txt2);margin-top:6px}
 
-/* ============ PRESENTACIÓN ============ */
-.present{background:var(--bg-claro)}
-.present .cols{display:grid;gap:22px;max-width:860px}
-.present p{color:var(--texto-sec);font-size:1.02rem}
-.present p strong{color:var(--texto);font-weight:700}
-
-/* ============ DETALLES (DATOS CURIOSOS) ============ */
-.facts-sec{
-  background:
-    radial-gradient(700px 380px at 90% 0%, rgba(225,6,19,.10), transparent 60%),
-    var(--bg-osc);
-  color:#fff;
-}
-.facts-grid{display:grid;grid-template-columns:1fr;gap:24px}
-@media(min-width:720px){.facts-grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1024px){.facts-grid{grid-template-columns:repeat(3,1fr)}}
-.fact{
-  position:relative;
-  background:radial-gradient(360px 190px at 100% 0%, rgba(225,6,19,.09), transparent 60%), var(--bg-card-osc);
-  border:1px solid var(--linea-dark);
-  border-left:4px solid var(--rojo);
-  border-radius:var(--radius);
-  padding:20px;
-  display:flex;flex-direction:column;gap:10px;
-  transition:opacity .35s ease,border-color .35s ease,box-shadow .35s ease,transform .3s ease;
-}
-.fact:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(0,0,0,.45);border-color:rgba(225,6,19,.45);border-left-color:var(--rojo)}
-.fact-ico{
-  width:46px;height:46px;border-radius:50%;
-  background:rgba(225,6,19,.15);
-  display:flex;align-items:center;justify-content:center;
-  font-size:21px;flex-shrink:0;
-}
+/* ===== Datos curiosos ===== */
+.facts{background:
+  radial-gradient(700px 420px at 92% 0%,rgba(225,6,19,.1),transparent 60%),
+  radial-gradient(500px 380px at 0% 100%,rgba(225,6,19,.06),transparent 60%),
+  var(--bg-dark)}
+.facts-grid{display:grid;grid-template-columns:1fr;gap:24px;margin-top:38px}
+@media(min-width:660px){.facts-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.facts-grid{grid-template-columns:repeat(3,1fr)}}
+.fact{position:relative;background:linear-gradient(160deg,#181b22 0%,var(--bg-card) 55%);border:1px solid var(--line-d2);border-left:4px solid var(--red);border-radius:14px;padding:20px;transition:transform .35s cubic-bezier(.22,1,.36,1),box-shadow .35s ease,border-color .35s ease,opacity .35s ease}
+.fact:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(0,0,0,.4);border-color:rgba(225,6,19,.55);border-left-color:var(--red)}
+.fact-ico{width:46px;height:46px;border-radius:50%;background:rgba(225,6,19,.15);display:flex;align-items:center;justify-content:center;font-size:21px;margin-bottom:14px}
 .fact h3{color:#fff;font-weight:700}
-.fact p{color:var(--texto-dark);font-size:.92rem}
-.fact .own-tag{margin-top:auto}
+.fact p{margin-top:8px;font-size:14.5px;color:var(--txt3)}
 
-/* Estados de versión */
-.versioned{transition:opacity .35s ease,border-color .35s ease,box-shadow .35s ease,transform .3s ease}
-.version-off{opacity:.35;pointer-events:none}
+/* ===== Version gating ===== */
 .version-on{opacity:1}
-.badge-off{
-  display:none;position:absolute;top:12px;right:12px;z-index:2;
-  background:rgba(225,6,19,.09);color:var(--rojo);
-  font-size:.66rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
-  padding:5px 10px;border-radius:999px;white-space:nowrap;
-}
-.version-off .badge-off{display:inline-block}
-.own-tag{
-  display:inline-flex;align-self:flex-start;align-items:center;
-  font-size:.66rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
-  color:var(--rojo);border:1px solid rgba(225,6,19,.45);
-  background:rgba(225,6,19,.07);
-  padding:4px 10px;border-radius:999px;
-}
-.dark .own-tag{color:#ff8a90}
+.version-off{opacity:.35;pointer-events:none}
+.vcard,.fact{transition:opacity .35s ease,border-color .35s ease,box-shadow .35s ease,transform .3s cubic-bezier(.22,1,.36,1)}
+.vcard.version-on{border-color:rgba(225,6,19,.35);box-shadow:0 6px 18px rgba(225,6,19,.07)}
+.na{display:none;align-items:center;gap:6px;font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--txt2);background:#eef0f3;border:1px solid var(--line);border-radius:999px;padding:4px 11px;margin-top:12px}
+.na::before{content:"⊘";color:var(--red)}
+.version-off .na{display:inline-flex}
 
-/* ============ CARACTERÍSTICAS ============ */
-.feats-sec{background:var(--bg-claro)}
+/* ===== Selector sticky ===== */
+.selector{position:sticky;top:var(--head-h);z-index:50;background:var(--bg-card);border-top:1px solid var(--line-d2);border-bottom:1px solid var(--line-d2);box-shadow:0 12px 30px rgba(0,0,0,.35)}
+.sel-in{display:flex;align-items:center;gap:14px;padding:12px 0}
+.sel-label{font-family:var(--f-cond);font-weight:700;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--txt3);white-space:nowrap}
+.tabs{display:flex;gap:10px;overflow-x:auto;flex:1}
+.vtab{display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-height:46px;min-width:168px;padding:8px 18px;background:transparent;border:1px solid var(--line-d2);border-radius:10px;color:var(--txt3);text-align:left;transition:transform .3s cubic-bezier(.22,1,.36,1),background .3s ease,color .3s ease,border-color .3s ease,box-shadow .3s ease}
+.vtab strong{font-family:var(--f-cond);font-weight:700;font-size:1.05rem;letter-spacing:.04em;text-transform:uppercase}
+.vtab small{font-size:11px;letter-spacing:.03em;opacity:.85}
+.vtab:hover{color:#fff;border-color:#3a3f4b}
+.vtab.active{background:var(--red);border-color:var(--red);color:#fff;transform:scale(1.02);box-shadow:0 8px 22px rgba(225,6,19,.38)}
+.vtab:active{transform:scale(.96)}
+.sel-now{white-space:nowrap;font-family:var(--f-cond);font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--txt3)}
+.sel-now b{color:var(--red);font-weight:700}
+@media(max-width:560px){.sel-label{display:none}.sel-now{font-size:11px}}
 
-/* Panel diferencias clave */
-.diff{
-  display:grid;gap:18px;background:#fff;
-  border:1px solid var(--linea);border-radius:var(--radius);
-  padding:24px;margin-bottom:26px;
-  box-shadow:0 6px 20px rgba(11,12,16,.05);
-}
-@media(min-width:720px){.diff{grid-template-columns:1fr 1fr}}
-.diff-col h3{display:flex;align-items:center;gap:8px;margin-bottom:12px;font-weight:700}
-.diff-col h3 .dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
-.dot-gris{background:#8a8f98}
-.dot-rojo{background:var(--rojo);box-shadow:0 0 0 4px rgba(225,6,19,.12)}
-.diff-col .chips{display:flex;flex-wrap:wrap;gap:8px}
-.chip{
-  font-size:.74rem;font-weight:600;letter-spacing:.02em;
-  background:var(--bg-claro);border:1px solid var(--linea);
-  color:var(--texto-sec);padding:5px 11px;border-radius:999px;
-}
-.chip-rojo{background:rgba(225,6,19,.06);border-color:rgba(225,6,19,.3);color:var(--rojo)}
+/* ===== Acordeones ===== */
+.accs{display:grid;gap:14px;margin-top:34px}
+.acc{border-radius:12px;overflow:hidden}
+.acc-head{width:100%;display:flex;align-items:center;gap:14px;background:var(--bg-card);color:#fff;border:none;border-radius:12px;padding:12px 16px;min-height:56px;text-align:left;transition:border-radius .3s ease}
+.acc.open .acc-head{border-radius:12px 12px 0 0}
+.acc-ico{width:38px;height:38px;flex:none;border-radius:50%;background:rgba(225,6,19,.15);display:flex;align-items:center;justify-content:center;font-size:17px}
+.acc-title{font-family:var(--f-cond);font-weight:600;font-size:clamp(1.1rem,2vw,1.4rem);letter-spacing:.02em;flex:1}
+.acc-count{font-family:var(--f-cond);font-weight:600;font-size:12px;color:var(--txt3);letter-spacing:.1em}
+.arr{flex:none;width:10px;height:10px;border-right:2.5px solid var(--red);border-bottom:2.5px solid var(--red);transform:rotate(-45deg);transition:transform .35s ease}
+.acc.open .arr{transform:rotate(45deg)}
+.js .acc-body{max-height:0;opacity:0;transform:translateY(-8px);overflow:hidden;transition:max-height .45s cubic-bezier(.4,0,.2,1),opacity .35s ease,transform .35s ease}
+.acc.open .acc-body{opacity:1;transform:none}
+.acc-panel{background:#fff;border:1px solid var(--line);border-top:none;border-radius:0 0 12px 12px;padding:20px}
+.cards{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:700px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.cards{grid-template-columns:repeat(3,1fr)}}
+.vcard{position:relative;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:18px}
+.vcard:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(16,17,20,.09)}
+.vcard-head{display:flex;align-items:center;gap:11px;margin-bottom:10px}
+.vico{width:38px;height:38px;flex:none;border-radius:50%;background:rgba(225,6,19,.09);color:var(--red);display:flex;align-items:center;justify-content:center;font-size:17px}
+.vcard h4{font-family:var(--f-cond);font-weight:600;font-size:clamp(1.02rem,1.6vw,1.22rem);line-height:1.2;color:var(--txt)}
+.vcard p{font-size:14px;color:var(--txt2)}
+.vtag{display:inline-flex;margin-top:12px;font-family:var(--f-cond);font-weight:600;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--red);background:rgba(225,6,19,.08);border:1px solid rgba(225,6,19,.25);border-radius:999px;padding:4px 11px}
+.vtag.gray{color:var(--txt2);background:#eef0f3;border-color:var(--line)}
+.mini{display:flex;gap:10px;margin-top:10px;font-size:13.5px;color:var(--txt2)}
+.mini b{flex:none;font-family:var(--f-cond);font-weight:700;color:var(--red);letter-spacing:.05em;min-width:44px}
+.dots{display:flex;gap:9px;margin-top:12px;flex-wrap:wrap;align-items:center}
+.dots i{width:22px;height:22px;border-radius:50%;border:1px solid var(--line);display:inline-block}
+.dots span{font-size:13px;color:var(--txt2)}
 
-/* Selector sticky de versiones */
-.vbar{
-  position:sticky;top:var(--hdr-h);z-index:50;
-  display:flex;align-items:center;gap:14px;
-  background:var(--bg-card-osc);
-  border:1px solid var(--linea-dark2);
-  border-radius:var(--radius);
-  padding:10px 12px;margin:6px 0 28px;
-  box-shadow:0 14px 32px rgba(7,8,11,.28);
-}
-.vlabel{
-  font-family:'Saira Condensed',sans-serif;font-weight:700;
-  font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--texto-dark);white-space:nowrap;
-}
-.vtabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;flex:1}
-.vtabs::-webkit-scrollbar{display:none}
-.vtab{
-  flex:1 0 auto;min-height:44px;min-width:150px;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;
-  background:var(--bg-celda);color:#fff;
-  border:1px solid var(--linea-dark2);border-radius:10px;
-  padding:7px 18px;cursor:pointer;
-  transition:all .3s cubic-bezier(.22,.61,.36,1);
-}
-.vtab strong{font-family:'Saira Condensed',sans-serif;font-size:1.05rem;font-weight:700;letter-spacing:.06em}
-.vtab span{font-family:'Barlow',sans-serif;font-size:.68rem;font-weight:500;color:var(--texto-dark);letter-spacing:.02em}
-.vtab:hover{border-color:rgba(225,6,19,.55)}
-.vtab.active{
-  background:var(--rojo);border-color:var(--rojo);
-  transform:scale(1.02);box-shadow:0 8px 22px rgba(225,6,19,.4);
-}
-.vtab.active span{color:rgba(255,255,255,.85)}
-.vtab.pressed{transform:scale(.96)}
-@media(max-width:560px){.vlabel{display:none}}
+/* ===== Tabla comparativa ===== */
+.cmp{margin-top:64px}
+.cmp-box{margin-top:26px;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 8px 22px rgba(16,17,20,.05)}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;min-width:660px;border-collapse:collapse;font-size:14px}
+thead th{background:var(--bg-card);color:#fff;font-family:var(--f-cond);font-weight:700;font-size:15px;letter-spacing:.06em;text-transform:uppercase;text-align:left;padding:14px 18px}
+thead th:last-child{color:#ff8890}
+tbody td{padding:12px 18px;border-top:1px solid var(--line);color:var(--txt)}
+tbody td:first-child{font-weight:600;color:var(--txt);font-size:13px;letter-spacing:.04em;text-transform:uppercase}
+tbody tr:nth-child(even) td{background:#fafbfc}
+tbody td .yes{color:var(--red);font-weight:700}
+tbody td .no{color:var(--txt3)}
+.shared{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;align-items:center}
+.shared em{font-style:normal;font-family:var(--f-cond);font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--txt2);margin-right:4px}
+.chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-size:12.5px;color:var(--txt2)}
 
-/* Acordeones */
-.acc{margin-bottom:14px}
-.acc-head{
-  width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;
-  background:var(--bg-card-osc);color:#fff;
-  border:1px solid var(--linea-dark);border-radius:10px;
-  padding:12px 16px;min-height:48px;cursor:pointer;
-  font-family:'Saira Condensed',sans-serif;font-weight:600;
-  font-size:clamp(1.1rem,2vw,1.4rem);letter-spacing:.02em;text-align:left;
-  transition:border-color .3s;
-}
-.acc-head:hover{border-color:rgba(225,6,19,.5)}
-.acc-head .t{display:flex;align-items:center;gap:11px}
-.acc-head .t .ico{font-size:1.15em}
-.acc-arrow{color:var(--rojo);font-size:1rem;transition:transform .35s cubic-bezier(.22,.61,.36,1);flex-shrink:0}
-.acc.open .acc-arrow{transform:rotate(180deg)}
-.acc-body{
-  max-height:0;overflow:hidden;opacity:0;transform:translateY(-6px);
-  transition:max-height .4s cubic-bezier(.22,.61,.36,1),opacity .35s ease,transform .35s ease;
-}
-.acc.open .acc-body{opacity:1;transform:translateY(0)}
-.acc-inner{padding:16px 0 8px}
-.acc-note{color:var(--texto-sec);font-size:.92rem;margin-bottom:16px;max-width:760px}
+/* ===== Perfiles ===== */
+.perfiles{background:radial-gradient(600px 380px at 10% 0%,rgba(225,6,19,.08),transparent 60%),var(--bg-dark)}
+.prof-grid{display:grid;grid-template-columns:1fr;gap:24px;margin-top:38px}
+@media(min-width:900px){.prof-grid{grid-template-columns:repeat(2,1fr)}}
+.prof{background:var(--bg-dark2);border:1px solid var(--line-d2);border-radius:14px;padding:24px;transition:transform .35s cubic-bezier(.22,1,.36,1),border-color .35s ease,box-shadow .35s ease}
+.prof:hover{transform:translateY(-5px);border-color:rgba(225,6,19,.6);box-shadow:0 18px 36px rgba(0,0,0,.45)}
+.prof-top{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.prof-ico{width:50px;height:50px;flex:none;border-radius:50%;background:rgba(225,6,19,.1);display:flex;align-items:center;justify-content:center;font-size:23px}
+.prof-tag{display:inline-block;font-family:var(--f-cond);font-weight:700;font-size:11px;letter-spacing:.18em;text-transform:uppercase;background:var(--red);color:#fff;border-radius:999px;padding:4px 12px}
+.prof h3{margin-top:7px;color:#fff;font-weight:700;font-size:clamp(1.25rem,2.2vw,1.6rem)}
+.prof-desc{color:var(--txt3);font-size:14.5px}
+.prof ul{list-style:none;margin-top:16px;display:grid;gap:10px}
+.prof li{position:relative;padding-left:20px;font-size:14px;color:#c3c8d2}
+.prof li::before{content:"";position:absolute;left:0;top:7px;width:9px;height:9px;border-radius:50%;background:var(--red)}
+.prof-btn{margin-top:20px;display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 22px;border-radius:9px;border:1px solid var(--line-d2);background:transparent;color:#fff;font-family:var(--f-cond);font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;transition:border-color .3s ease,background .3s ease,transform .3s ease}
+.prof-btn:hover{border-color:var(--red);background:rgba(225,6,19,.1);transform:translateY(-2px)}
+.prof-btn:active{transform:scale(.97)}
 
-/* Tarjetas de equipamiento */
-.feat-grid{display:grid;grid-template-columns:1fr;gap:16px}
-@media(min-width:720px){.feat-grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1024px){.feat-grid{grid-template-columns:repeat(3,1fr)}}
-.feat{
-  position:relative;background:#fff;
-  border:1px solid var(--linea);border-radius:var(--radius);
-  padding:20px 18px 18px;display:flex;flex-direction:column;gap:9px;
-  transition:opacity .35s ease,border-color .35s ease,box-shadow .35s ease,transform .28s ease;
-}
-.feat:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(11,12,16,.1)}
-.feat.version-on.own{border-color:rgba(225,6,19,.38);box-shadow:0 0 0 3px rgba(225,6,19,.06)}
-.feat-ico{
-  width:42px;height:42px;border-radius:50%;
-  background:rgba(225,6,19,.08);
-  display:flex;align-items:center;justify-content:center;font-size:19px;flex-shrink:0;
-}
-.feat h3{color:var(--texto)}
-.feat p{color:var(--texto-sec);font-size:.9rem;line-height:1.55}
-.feat .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:6px}
-.feat .own-tag{position:absolute;bottom:16px;right:16px}
-.feat.has-own .chips{padding-right:110px}
+/* ===== Respaldo ===== */
+.respaldo{background:radial-gradient(760px 460px at 88% 100%,rgba(225,6,19,.12),transparent 60%),radial-gradient(520px 360px at 6% 0%,rgba(225,6,19,.07),transparent 60%),var(--bg-dark)}
+.r-grid{display:grid;grid-template-columns:1fr;gap:20px;margin-top:38px}
+@media(min-width:720px){.r-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1080px){.r-grid{grid-template-columns:repeat(3,1fr)}}
+.rcard{background:var(--bg-card);border:1px solid var(--line-d2);border-radius:14px;padding:24px;transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}
+.rcard:hover{transform:translateY(-4px);border-color:rgba(225,6,19,.5);box-shadow:0 16px 32px rgba(0,0,0,.4)}
+.rcard h3{color:#fff;margin-top:12px}
+.rcard p{margin-top:8px;font-size:14.5px;color:var(--txt3)}
+.r-ico{width:46px;height:46px;border-radius:50%;background:rgba(225,6,19,.15);display:flex;align-items:center;justify-content:center;font-size:21px}
+.r-wide{display:flex;flex-wrap:wrap;gap:26px;align-items:center}
+@media(min-width:1080px){.r-wide{grid-column:1/-1}}
+.r-big{flex:none;text-align:center;padding:6px 26px;border-right:1px solid var(--line-d2)}
+.r-big b{display:block;font-family:var(--f-cond);font-weight:800;font-size:clamp(3rem,7vw,4.6rem);color:var(--red);line-height:.9}
+.r-big span{display:block;font-family:var(--f-cond);font-weight:700;font-size:1rem;color:#fff;letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
+.r-big small{display:block;font-size:12px;color:var(--txt3);margin-top:4px}
+.r-wide-txt{flex:1;min-width:260px}
+.r-wide-txt h3{margin-top:0}
+.brand-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.brand-chips span{font-family:var(--f-cond);font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#ff8890;background:rgba(225,6,19,.09);border:1px solid rgba(225,6,19,.3);border-radius:999px;padding:5px 12px}
+.testi-head{margin-top:56px}
+.testi-grid{display:grid;grid-template-columns:1fr;gap:20px;margin-top:24px}
+@media(min-width:900px){.testi-grid{grid-template-columns:repeat(3,1fr)}}
+.testi{background:var(--bg-card);border:1px solid var(--line-d);border-radius:14px;padding:22px}
+.testi::before{content:"❝";display:block;font-size:34px;color:var(--red);line-height:1;margin-bottom:8px}
+.testi p{font-size:14.5px;color:#c7ccd6}
+.testi footer{margin-top:14px;font-family:var(--f-cond);font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--txt3)}
+.colores{display:flex;flex-wrap:wrap;align-items:center;gap:18px;margin-top:46px;padding:20px 22px;background:var(--bg-card);border:1px solid var(--line-d2);border-radius:14px}
+.colores em{font-style:normal;font-family:var(--f-cond);font-weight:700;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#fff}
+.cdot{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--txt3)}
+.cdot i{width:18px;height:18px;border-radius:50%;border:1px solid var(--line-d2);display:inline-block}
 
-/* Swatches de color */
-.swatches{display:flex;flex-wrap:wrap;gap:18px;margin-top:10px}
-.sw{display:flex;flex-direction:column;align-items:center;gap:7px;font-size:.72rem;font-weight:600;color:var(--texto-sec)}
-.sw i{
-  width:32px;height:32px;border-radius:50%;background:var(--c);
-  border:1px solid #c3c8d0;box-shadow:inset 0 0 0 2px #fff,0 2px 6px rgba(0,0,0,.15);
-}
+/* ===== Footer ===== */
+.footer{background:var(--foot);color:var(--txt3);padding:clamp(48px,7vw,72px) 0 0;border-top:1px solid var(--line-d)}
+.f-grid{display:grid;grid-template-columns:1fr;gap:34px}
+@media(min-width:700px){.f-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1020px){.f-grid{grid-template-columns:1.4fr 1fr 1.2fr 1fr}}
+.f-brand .brand-mark{font-size:1.5rem}
+.f-grid p{font-size:14px;margin-top:12px;max-width:36ch}
+.f-grid h4{font-family:var(--f-cond);font-weight:700;font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:#fff}
+.f-grid ul{list-style:none;margin-top:14px;display:grid;gap:9px;font-size:14px}
+.f-grid ul a{transition:color .25s ease}
+.f-grid ul a:hover{color:var(--red)}
+.f-bottom{margin-top:44px;border-top:1px solid var(--line-d);padding:20px 0;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:12.5px;color:#6b7280}
 
-/* ============ PERFILES ============ */
-.profiles-sec{background:#fff}
-.profiles-grid{display:grid;grid-template-columns:1fr;gap:24px}
-@media(min-width:820px){.profiles-grid{grid-template-columns:repeat(2,1fr)}}
-.profile{
-  position:relative;background:var(--bg-sec);
-  border:1px solid var(--linea-dark2);border-radius:var(--radius);
-  padding:26px 24px;display:flex;flex-direction:column;gap:14px;
-  transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease;
+/* ===== Reveal ===== */
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s cubic-bezier(.22,1,.36,1)}
+.js .reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
 }
-.profile:hover{transform:translateY(-5px);border-color:rgba(225,6,19,.6);box-shadow:0 18px 36px rgba(7,8,11,.35)}
-.profile-ico{
-  width:50px;height:50px;border-radius:50%;
-  background:rgba(225,6,19,.1);
-  display:flex;align-items:center;justify-content:center;font-size:23px;
-}
-.profile .p-tag{
-  display:inline-flex;align-items:center;gap:8px;
-  font-family:'Saira Condensed',sans-serif;font-weight:700;
-  font-size:1.35rem;color:#fff;letter-spacing:.03em;
-}
-.p-tag .badge-v{
-  font-family:'Barlow',sans-serif;font-size:.64rem;font-weight:700;
-  letter-spacing:.1em;text-transform:uppercase;
-  background:var(--rojo);color:#fff;padding:4px 10px;border-radius:999px;
-}
-.profile .desc{color:var(--texto-dark);font-size:.95rem}
-.feats-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin-top:4px}
-.feats-list li{
-  position:relative;padding-left:22px;
-  color:#c8ccd4;font-size:.9rem;font-weight:500;
-}
-.feats-list li::before{
-  content:'';position:absolute;left:0;top:6px;
-  width:9px;height:9px;border-radius:50%;
-  background:var(--rojo);box-shadow:0 0 0 3px rgba(225,6,19,.18);
-}
-
-/* ============ RESPALDO ============ */
-.respaldo-sec{
-  background:
-    radial-gradient(760px 420px at 12% 100%, rgba(225,6,19,.13), transparent 62%),
-    radial-gradient(500px 300px at 95% 10%, rgba(225,6,19,.08), transparent 60%),
-    var(--bg-osc);
-  color:#fff;
-}
-.resp-grid{display:grid;grid-template-columns:1fr;gap:24px}
-@media(min-width:820px){.resp-grid{grid-template-columns:repeat(3,1fr)}}
-.resp-card{
-  background:var(--bg-card-osc);border:1px solid var(--linea-dark2);
-  border-radius:var(--radius);padding:26px 22px;
-  display:flex;flex-direction:column;gap:12px;
-  transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease;
-}
-.resp-card:hover{transform:translateY(-5px);border-color:rgba(225,6,19,.55);box-shadow:0 16px 34px rgba(0,0,0,.45)}
-.resp-ico{
-  width:48px;height:48px;border-radius:50%;
-  background:rgba(225,6,19,.15);
-  display:flex;align-items:center;justify-content:center;font-size:22px;
-}
-.resp-card h3{color:#fff;font-weight:700}
-.resp-card p{color:var(--texto-dark);font-size:.92rem}
-.resp-card .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;padding-top:8px}
-.resp-card .chip{background:rgba(255,255,255,.04);border-color:var(--linea-dark2);color:#c8ccd4}
-.resp-num{
-  font-family:'Saira Condensed',sans-serif;font-weight:800;
-  font-size:clamp(2rem,4vw,2.8rem);color:#fff;line-height:1;
-}
-.resp-num small{color:var(--rojo);font-size:.5em;font-weight:700;margin-left:4px}
-
-/* ============ FOOTER ============ */
-.footer{background:#07080b;color:var(--texto-dark);padding:44px 0;border-top:1px solid var(--linea-dark)}
-.footer-in{display:flex;flex-direction:column;gap:16px;align-items:flex-start}
-@media(min-width:820px){.footer-in{flex-direction:row;justify-content:space-between;align-items:center}}
-.footer .brand{font-size:1.15rem}
-.footer p{font-size:.8rem;max-width:520px}
-.footer .mini{font-size:.74rem;color:#5d6470}
 </style>
 </head>
 <body id="top">
+<script>document.documentElement.classList.add('js');</script>
 
-<!-- ==================== TOPBAR ==================== -->
-<div class="topbar">
-  <b>GRUPO RO LDÁN</b><span class="sep">·</span>Jetour<span class="sep">·</span>JAC<span class="sep">·</span>SANY<span class="sep">·</span>YTO<span class="sep">·</span>Karry<span class="sep">·</span>Textron<span class="sep">·</span>Zongshen<span class="sep">·</span>+50 años<span class="sep">·</span>27 concesionarios
+<!-- Topbar -->
+<div class="topbar no-bar">
+  <div class="container">
+    <span>Grupo Roldán</span><i>·</i><span>Jetour</span><i>·</i><span>JAC</span><i>·</i><span>SANY</span><i>·</i><span>YTO</span><i>·</i><span>Karry</span><i>·</i><span>Textron</span><i>·</i><span>Zongshen</span><i>·</i><span>+50 años</span><i>·</i><span>27 concesionarios</span>
+  </div>
 </div>
 
-<!-- ==================== HEADER ==================== -->
-<header class="hdr" id="hdr">
-  <div class="wrap hdr-in">
-    <a class="brand" href="#top">JETOUR <span class="rojo">X50</span> <small>Ecuador</small></a>
-    <nav>
-      <a href="#caracteristicas">Características</a>
-      <a href="#perfiles">Versiones</a>
-      <a href="#respaldo">Respaldo</a>
-    </nav>
-    <a class="btn btn-primary btn-sm" href="#versiones">Elegir versión</a>
+<!-- Header -->
+<header class="hdr" id="siteHeader">
+  <div class="container hdr-in">
+    <a class="brand" href="#top">
+      <span class="brand-mark">JETOUR <em>X50</em></span>
+      <span class="brand-sub">Ecuador</span>
+    </a>
+    <a class="hdr-chip" href="#respaldo">🛡️ Garantía 10 años · 120.000 km</a>
   </div>
 </header>
 
-<!-- ==================== HERO ==================== -->
+<!-- Hero -->
 <section class="hero">
-  <div class="orb orb-1"></div>
-  <div class="orb orb-2"></div>
-  <div class="beam"></div>
-  <div class="wrap">
-    <div class="hero-inner">
-      <span class="kicker">SUV compacta · Ecuador</span>
-      <h1>JETOUR <span class="rojo">X50</span></h1>
-      <p class="lead">La SUV compacta que combina tecnología de serie, seguridad ADAS en toda la gama y una garantía que marca un antes y un después. Lista para la ciudad, preparada para la carretera.</p>
-      <div class="badges">
-        <span class="badge">🛡️ Garantía <em>10 años / 120.000 km</em></span>
-        <span class="badge">📺 Pantallas duales <em>10,25″</em></span>
-        <span class="badge">👁️ ADAS <em>BSD · LDW · RCW</em> de serie</span>
-        <span class="badge">🔥 Hasta <em>160 HP</em> Turbo</span>
-      </div>
-      <div class="hero-ctas">
-        <a class="btn btn-primary" href="#caracteristicas">Explorar características</a>
-        <a class="btn btn-ghost" href="#versiones">Ver versiones</a>
-      </div>
+  <div class="hero-x" aria-hidden="true">X50</div>
+  <span class="ring r1" aria-hidden="true"></span>
+  <span class="ring r2" aria-hidden="true"></span>
+  <span class="beam" aria-hidden="true"></span>
+  <span class="beam b2" aria-hidden="true"></span>
+  <div class="container hero-in">
+    <span class="eyebrow">SUV compacto · Jetour Ecuador</span>
+    <h1 class="h1">JETOUR <span>X50</span></h1>
+    <p class="hero-sub">El SUV compacto que trae tecnología de segmentos superiores a tu día a día: empuje de motor grande, caja de doble embrague, suspensión independiente y un copiloto electrónico que nunca parpadea. Todo, de serie.</p>
+    <div class="badges">
+      <span class="badge">🔥 1.5 Turbo · 160 HP</span>
+      <span class="badge">⚡ Caja 6DCT húmeda</span>
+      <span class="badge">🏆 Suspensión multi-link</span>
+      <span class="badge">🎥 Cámara 360° de serie</span>
+      <span class="badge">⭐ Garantía 10 años</span>
     </div>
-
-    <!-- STATS -->
-    <div class="stats">
-      <div class="stat"><div class="num">160<small>HP</small></div><div class="lbl">Potencia máx. motor Turbo (DCT)</div></div>
-      <div class="stat"><div class="num">230<small>Nm</small></div><div class="lbl">Torque máx. motor Turbo (DCT)</div></div>
-      <div class="stat"><div class="num">10<small>años</small></div><div class="lbl">Garantía (o 120.000 km)</div></div>
-      <div class="stat"><div class="num">5<small>plazas</small></div><div class="lbl">Capacidad de pasajeros</div></div>
-      <div class="stat"><div class="num">1.262<small>L</small></div><div class="lbl">Maletero con asientos abatidos</div></div>
-      <div class="stat"><div class="num">45<small>L</small></div><div class="lbl">Tanque de combustible</div></div>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#selector">Explorar versiones ↓</a>
+      <a class="btn btn-ghost" href="#detalles">Detalles que sorprenden</a>
     </div>
   </div>
 </section>
 
-<!-- ==================== PRESENTACIÓN ==================== -->
-<section class="section present">
-  <div class="wrap">
-    <span class="kicker">Presentación</span>
-    <h2>Una SUV compacta hecha para tu vida real</h2>
-    <div class="cols" style="margin-top:18px">
-      <p>La <strong>Jetour X50</strong> es la SUV compacta con la que Jetour llega a Ecuador para quienes buscan su primera camioneta o quieren dar un salto de calidad sin renunciar a la practicidad. Es urbana en tamaño y aventurera en espíritu: cómoda para el tráfico diario y lista para el feriado.</p>
-      <p>Tres fortalezas la definen: una <strong>seguridad que no negocia</strong> —con asistencias avanzadas de conducción de serie en toda la gama—, una <strong>cabina tecnológica</strong> que mantiene a todos conectados, y un <strong>confort</strong> pensado para que cada trayecto se sienta de una categoría superior.</p>
-      <p>Y detrás hay un respaldo real: el Grupo Roldán, con más de medio siglo de experiencia en el país, y una garantía que habla de confianza en cada componente. Elige entre su versión <strong>manual</strong> o la <strong>automática de doble embrague</strong>, y quédate con la que mejor va contigo.</p>
+<!-- Stats -->
+<div class="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat"><b>160<i>HP</i></b><span>Potencia máx. versión Turbo</span></div>
+      <div class="stat"><b>230<i>Nm</i></b><span>Torque desde bajas rpm</span></div>
+      <div class="stat"><b>10<i>años</i></b><span>Garantía o 120.000 km</span></div>
+      <div class="stat"><b>672<i>km</i></b><span>Autonomía máx. en carretera</span></div>
+      <div class="stat"><b>1.262<i>L</i></b><span>Cajuela con asientos abatidos</span></div>
+      <div class="stat"><b>20,5<i>"</i></b><span>Superficie de pantallas</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- Presentación -->
+<section class="section light">
+  <div class="container">
+    <div class="intro-grid">
+      <div class="intro-text reveal">
+        <span class="kicker">Presentación</span>
+        <h2 class="h2">Un SUV compacto que juega en ligas mayores</h2>
+        <p>El <strong>Jetour X50</strong> es el SUV pensado para quienes creen que la tecnología y la seguridad no deberían ser un privilegio: un diseño urbano con presencia, una cabina digital envolvente y un andar que se siente un segmento arriba del que esperas.</p>
+        <p>Está hecho para la familia joven que estrena su primer SUV, para el profesional que quiere presencia sin exagerar y para el conductor de ciudad que escapa a la carretera cada vez que puede. Un vehículo versátil, igual de cómodo entre el tráfico de lunes que en un viaje de fin de semana.</p>
+        <p>Tres ideas lo definen: <strong>equipamiento propio de segmentos superiores</strong> desde la versión de entrada, <strong>seguridad integral con asistentes electrónicos</strong> que vigilan por ti, y un <strong>respaldo de marca</strong> que responde por una década completa.</p>
+      </div>
+      <div class="pillars reveal">
+        <div class="pillar"><b>01</b><h3 class="h3">Tecnología de segmento superior</h3><p>Doble embrague, suspensión independiente y pantallas duales, sin excepciones.</p></div>
+        <div class="pillar"><b>02</b><h3 class="h3">Seguridad con copiloto electrónico</h3><p>Asistentes ADAS y estructura tipo jaula trabajando en cada kilómetro.</p></div>
+        <div class="pillar"><b>03</b><h3 class="h3">Respaldo real en Ecuador</h3><p>Grupo Roldán y una garantía que muy pocas marcas se atreven a firmar.</p></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ==================== DETALLES QUE MARCAN LA DIFERENCIA ==================== -->
-<section class="section facts-sec dark">
-  <div class="wrap">
-    <span class="kicker">💡 Datos curiosos</span>
-    <h2>Detalles que marcan la diferencia</h2>
-    <p class="sec-sub">Pequeñas grandes cosas que convierten a la X50 en una referente de su segmento en Ecuador.</p>
-
+<!-- Datos curiosos -->
+<section class="section dark facts" id="detalles">
+  <div class="container">
+    <span class="kicker reveal">Para descubrir</span>
+    <h2 class="h2 reveal">Detalles que marcan la diferencia</h2>
+    <p class="lead reveal">Doce razones por las que el X50 se siente de otra categoría, antes de entrar en el detalle técnico.</p>
     <div class="facts-grid">
-      <article class="fact versioned" data-v="both">
-        <span class="badge-off">No incluido en esta versión</span>
-        <div class="fact-ico">🏆</div>
-        <h3>Garantía de 10 años o 120.000 km</h3>
-        <p>La garantía más extensa del segmento en Ecuador: una declaración de confianza total en la ingeniería del vehículo.</p>
-      </article>
-
-      <article class="fact versioned" data-v="both">
-        <span class="badge-off">No incluido en esta versión</span>
-        <div class="fact-ico">🖥️</div>
-        <h3>Pantallas duales de 10,25″</h3>
-        <p>Pantalla táctil multimedia y panel de instrumentos digital del mismo tamaño, de serie en todas las versiones.</p>
-      </article>
-
-      <article class="fact versioned" data-v="both">
-        <span class="badge-off">No incluido en esta versión</span>
-        <div class="fact-ico">🛡️</div>
-        <h3>ADAS de serie</h3>
-        <p>Detección de punto ciego, alerta de cambio de carril y alerta de colisión trasera vienen de fábrica, sin importar la versión.</p>
-      </article>
-
-      <article class="fact versioned" data-v="both">
-        <span class="badge-off">No incluido en esta versión</span>
-        <div class="fact-ico">📸</div>
-        <h3>Cámara y sensores 360°</h3>
-        <p>Estacionar en espacios estrechos deja de ser un problema: la vista panorámica te muestra todo lo que rodea al vehículo.</p>
-      </article>
-
-      <article class="fact versioned" data-v="both">
-        <span class="badge-off">No incluido en esta versión</span>
-        <div class="fact-ico">🌬️</div>
-        <h3>Filtro de aire CN95</h3>
-        <p>Captura partículas ultrafinas, polvo y alérgenos para que el aire dentro de la cabina sea siempre más limpio que afuera.</p>
-      </article>
-
-      <article class="fact versioned" data-v="both">
-        <span class="badge-off">No incluido en esta versión</span>
-        <div class="fact-ico">🧳</div>
-        <h3>Maletero transformable</h3>
-        <p>De 398 litros con los asientos arriba a 1.262 litros con ellos abatidos: espacio para el mercado, la maleta o la mudanza.</p>
-      </article>
-
-      <article class="fact versioned" data-v="both">
-        <span class="badge-off">No incluido en esta versión</span>
-        <div class="fact-ico">🔌</div>
-        <h3>4 puertos USB (A + C)</h3>
-        <p>Conexiones Tipo A y Tipo C repartidas en la cabina para que todos los pasajeros viajen con batería completa.</p>
-      </article>
-
-      <article class="fact versioned" data-v="dct">
-        <span class="badge-off">No incluido en esta versión</span>
+      <article class="fact reveal" data-only="dct">
         <div class="fact-ico">🔥</div>
-        <h3>Turbo + 3 modos de manejo</h3>
-        <p>El DCT suma motor Turbo de 160 HP y modos Normal, Eco y Sport para adaptar la respuesta del vehículo a cada momento.</p>
-        <span class="own-tag">Exclusivo DCT</span>
+        <h3 class="h3">Torque de motor grande</h3>
+        <p>230 Nm disponibles desde bajas revoluciones: el empuje que en otros SUV aparece al final del tacómetro, aquí está desde el principio. Subidas con el carro lleno y adelantamientos sin sufrimiento.</p>
       </article>
-
-      <article class="fact versioned" data-v="manual">
-        <span class="badge-off">No incluido en esta versión</span>
+      <article class="fact reveal" data-only="dct">
+        <div class="fact-ico">⚡</div>
+        <h3 class="h3">Cambios en menos de 0,2 segundos</h3>
+        <p>La caja de doble embrague prepara el siguiente cambio antes de soltar el actual. El resultado es una aceleración continua, sin tirones ni pausas, propia de autos de alto desempeño.</p>
+      </article>
+      <article class="fact reveal">
+        <div class="fact-ico">🏆</div>
+        <h3 class="h3">Suspensión trasera multi-link</h3>
+        <p>Cada rueda trasera trabaja por su cuenta: si una cae en un bache, la otra ni se entera. Un confort que la mayoría de la categoría simplemente no ofrece.</p>
+      </article>
+      <article class="fact reveal">
+        <div class="fact-ico">🛡️</div>
+        <h3 class="h3">Jaula de seguridad 360°</h3>
+        <p>Acero de ultra alta resistencia que envuelve a los pasajeros y absorbe la energía de un impacto, distribuyéndola por toda la estructura. La última línea de defensa, construida en serio.</p>
+      </article>
+      <article class="fact reveal">
+        <div class="fact-ico">👁️</div>
+        <h3 class="h3">Un copiloto que no parpadea</h3>
+        <p>El paquete ADAS vigila el punto ciego, las salidas de carril y el tráfico trasero. El carro ve lo que tú no puedes ver y te avisa antes de que sea tarde.</p>
+      </article>
+      <article class="fact reveal">
+        <div class="fact-ico">📺</div>
+        <h3 class="h3">20,5 pulgadas de pantalla</h3>
+        <p>Dos pantallas de 10,25" —tablero digital y multimedia— de serie en toda la gama. La configuración de cabina digital que caracteriza a las marcas premium.</p>
+      </article>
+      <article class="fact reveal">
+        <div class="fact-ico">🎥</div>
+        <h3 class="h3">Vista de videojuego para estacionar</h3>
+        <p>Cuatro cámaras HD generan una vista panorámica 3D del entorno: ves el carro desde arriba y sabes exactamente dónde están los bordes. De serie, incluso en la versión de entrada.</p>
+      </article>
+      <article class="fact reveal">
         <div class="fact-ico">⭐</div>
-        <h3>Llantas R17 bitono</h3>
-        <p>La versión MANUAL calza aros deportivos R17 con acabado bitono y perfil más alto, para una marcha más suave.</p>
-        <span class="own-tag">Exclusivo MANUAL</span>
+        <h3 class="h3">10 años de confianza</h3>
+        <p>Una década o 120.000 km de garantía: ninguna marca tradicional se atreve a tanto. Cuando un fabricante responde así, es porque sabe cómo está construido su vehículo.</p>
+      </article>
+      <article class="fact reveal">
+        <div class="fact-ico">😷</div>
+        <h3 class="h3">Aire de cabina nivel CN95</h3>
+        <p>El filtro de aire retiene el 95% de las partículas de 0,3 micras, un estándar comparable al de una mascarilla KN95. Aire más limpio para toda la familia, en ciudad y carretera.</p>
+      </article>
+      <article class="fact reveal" data-only="manual">
+        <div class="fact-ico">🧩</div>
+        <h3 class="h3">La versión de entrada no es "pobre"</h3>
+        <p>La Manual conserva las pantallas duales, el paquete ADAS, la suspensión multi-link y la cámara 360°. Tienes casi todo el equipamiento tope, con una mecánica simple y confiable.</p>
+      </article>
+      <article class="fact reveal" data-only="dct">
+        <div class="fact-ico">⛽</div>
+        <h3 class="h3">Hasta 672 km con un solo tanque</h3>
+        <p>En carretera, los 45 litros del tanque rinden hasta 672 km con la versión Turbo. Viajes largos con menos paradas en la gasolinera y más tiempo disfrutando el destino.</p>
+      </article>
+      <article class="fact reveal">
+        <div class="fact-ico">🕰️</div>
+        <h3 class="h3">Un modelo con historia</h3>
+        <p>Su plataforma nació en 2019 y lleva más de cinco años en el mercado real. Hoy recibe una renovación integral de diseño, tecnología y seguridad, con los problemas de juventud ya resueltos.</p>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ==================== CARACTERÍSTICAS ==================== -->
-<section class="section feats-sec" id="caracteristicas">
-  <div class="wrap">
-    <span class="kicker">Equipamiento</span>
-    <h2>Características por categoría</h2>
-    <p class="sec-sub">Explora el equipamiento completo de la X50. Selecciona tu versión y descubre qué incluye cada una: las tarjetas que no aplican quedarán atenuadas.</p>
-
-    <!-- Diferencias clave -->
-    <div class="diff">
-      <div class="diff-col">
-        <h3><span class="dot dot-gris"></span>Exclusivo versión MANUAL</h3>
-        <div class="chips">
-          <span class="chip">Motor 1.5 atmosférico · 116 HP</span>
-          <span class="chip">Caja manual 5 velocidades</span>
-          <span class="chip">Llantas R17 bitono</span>
-          <span class="chip">2 airbags frontales</span>
-        </div>
+<!-- Zona de versiones: selector sticky + acordeones + comparativa -->
+<div class="verzone light" id="versiones">
+  <div class="selector" id="selector">
+    <div class="container sel-in">
+      <span class="sel-label">Versiones</span>
+      <div class="tabs no-bar" role="group" aria-label="Selector de versión">
+        <button class="vtab" data-version="manual" aria-pressed="false"><strong>Manual</strong><small>1.5 atmosférico · Caja 5MT</small></button>
+        <button class="vtab" data-version="dct" aria-pressed="false"><strong>DCT</strong><small>1.5 Turbo · Caja 6DCT</small></button>
       </div>
-      <div class="diff-col">
-        <h3><span class="dot dot-rojo"></span>Exclusivo versión DCT</h3>
-        <div class="chips">
-          <span class="chip chip-rojo">Motor 1.5 Turbo · 160 HP</span>
-          <span class="chip chip-rojo">Caja automática 6DCT doble embrague</span>
-          <span class="chip chip-rojo">Llantas R18</span>
-          <span class="chip chip-rojo">Sun roof</span>
-          <span class="chip chip-rojo">Asiento conductor eléctrico</span>
-          <span class="chip chip-rojo">Retrovisores plegables</span>
-          <span class="chip chip-rojo">4 airbags (frontales + laterales)</span>
-          <span class="chip chip-rojo">Modos Normal / Eco / Sport</span>
+      <span class="sel-now">Viendo: <b id="verLabel">DCT</b></span>
+      <span class="sr-only" aria-live="polite" id="live"></span>
+    </div>
+  </div>
+
+  <section class="section light" style="padding-top:clamp(40px,5vw,64px)">
+    <div class="container">
+      <span class="kicker reveal">Características</span>
+      <h2 class="h2 reveal">El X50, a fondo</h2>
+      <p class="lead reveal">Cambia de versión en el selector y descubre qué incluye cada una. Cada categoría se abre para mostrar el detalle completo.</p>
+
+      <div class="accs">
+
+        <!-- 1. Diseño exterior -->
+        <div class="acc">
+          <button class="acc-head" aria-expanded="false"><span class="acc-ico">🚘</span><span class="acc-title">Diseño exterior</span><span class="acc-count">10</span><span class="arr" aria-hidden="true"></span></button>
+          <div class="acc-body"><div class="acc-panel"><div class="cards">
+            <article class="vcard"><div class="vcard-head"><span class="vico">💎</span><h4>Parrilla tipo cascada</h4></div><p>El frente apuesta por líneas limpias y una parrilla que transmite presencia e imponencia, un recurso habitual en SUV de gama alta. Esto significa que el X50 se ve y se siente un segmento arriba.</p><span class="vtag gray">Filosofía Urban Aesthetic</span></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">🦅</span><h4>Faros LED "Eagle-Eye"</h4></div><p>Ópticas de diseño cristalino inspiradas en la mirada de un águila, con iluminación 100% LED: mejor visibilidad nocturna y un sello visual inconfundible.</p></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">🏠</span><h4>Función "sígueme a casa"</h4></div><p>Las luces diurnas automáticas y los faros iluminan el camino hasta tu puerta cuando llegas de noche. Un detalle pequeño que se agradece todos los días.</p></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">🌧️</span><h4>Plumas automáticas</h4></div><p>Limpiaparabrisas delanteros y traseros con accionamiento automático: en plena lluvia serrana no sueltas el volante ni un segundo.</p></article>
+            <article class="vcard" data-only="manual"><div class="vcard-head"><span class="vico">🛞</span><h4>Llantas R17 bitono</h4></div><p>Aros de 17" con diseño bitono y neumáticos 215/60: el perfil más alto cuida el confort en calles irregulares y hace más sencillo el reemplazo.</p><span class="vtag">Versión Manual</span><span class="na">No incluido en esta versión</span></article>
+            <article class="vcard" data-only="dct"><div class="vcard-head"><span class="vico">🛞</span><h4>Llantas R18</h4></div><p>Aros de 18 pulgadas que realzan el perfil deportivo del X50 y aportan mayor superficie de contacto: más agarre y más presencia en la calle.</p><span class="vtag">Versión DCT</span><span class="na">No incluido en esta versión</span></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">🪞</span><h4>Retrovisores eléctricos con desempañador</h4></div><p>Ajuste desde el interior y desempañado rápido para las mañanas frías de la Sierra: visibilidad clara sin distracciones.</p></article>
+            <article class="vcard" data-only="dct"><div class="vcard-head"><span class="vico">🪞</span><h4>Retrovisores plegables eléctricos</h4></div><p>Se pliegan con un botón para protegerlos en parqueaderos estrechos o espacios reducidos.</p><span class="vtag">Versión DCT</span><span class="na">No incluido en esta versión</span></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">🧳</span><h4>Barras de techo</h4></div><p>Listas para portaequipaje, bicicletas o lo que requiera el próximo viaje: capacidad extra cuando la cajuela no alcanza.</p></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">🎨</span><h4>Cinco colores disponibles</h4></div><p>Elige el tono que va con tu estilo:</p><div class="dots"><i style="background:#f4f5f7" title="Blanco"></i><i style="background:#101114" title="Negro"></i><i style="background:#8a8f98" title="Gris"></i><i style="background:#274b82" title="Azul"></i><i style="background:#c9ced6" title="Plata"></i><span>Blanco · Negro · Gris · Azul · Plata</span></div></article>
+          </div></div></div>
+        </div>
+
+        <!-- 2. Cabina interior y confort -->
+        <div class="acc">
+          <button class="acc-head" aria-expanded="false"><span class="acc-ico">🛋️</span><span class="acc-title">Cabina interior y confort</span><span class="acc-count">11</span><span class="arr" aria-hidden="true"></span></button>
+          <div class="acc-body"><div class="acc-panel"><div class="cards">
+            <article class="vcard"><div class="vcard-head"><span class="vico">🖥️</span><h4>Pantallas duales de 10,25" + 10,25"</h4></div><p>Tablero digital y centro multimedia suman 20,5 pulgadas de superficie. Esto significa una cabina envolvente, con la información siempre a la vista y gráficos de nivel superior.</p><span class="vtag">Serie en toda la gama</span></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">🪑</span><h4>Asientos de cuero</h4></div><p>Tacto premium y limpieza sencilla: el café derramado del lunes deja de ser un problema para el día a día familiar.</p></article>
+            <article class="vcard" data-only="dct"><div class="vcard-head"><span class="vico">⚙️</span><h4>Asiento del conductor con ajuste eléctrico</h4></div><p>Ajuste milimétrico con solo presionar un botón, incluso mientras conduces: mejor postura, menos fatiga en viajes largos.</p><span class="vtag">Versión DCT</span><span class="na">No incluido en esta versión</span></article>
+            <article class="vcard" data-only="dct"><div class="vcard-head"><span class="vico">☀️</span><h4>Sun roof</h4></div><p>Luz natural y ventilación sin abrir las ventanas: menos ruido de viento y viajes más agradables para todos, especialmente para los más pequeños.</p><span class="vtag">Versión DCT</span><span class="na">No incluido en esta versión</span></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">❄️</span><h4>Climatización digital con salidas traseras</h4></div><p>Aire acondicionado digital con salidas delanteras y traseras: la temperatura llega a las dos filas y nadie viaja "de adorno". Enfría rápido incluso con el sol de la costa.</p></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">😷</span><h4>Filtro de aire CN95</h4></div><p>Retiene el 95% de las partículas de 0,3 micras, un estándar comparable al de una mascarilla KN95. Esto significa aire más limpio para todos los pasajeros.</p></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">🔊</span><h4>Seis parlantes</h4></div><p>Sistema de audio equilibrado para todas las plazas: música, podcasts y llamadas con claridad.</p></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">🔌</span><h4>Cuatro puertos USB (Tipo A + C)</h4></div><p>Todos los pasajeros cargan sus dispositivos al mismo tiempo, sin peleas por el enchufe ni adaptadores improvisados.</p></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">🎛️</span><h4>Volante de cuero multifunción</h4></div><p>Controles de audio y computadora al alcance del pulgar, con columna ajustable para encontrar la postura perfecta.</p></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">🅿️</span><h4>Freno de mano electrónico con Auto Hold</h4></div><p>Botón en lugar de palanca y retención automática en semáforos y filas de tráfico. Un sistema propio de categorías superiores que descansa tu pie derecho.</p></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">🔐</span><h4>Comodidades de todos los días</h4></div><p>Vidrios eléctricos one-touch, bloqueo central de puertas y maletero con apertura electrónica desde la llave: las manos ocupadas dejan de ser excusa.</p></article>
+          </div></div></div>
+        </div>
+
+        <!-- 3. Seguridad -->
+        <div class="acc">
+          <button class="acc-head" aria-expanded="false"><span class="acc-ico">🛡️</span><span class="acc-title">Seguridad integral</span><span class="acc-count">12</span><span class="arr" aria-hidden="true"></span></button>
+          <div class="acc-body"><div class="acc-panel"><div class="cards">
+            <article class="vcard"><div class="vcard-head"><span class="vico">🧱</span><h4>Carrocería tipo jaula 360°</h4></div><p>Estructura con acero de ultra alta resistencia que absorbe y distribuye la energía de un impacto alrededor de los pasajeros. La misma filosofía constructiva de los vehículos más seguros de segmentos superiores.</p></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">🧠</span><h4>Bosch ESP 9.3</h4></div><p>ESP (Programa Electrónico de Estabilidad) en su última generación: ajusta la dinámica del vehículo en maniobras repentinas con una respuesta más rápida y precisa que versiones anteriores.</p></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">🛑</span><h4>ABS + EBD: frenado inteligente</h4></div><p>El ABS (Sistema Antibloqueo de Frenos) evita que las ruedas se bloqueen al frenar de emergencia, y el EBD (Distribución Electrónica de Frenado) reparte la fuerza entre ejes. En un frenón sobre piso mojado, el carro frena derecho y bajo control.</p></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">🌀</span><h4>TCS + ESC + ROP: tres capas extra</h4></div><p>TCS (Control de Tracción) evita que las ruedas patinen al acelerar; ESC (Control Electrónico de Estabilidad) corrige derrapes en curvas; y ROP (Protección contra Vuelco) frena selectivamente si detecta riesgo de volcamiento.</p></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">⛰️</span><h4>Asistente de arranque en pendiente</h4></div><p>Suelta el freno en una cuesta y el X50 se queda quieto unos segundos mientras aceleras. Cero retrocesos, cero sustos: ideal para los parqueaderos y cuestas de nuestras ciudades.</p></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">👁️</span><h4>ADAS: tu copiloto electrónico</h4></div><p>ADAS (Sistemas Avanzados de Asistencia a la Conducción) de serie en toda la gama. El carro ve lo que tú no puedes ver:</p><div class="mini"><b>BSD</b><span>Detección de Punto Ciego: avisa si hay un vehículo donde tus espejos no alcanzan.</span></div><div class="mini"><b>LDW</b><span>Advertencia de Cambio de Carril: te alerta si el carro se desvía sin querer.</span></div><div class="mini"><b>RCW</b><span>Advertencia de Colisión Trasera: monitorea el tráfico que viene detrás.</span></div></article>
+            <article class="vcard" data-only="manual"><div class="vcard-head"><span class="vico">🎈</span><h4>2 airbags frontales</h4></div><p>Protección frontal de serie para conductor y copiloto, complementada por la estructura tipo jaula y los cinturones de tres puntos.</p><span class="vtag">Versión Manual</span><span class="na">No incluido en esta versión</span></article>
+            <article class="vcard" data-only="dct"><div class="vcard-head"><span class="vico">🎈</span><h4>4 airbags: frontales y laterales</h4></div><p>Protección reforzada para quienes más quieres, con cobertura frontal y lateral en caso de impacto.</p><span class="vtag">Versión DCT</span><span class="na">No incluido en esta versión</span></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">🛞</span><h4>TPMS: monitor de presión de neumáticos</h4></div><p>Avisa en tiempo real si una llanta pierde presión. Esto significa menos riesgo de reventones, mejor agarre y un consumo más eficiente.</p></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">👶</span><h4>ISOFIX + 5 cinturones de 3 puntos</h4></div><p>Anclajes certificados para sillas infantiles y cinturón de tres puntos en las cinco plazas: seguridad completa para toda la familia.</p></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">🔩</span><h4>Frenos de disco en las cuatro ruedas</h4></div><p>Discos ventilados adelante y sólidos atrás: mejor disipación de calor y frenadas consistentes en uso exigente, como bajadas largas de montaña.</p></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">🎥</span><h4>Cámara y sensores de retroceso 360°</h4></div><p>Cuatro cámaras HD generan una vista panorámica 3D del entorno: sabes exactamente dónde está cada borde, incluso en parqueaderos imposibles. De serie en toda la gama.</p><span class="vtag">Serie en toda la gama</span></article>
+          </div></div></div>
+        </div>
+
+        <!-- 4. Motor y transmisión -->
+        <div class="acc">
+          <button class="acc-head" aria-expanded="false"><span class="acc-ico">⚙️</span><span class="acc-title">Motor y transmisión</span><span class="acc-count">6</span><span class="arr" aria-hidden="true"></span></button>
+          <div class="acc-body"><div class="acc-panel"><div class="cards">
+            <article class="vcard" data-only="manual"><div class="vcard-head"><span class="vico">🧰</span><h4>Motor 1.5 atmosférico · 116 HP / 143 Nm</h4></div><p>Cuatro cilindros, 16 válvulas y distribución variable DVVT (sincronización de válvulas ajustable para mejorar eficiencia). Mecánica simple, confiable y de bajo mantenimiento, ideal si tu manejo es mayormente urbano.</p><span class="vtag">Versión Manual · EURO 5+</span><span class="na">No incluido en esta versión</span></article>
+            <article class="vcard" data-only="dct"><div class="vcard-head"><span class="vico">🚀</span><h4>Motor 1.5 Turbo · 160 HP / 230 Nm</h4></div><p>El turbo cambia las reglas del juego: el torque máximo aparece desde bajas revoluciones, así las subidas con el carro lleno, los adelantamientos y las incorporaciones a autopista se resuelven con un toque de acelerador.</p><span class="vtag">Versión DCT · EURO 5+</span><span class="na">No incluido en esta versión</span></article>
+            <article class="vcard" data-only="manual"><div class="vcard-head"><span class="vico">🕹️</span><h4>Caja manual de 5 velocidades</h4></div><p>Control total del cambio y máximo aprovechamiento del combustible, para quienes disfrutan manejar y prefieren la conexión mecánica directa.</p><span class="vtag">Versión Manual</span><span class="na">No incluido en esta versión</span></article>
+            <article class="vcard" data-only="dct"><div class="vcard-head"><span class="vico">⚡</span><h4>Caja 6DCT de doble embrague húmedo</h4></div><p>DCT (Transmisión de Doble Embrague) con embragues bañados en aceite: mientras un cambio trabaja, el siguiente ya está preparado. Cambios en menos de 0,2 segundos, sin tirones ni interrupción de potencia, con menor desgaste que una caja seca.</p><span class="vtag">Versión DCT</span><span class="na">No incluido en esta versión</span></article>
+            <article class="vcard" data-only="dct"><div class="vcard-head"><span class="vico">🎮</span><h4>Modos de manejo Eco · Normal · Sport</h4></div><p>Adapta la respuesta del acelerador y la dirección a cada trayecto: ahorro en ciudad, equilibrio en ruta o un extra de diversión en carretera.</p><span class="vtag">Versión DCT</span><span class="na">No incluido en esta versión</span></article>
+            <article class="vcard" data-only="dct"><div class="vcard-head"><span class="vico">⛽</span><h4>Rendimiento que rinde</h4></div><p>0 a 100 km/h en 10,6–11,1 segundos, velocidad máxima de 185 km/h y consumos reales aproximados de 27 km/galón en ciudad y 35 km/galón en carretera. Esto significa potencia de sobra con eficiencia de auto compacto.</p><span class="vtag">Versión DCT</span><span class="na">No incluido en esta versión</span></article>
+          </div></div></div>
+        </div>
+
+        <!-- 5. Suspensión y chasis -->
+        <div class="acc">
+          <button class="acc-head" aria-expanded="false"><span class="acc-ico">🛞</span><span class="acc-title">Suspensión, dirección y chasis</span><span class="acc-count">4</span><span class="arr" aria-hidden="true"></span></button>
+          <div class="acc-body"><div class="acc-panel"><div class="cards">
+            <article class="vcard"><div class="vcard-head"><span class="vico">🏗️</span><h4>Delantera independiente MacPherson</h4></div><p>El esquema de referencia en vehículos modernos por su equilibrio entre confort y precisión de manejo.</p></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">🏆</span><h4>Trasera independiente multi-link</h4></div><p>El gran diferenciador del X50: cada rueda trasera se mueve de forma independiente, así el bache de un lado no se transmite al resto del carro. En las carreteras irregulares que conocemos, los pasajeros de atrás viajan cómodos y el vehículo se mantiene plantado en curvas. La mayoría de los SUV de esta categoría recurre a soluciones más sencillas.</p><span class="vtag">Diferenciador clave</span></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">🎯</span><h4>Dirección electroasistida</h4></div><p>Suave y ligera para estacionar sin esfuerzo, firme a alta velocidad para transmitir confianza. La asistencia se ajusta automáticamente según la velocidad.</p></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">🛻</span><h4>Tracción delantera optimizada</h4></div><p>Esquema FWD enfocado en la eficiencia de combustible y en un manejo seguro para el uso urbano y de carretera del día a día.</p></article>
+          </div></div></div>
+        </div>
+
+        <!-- 6. Capacidad y dimensiones -->
+        <div class="acc">
+          <button class="acc-head" aria-expanded="false"><span class="acc-ico">📦</span><span class="acc-title">Capacidad y dimensiones</span><span class="acc-count">4</span><span class="arr" aria-hidden="true"></span></button>
+          <div class="acc-body"><div class="acc-panel"><div class="cards">
+            <article class="vcard"><div class="vcard-head"><span class="vico">🧳</span><h4>Cajuela de 398 L → 1.262 L</h4></div><p>Con asientos arriba cabe el equipaje de una familia de cinco para el fin de semana; con asientos abatidos, espacio de sobra para mudanzas, compras grandes o equipo deportivo.</p></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">⛽</span><h4>Tanque de 45 litros</h4></div><p>Autonomía de hasta 672 km en carretera con un solo tanque (versión Turbo): menos paradas y más destino en cada viaje.</p></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">👨‍👩‍👧‍👦</span><h4>Cinco plazas reales</h4></div><p>Espacio para piernas y cabeza en las dos filas, con apoyabrazos central delantero y trasero para los viajes largos.</p></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">📏</span><h4>Compacto por fuera, amplio por dentro</h4></div><p>4.397 mm de largo, 1.841 mm de ancho, 1.694 mm de alto y 2.601 mm entre ejes: maniobrabilidad de hatchback para la ciudad, espacio de SUV para la familia.</p></article>
+          </div></div></div>
+        </div>
+
+        <!-- 7. Conectividad -->
+        <div class="acc">
+          <button class="acc-head" aria-expanded="false"><span class="acc-ico">📱</span><span class="acc-title">Conectividad y tecnología</span><span class="acc-count">5</span><span class="arr" aria-hidden="true"></span></button>
+          <div class="acc-body"><div class="acc-panel"><div class="cards">
+            <article class="vcard"><div class="vcard-head"><span class="vico">🍏</span><h4>Apple CarPlay y Android Auto</h4></div><p>Tu teléfono integrado a la pantalla grande: mapas, música y llamadas sin tocar el celular mientras conduces.</p></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">📶</span><h4>Bluetooth manos libres</h4></div><p>Llamadas seguras y audio inalámbrico, sin distracciones al volante.</p></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">🔑</span><h4>Llave inteligente y encendido por botón</h4></div><p>El carro te reconoce: abres y arrancas sin sacar la llave del bolsillo, incluso con las manos ocupadas.</p></article>
+            <article class="vcard"><div class="vcard-head"><span class="vico">🚢</span><h4>Control crucero</h4></div><p>Mantén la velocidad en carretera y descansa el pie derecho en los trayectos largos.</p></article>
+            <article class="vcard" data-only="dct"><div class="vcard-head"><span class="vico">🔋</span><h4>Cargador inalámbrico para celular</h4></div><p>Apoya el teléfono en la consola y listo: carga rápida sin cables a la vista ni enredos en la cabina.</p><span class="vtag">Versión DCT</span><span class="na">No incluido en esta versión</span></article>
+          </div></div></div>
+        </div>
+
+      </div>
+
+      <!-- Comparativa -->
+      <div class="cmp" id="comparativa">
+        <span class="kicker reveal">Frente a frente</span>
+        <h2 class="h2 reveal">Manual vs DCT, en una sola tabla</h2>
+        <div class="cmp-box reveal">
+          <div class="table-scroll no-bar">
+            <table>
+              <thead><tr><th>Característica</th><th>X50 Manual</th><th>X50 DCT</th></tr></thead>
+              <tbody>
+                <tr><td>Motor</td><td>1.500 cc atmosférico</td><td>1.500 cc Turbo</td></tr>
+                <tr><td>Potencia</td><td>116 HP</td><td><span class="yes">160 HP</span></td></tr>
+                <tr><td>Torque</td><td>143 Nm</td><td><span class="yes">230 Nm</span></td></tr>
+                <tr><td>Emisión estándar</td><td>EURO 5+</td><td>EURO 5+</td></tr>
+                <tr><td>Transmisión</td><td>Manual, 5 velocidades + reversa</td><td>Automática 6DCT (doble embrague húmedo)</td></tr>
+                <tr><td>Airbags frontales</td><td>2</td><td><span class="yes">4 (incluye laterales)</span></td></tr>
+                <tr><td>Aros deportivos</td><td>R17 bitono</td><td>R18</td></tr>
+                <tr><td>Modos de manejo</td><td><span class="no">—</span></td><td><span class="yes">Normal / Eco / Sport</span></td></tr>
+                <tr><td>Sun roof</td><td><span class="no">—</span></td><td><span class="yes">Sí</span></td></tr>
+                <tr><td>Asiento conductor eléctrico</td><td><span class="no">—</span></td><td><span class="yes">Sí</span></td></tr>
+                <tr><td>Retrovisores plegables</td><td><span class="no">—</span></td><td><span class="yes">Sí</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="shared reveal">
+          <em>Ambas versiones comparten:</em>
+          <span class="chip">Pantallas duales 10,25"</span>
+          <span class="chip">Cámara y sensores 360°</span>
+          <span class="chip">ADAS (BSD · LDW · RCW)</span>
+          <span class="chip">Suspensión trasera multi-link</span>
+          <span class="chip">Asientos de cuero</span>
+          <span class="chip">Climatización digital + filtro CN95</span>
+          <span class="chip">Cajuela 398 / 1.262 L</span>
+          <span class="chip">Tanque de 45 L</span>
+          <span class="chip">Garantía 10 años</span>
         </div>
       </div>
     </div>
+  </section>
+</div>
 
-    <div id="versiones">
-      <!-- Selector sticky -->
-      <div class="vbar">
-        <span class="vlabel">Tu versión</span>
-        <div class="vtabs">
-          <button class="vtab" data-version="manual" type="button" aria-pressed="false">
-            <strong>MANUAL</strong><span>1.5 atmosférico · 5MT</span>
-          </button>
-          <button class="vtab active" data-version="dct" type="button" aria-pressed="true">
-            <strong>DCT</strong><span>1.5 Turbo · 6DCT</span>
-          </button>
+<!-- Perfiles -->
+<section class="section dark perfiles" id="perfiles">
+  <div class="container">
+    <span class="kicker reveal">Perfiles</span>
+    <h2 class="h2 reveal">¿Para quién es este vehículo?</h2>
+    <p class="lead reveal">Dos versiones, dos personalidades. Encuentra la que mejor va con tu forma de manejar.</p>
+    <div class="prof-grid">
+      <article class="prof reveal">
+        <div class="prof-top">
+          <span class="prof-ico">🎯</span>
+          <div><span class="prof-tag">Versión Manual</span><h3>El Guerrero Urbano</h3></div>
         </div>
-      </div>
-
-      <!-- ======= 1. EXTERIOR ======= -->
-      <div class="acc">
-        <button class="acc-head" type="button" aria-expanded="false">
-          <span class="t"><span class="ico">🚙</span>Diseño exterior</span>
-          <span class="acc-arrow">▼</span>
-        </button>
-        <div class="acc-body">
-          <div class="acc-inner">
-            <p class="acc-note">Luces, visibilidad y detalles que le dan presencia a la X50 y te facilitan la vida todos los días.</p>
-            <div class="feat-grid">
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">💡</div>
-                <h3>Luces diurnas LED automáticas</h3>
-                <p>Sal de casa cuando aún es de noche y las luces se encienden solas; la función «sígueme a casa» ilumina tu camino al llegar. Esto significa más visibilidad sin pensar en las luces.</p>
-                <div class="chips"><span class="chip">LED</span><span class="chip">Automáticas</span><span class="chip">Sígueme a casa</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🌧️</div>
-                <h3>Plumas automáticas del. y tras.</h3>
-                <p>Cuando empieza a llover de golpe, los limpiaparabrisas se activan solos y mantienen el vidrio despejado para que conserves la vista en la vía.</p>
-                <div class="chips"><span class="chip">Delanteras y traseras</span><span class="chip">Automáticas</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🧗</div>
-                <h3>Barras de techo</h3>
-                <p>¿Bicicletas, portaequipaje o carga extra para el feriado? Las barras de techo amplían la capacidad de transporte sin ocupar la cabina.</p>
-                <div class="chips"><span class="chip">De serie</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🪞</div>
-                <h3>Retrovisores eléctricos y desempañados</h3>
-                <p>Ajuste desde el asiento y desempañador para las mañanas frías y lluviosas de la Sierra: visibilidad clara antes de arrancar.</p>
-                <div class="chips"><span class="chip">Ajuste eléctrico</span><span class="chip">Desempañador</span></div>
-              </article>
-              <article class="feat versioned own has-own" data-v="dct">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🪄</div>
-                <h3>Retrovisores plegables</h3>
-                <p>En parqueaderos estrechos o en la calle, pliega los espejos con un toque y protégelos de golpes ajenos.</p>
-                <div class="chips"><span class="chip">Plegado eléctrico</span></div>
-                <span class="own-tag">Exclusivo DCT</span>
-              </article>
-              <article class="feat versioned own has-own" data-v="manual">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🛞</div>
-                <h3>Aros deportivos R17 bitono</h3>
-                <p>Llantas R17 con acabado bitono que combinan presencia deportiva y un perfil más generoso para absorber mejor las calles irregulares.</p>
-                <div class="chips"><span class="chip">R17</span><span class="chip">Bitono</span></div>
-                <span class="own-tag">Exclusivo MANUAL</span>
-              </article>
-              <article class="feat versioned own has-own" data-v="dct">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🛞</div>
-                <h3>Aros deportivos R18</h3>
-                <p>Llantas R18 que realzan el perfil deportivo de la X50 y aportan mayor aplomo a velocidad de carretera.</p>
-                <div class="chips"><span class="chip">R18</span></div>
-                <span class="own-tag">Exclusivo DCT</span>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ======= 2. SUSPENSIÓN Y DIRECCIÓN ======= -->
-      <div class="acc">
-        <button class="acc-head" type="button" aria-expanded="false">
-          <span class="t"><span class="ico">🛞</span>Suspensión y dirección</span>
-          <span class="acc-arrow">▼</span>
-        </button>
-        <div class="acc-body">
-          <div class="acc-inner">
-            <p class="acc-note">Ambas versiones comparten el mismo esquema de suspensión independiente y dirección electroasistida.</p>
-            <div class="feat-grid">
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🧩</div>
-                <h3>Suspensión frontal MacPherson</h3>
-                <p>Independiente tipo MacPherson con barra estabilizadora: absorbe baches y topes, y mantiene la carrocería controlada en las curvas.</p>
-                <div class="chips"><span class="chip">Independiente</span><span class="chip">Barra estabilizadora</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🔗</div>
-                <h3>Suspensión trasera multi-link</h3>
-                <p>Cada rueda trasera trabaja por su cuenta: los pasajeros sienten menos las irregularidades y el vehículo se mantiene estable incluso con carga.</p>
-                <div class="chips"><span class="chip">Independiente</span><span class="chip">Barra estabilizadora</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🎯</div>
-                <h3>Dirección electroasistida (EPS)</h3>
-                <p>EPS (Electric Power Steering): volante ligero para maniobrar en la ciudad y firmeza progresiva cuando sales a carretera.</p>
-                <div class="chips"><span class="chip">EPS</span></div>
-              </article>
-              <article class="feat versioned own has-own" data-v="manual">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🛞</div>
-                <h3>Neumáticos 215/60 R17</h3>
-                <p>Perfil más alto que prioriza el confort y suaviza el paso por calles empedradas o con baches.</p>
-                <div class="chips"><span class="chip">215/60 R17</span></div>
-                <span class="own-tag">Versión MANUAL</span>
-              </article>
-              <article class="feat versioned own has-own" data-v="dct">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🛞</div>
-                <h3>Neumáticos 215/55 R18</h3>
-                <p>Perfil más bajo y llanta más grande: mayor agarre y una postura visiblemente más deportiva.</p>
-                <div class="chips"><span class="chip">215/55 R18</span></div>
-                <span class="own-tag">Versión DCT</span>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ======= 3. CABINA INTERIOR ======= -->
-      <div class="acc">
-        <button class="acc-head" type="button" aria-expanded="false">
-          <span class="t"><span class="ico">🛋️</span>Cabina interior</span>
-          <span class="acc-arrow">▼</span>
-        </button>
-        <div class="acc-body">
-          <div class="acc-inner">
-            <p class="acc-note">Un habitáculo para 5 pasajeros con materiales fáciles de vivir y detalles que se agradecen en cada viaje.</p>
-            <div class="feat-grid">
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🎡</div>
-                <h3>Volante de cuero multifunción</h3>
-                <p>Ajustable y con botones para controlar audio y teléfono sin soltar el volante: menos distracciones, más control.</p>
-                <div class="chips"><span class="chip">Cuero</span><span class="chip">Ajustable</span><span class="chip">Multifunción</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🪑</div>
-                <h3>Asientos de cuero para 5</h3>
-                <p>Tapicería de cuero fácil de limpiar y cinco plazas reales para la familia o el grupo de amigos.</p>
-                <div class="chips"><span class="chip">Cuero</span><span class="chip">5 pasajeros</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">❄️</div>
-                <h3>A/C digital con salidas traseras</h3>
-                <p>Climatización digital y salidas para las plazas traseras: todos viajan cómodos, incluso en los viajes largos por la Costa.</p>
-                <div class="chips"><span class="chip">Digital</span><span class="chip">Salidas del./tras.</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🌬️</div>
-                <h3>Filtro de aire CN95</h3>
-                <p>Retiene partículas ultrafinas, polvo y alérgenos. Esto significa aire más limpio dentro de la cabina, ideal para quienes sufren de alergias.</p>
-                <div class="chips"><span class="chip">CN95</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🅿️</div>
-                <h3>Freno de mano electrónico</h3>
-                <p>EPB (Electronic Parking Brake): se activa con un botón, libera espacio en la consola y evita los olvidos de palanca.</p>
-                <div class="chips"><span class="chip">Con botón</span><span class="chip">EPB</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🧳</div>
-                <h3>Maletero con apertura electrónica</h3>
-                <p>Abre el maletero desde la llave con las manos ocupadas: perfecto cuando llegas del supermercado cargado.</p>
-                <div class="chips"><span class="chip">Desde la llave</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🪟</div>
-                <h3>Vidrios eléctricos one touch</h3>
-                <p>Sube y baja los vidrios con un solo toque en cada puerta, sin mantener el botón presionado.</p>
-                <div class="chips"><span class="chip">One touch</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">💪</div>
-                <h3>Apoyabrazos centrales</h3>
-                <p>Apoyabrazos en las plazas delanteras y traseras para que los trayectos largos se sientan más descansados.</p>
-                <div class="chips"><span class="chip">Delantero</span><span class="chip">Trasero</span></div>
-              </article>
-              <article class="feat versioned own has-own" data-v="dct">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🪑</div>
-                <h3>Asiento conductor con ajuste eléctrico</h3>
-                <p>Encuentra tu posición ideal de manejo con precisión y sin esfuerzo, todos los días.</p>
-                <div class="chips"><span class="chip">Ajuste eléctrico</span></div>
-                <span class="own-tag">Exclusivo DCT</span>
-              </article>
-              <article class="feat versioned own has-own" data-v="dct">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">☀️</div>
-                <h3>Sun roof</h3>
-                <p>Techo solar para llenar la cabina de luz natural y aire fresco: los viajes se sienten más abiertos y placenteros.</p>
-                <div class="chips"><span class="chip">Techo solar</span></div>
-                <span class="own-tag">Exclusivo DCT</span>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ======= 4. SEGURIDAD ======= -->
-      <div class="acc">
-        <button class="acc-head" type="button" aria-expanded="false">
-          <span class="t"><span class="ico">🛡️</span>Seguridad integral</span>
-          <span class="acc-arrow">▼</span>
-        </button>
-        <div class="acc-body">
-          <div class="acc-inner">
-            <p class="acc-note">Paquete de seguridad activa completo y tecnologías ADAS de serie en ambas versiones: un copiloto extra que nunca se distrae.</p>
-            <div class="feat-grid">
-              <article class="feat versioned own has-own" data-v="manual">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🛡️</div>
-                <h3>2 airbags frontales</h3>
-                <p>Protección frontal para conductor y acompañante en la versión MANUAL.</p>
-                <div class="chips"><span class="chip">2 airbags</span></div>
-                <span class="own-tag">Versión MANUAL</span>
-              </article>
-              <article class="feat versioned own has-own" data-v="dct">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🛡️</div>
-                <h3>4 airbags: frontales y laterales</h3>
-                <p>La versión DCT suma airbags laterales para una protección más completa de todos los ocupantes.</p>
-                <div class="chips"><span class="chip">4 airbags</span></div>
-                <span class="own-tag">Versión DCT</span>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🛑</div>
-                <h3>ABS y EBD</h3>
-                <p>El ABS (Sistema Antibloqueo de Frenos) evita que las ruedas se bloqueen al frenar de emergencia; el EBD (Distribución Electrónica de Frenado) reparte la fuerza entre ejes. Esto significa frenadas controladas, incluso con piso mojado.</p>
-                <div class="chips"><span class="chip">ABS</span><span class="chip">EBD</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🌀</div>
-                <h3>TCS, ESC y ROP</h3>
-                <p>El TCS (Control de Tracción) evita el patinaje al acelerar; el ESC (Control Electrónico de Estabilidad) corrige la trayectoria en una maniobra brusca; el ROP (Protección Antivuelco) te protege ante el riesgo de vuelco.</p>
-                <div class="chips"><span class="chip">TCS</span><span class="chip">ESC</span><span class="chip">ROP</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">⛰️</div>
-                <h3>Asistente de arranque en pendiente (HHC)</h3>
-                <p>HHC (Hill Hold Control): en una subida, el vehículo retiene el freno unos segundos mientras pasas del pedal de freno al acelerador. Ideal para las calles empinadas de Quito o Cuenca.</p>
-                <div class="chips"><span class="chip">HHC</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🌡️</div>
-                <h3>TPMS: presión de neumáticos</h3>
-                <p>El TPMS (Tire Pressure Monitoring System) vigila la presión de las llantas y te avisa si baja demasiado: menos riesgo de pinchazos y mejor consumo.</p>
-                <div class="chips"><span class="chip">TPMS</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">👶</div>
-                <h3>Anclajes Isofix</h3>
-                <p>Sistema estándar internacional para fijar las sillas infantiles de forma segura y sin errores de instalación.</p>
-                <div class="chips"><span class="chip">Isofix</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🔔</div>
-                <h3>Alarma de límite de velocidad</h3>
-                <p>Un recordatorio sonoro cuando superas la velocidad configurada: una ayuda extra para evitar multas y sustos.</p>
-                <div class="chips"><span class="chip">Recordatorio</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">💿</div>
-                <h3>Frenos de disco en las 4 ruedas</h3>
-                <p>Discos ventilados adelante y sólidos atrás: frenadas consistentes y resistentes incluso en uso exigente.</p>
-                <div class="chips"><span class="chip">Ventilados del.</span><span class="chip">Sólidos tras.</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🔗</div>
-                <h3>Cinturones de 3 puntos × 5</h3>
-                <p>Todas las posiciones cuentan con cinturón de tres puntos, también la plaza central trasera.</p>
-                <div class="chips"><span class="chip">5 cinturones</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">👁️</div>
-                <h3>BSD: punto ciego</h3>
-                <p>BSD (Blind Spot Detection): te avisa si hay un vehículo en el punto ciego antes de cambiar de carril. Parte del paquete ADAS (Sistemas Avanzados de Asistencia a la Conducción) de serie.</p>
-                <div class="chips"><span class="chip">ADAS</span><span class="chip">BSD</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🛣️</div>
-                <h3>LDW: cambio de carril</h3>
-                <p>LDW (Lane Departure Warning): si el vehículo se desvía del carril sin señalizarlo, recibes una advertencia para corregir a tiempo.</p>
-                <div class="chips"><span class="chip">ADAS</span><span class="chip">LDW</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🚨</div>
-                <h3>RCW: colisión trasera</h3>
-                <p>RCW (Rear Collision Warning): monitorea el tráfico posterior y te alerta ante un alcance inminente, por ejemplo con el tráfico detenido.</p>
-                <div class="chips"><span class="chip">ADAS</span><span class="chip">RCW</span></div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ======= 5. MOTOR Y TRANSMISIÓN ======= -->
-      <div class="acc">
-        <button class="acc-head" type="button" aria-expanded="false">
-          <span class="t"><span class="ico">⚙️</span>Motor y transmisión</span>
-          <span class="acc-arrow">▼</span>
-        </button>
-        <div class="acc-body">
-          <div class="acc-inner">
-            <p class="acc-note">Dos filosofías de manejo sobre una misma base mecánica: eficiencia atmosférica o empuje Turbo con doble embrague.</p>
-            <div class="feat-grid">
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🔩</div>
-                <h3>Base mecánica 1.5 común</h3>
-                <p>En ambas versiones: motor de 1.5 litros, 4 cilindros en línea, 16 válvulas con doble árbol de levas (DOHC) e inyección multipuerto, con estándar de emisiones EURO 5+.</p>
-                <div class="chips"><span class="chip">1.5 L</span><span class="chip">DOHC 16V</span><span class="chip">EURO 5+</span></div>
-              </article>
-              <article class="feat versioned own has-own" data-v="manual">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">⚙️</div>
-                <h3>1.5 atmosférico + caja manual</h3>
-                <p>116 HP y 143 Nm. Un motor probado, de mantenimiento sencillo y respuesta lineal, perfecto para el día a día urbano; tú decides cada cambio con la palanca de 5 velocidades + reversa.</p>
-                <div class="chips"><span class="chip">116 HP</span><span class="chip">143 Nm</span><span class="chip">5MT</span></div>
-                <span class="own-tag">Versión MANUAL</span>
-              </article>
-              <article class="feat versioned own has-own" data-v="dct">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🚀</div>
-                <h3>1.5 Turbo + caja 6DCT</h3>
-                <p>El motor Turbo SQRE4T15C entrega 160 HP y 230 Nm: respuesta inmediata al acelerar. La caja 6DCT (Doble Embrague) de tipo húmedo cambia de marcha en milisegundos, sin tirones ni pérdida de potencia. Relación de compresión 9.5:1.</p>
-                <div class="chips"><span class="chip">160 HP</span><span class="chip">230 Nm</span><span class="chip">6DCT húmedo</span></div>
-                <span class="own-tag">Versión DCT</span>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ======= 6. RENDIMIENTO Y CONSUMO ======= -->
-      <div class="acc">
-        <button class="acc-head" type="button" aria-expanded="false">
-          <span class="t"><span class="ico">📊</span>Rendimiento y consumo</span>
-          <span class="acc-arrow">▼</span>
-        </button>
-        <div class="acc-body">
-          <div class="acc-inner">
-            <p class="acc-note">Cada versión tiene su propia personalidad: la MANUAL prioriza el rendimiento por galón; la DCT suma brío y modos de manejo.</p>
-            <div class="feat-grid">
-              <article class="feat versioned own has-own" data-v="manual">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">⛽</div>
-                <h3>Consumo versión MANUAL</h3>
-                <p>Rendimientos aproximados de 11,1 km/l en ciudad, 15,5 km/l en carretera y 13,6 km/l combinado: pensada para cuidar cada galón en el uso diario. En esta versión los modos de manejo no están disponibles.</p>
-                <div class="chips"><span class="chip">11,1 km/l urbano</span><span class="chip">15,5 km/l extraurbano</span><span class="chip">13,6 km/l mixto</span></div>
-                <span class="own-tag">Versión MANUAL</span>
-              </article>
-              <article class="feat versioned own has-own" data-v="dct">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🏁</div>
-                <h3>Performance versión DCT</h3>
-                <p>Consumo combinado de 7,3 l/100 km, velocidad máxima de 185 km/h y 0 a 100 km/h en 11,1 segundos: equilibrio entre brío para sobrepasar y eficiencia en viajes largos.</p>
-                <div class="chips"><span class="chip">7,3 l/100 km mixto</span><span class="chip">185 km/h</span><span class="chip">0-100 en 11,1 s</span></div>
-                <span class="own-tag">Versión DCT</span>
-              </article>
-              <article class="feat versioned own has-own" data-v="dct">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🎛️</div>
-                <h3>Modos de manejo</h3>
-                <p>Normal, Eco y Sport: ajusta la respuesta del vehículo al tráfico, al ahorro de combustible o a la deportividad con solo un botón.</p>
-                <div class="chips"><span class="chip">Normal</span><span class="chip">Eco</span><span class="chip">Sport</span></div>
-                <span class="own-tag">Exclusivo DCT</span>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ======= 7. DIMENSIONES Y CARGA ======= -->
-      <div class="acc">
-        <button class="acc-head" type="button" aria-expanded="false">
-          <span class="t"><span class="ico">📏</span>Dimensiones y carga</span>
-          <span class="acc-arrow">▼</span>
-        </button>
-        <div class="acc-body">
-          <div class="acc-inner">
-            <p class="acc-note">Tamaño contenido por fuera, espacio bien aprovechado por dentro: la fórmula de una SUV compacta bien lograda.</p>
-            <div class="feat-grid">
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">📐</div>
-                <h3>Dimensiones exteriores</h3>
-                <p>4.397 mm de largo, 1.841 mm de ancho, 1.694 mm de alto y 2.601 mm entre ejes: fácil de parquear y espaciosa por dentro.</p>
-                <div class="chips"><span class="chip">Largo 4.397 mm</span><span class="chip">Ancho 1.841 mm</span><span class="chip">Ejes 2.601 mm</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">⛰️</div>
-                <h3>186 mm de altura al suelo</h3>
-                <p>Altura suficiente para pasar topes, badenes y tramos irregulares sin preocuparte por el piso.</p>
-                <div class="chips"><span class="chip">186 mm</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🔄</div>
-                <h3>Diámetro de giro de 10,8 m</h3>
-                <p>Maniobras y vueltas en U más sencillas en calles angostas y parqueaderos reducidos.</p>
-                <div class="chips"><span class="chip">10,8 m</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🧳</div>
-                <h3>Maletero 398 L → 1.262 L</h3>
-                <p>398 litros con los asientos en posición normal y hasta 1.262 litros con los respaldos abatidos: del mercado al viaje largo sin escalas.</p>
-                <div class="chips"><span class="chip">398 L</span><span class="chip">1.262 L</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">⛽</div>
-                <h3>Capacidades para la familia</h3>
-                <p>Tanque de 45 litros y 5 plazas con cinturones de 3 puntos: lista para el feriado completo.</p>
-                <div class="chips"><span class="chip">45 L</span><span class="chip">5 plazas</span></div>
-              </article>
-              <article class="feat versioned own has-own" data-v="dct">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">⚖️</div>
-                <h3>Peso DCT: 1.410 kg</h3>
-                <p>Peso en orden de marcha de la versión DCT: una referencia de la solidez estructural del conjunto.</p>
-                <div class="chips"><span class="chip">1.410 kg</span></div>
-                <span class="own-tag">Versión DCT</span>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🎨</div>
-                <h3>Colores disponibles</h3>
-                <p>Cinco tonos para combinar con tu estilo:</p>
-                <div class="swatches">
-                  <span class="sw"><i style="--c:#101114"></i>Negro</span>
-                  <span class="sw"><i style="--c:#f7f7f8"></i>Blanco</span>
-                  <span class="sw"><i style="--c:#1f4e8c"></i>Azul</span>
-                  <span class="sw"><i style="--c:#8a8f98"></i>Gris</span>
-                  <span class="sw"><i style="--c:#c9ced6"></i>Plata</span>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ======= 8. CONECTIVIDAD Y TECNOLOGÍA ======= -->
-      <div class="acc">
-        <button class="acc-head" type="button" aria-expanded="false">
-          <span class="t"><span class="ico">📱</span>Conectividad y tecnología</span>
-          <span class="acc-arrow">▼</span>
-        </button>
-        <div class="acc-body">
-          <div class="acc-inner">
-            <p class="acc-note">El mismo arsenal tecnológico en ambas versiones: pantallas duales, conectividad total y ayudas de estacionamiento.</p>
-            <div class="feat-grid">
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">📺</div>
-                <h3>Pantalla táctil de 10,25″</h3>
-                <p>Centro multimedia LCD de gran formato con respuesta ágil para gestionar música, teléfono y cámara desde un solo lugar.</p>
-                <div class="chips"><span class="chip">10,25″ LCD</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🧭</div>
-                <h3>Panel de instrumentos digital</h3>
-                <p>Tablero 100 % digital de 10,25″: la información del vehículo, clara, moderna y configurable frente a tus ojos.</p>
-                <div class="chips"><span class="chip">10,25″ LCD</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🍏</div>
-                <h3>Apple CarPlay y Android Auto</h3>
-                <p>Tus aplicaciones de navegación y música favoritas, directo en la pantalla del vehículo y sin distracciones.</p>
-                <div class="chips"><span class="chip">CarPlay</span><span class="chip">Android Auto</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">📞</div>
-                <h3>Bluetooth manos libres</h3>
-                <p>Contesta llamadas sin tocar el teléfono y con las manos siempre en el volante.</p>
-                <div class="chips"><span class="chip">Bluetooth</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🔊</div>
-                <h3>6 parlantes</h3>
-                <p>Sonido envolvente para todas las plazas, adelante y atrás: la música viaja con todos.</p>
-                <div class="chips"><span class="chip">6 parlantes</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🔑</div>
-                <h3>Llave inteligente y botón de encendido</h3>
-                <p>Lleva la llave en el bolsillo: el vehículo te reconoce y enciende con solo presionar un botón.</p>
-                <div class="chips"><span class="chip">Smart Key</span><span class="chip">Start Button</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🔌</div>
-                <h3>4 puertos USB (A + C)</h3>
-                <p>Puertos Tipo A y Tipo C repartidos en la cabina para cargar todos los dispositivos de la familia.</p>
-                <div class="chips"><span class="chip">Tipo A</span><span class="chip">Tipo C</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">🚗</div>
-                <h3>Control crucero</h3>
-                <p>Mantén la velocidad constante en carretera y relaja el pie derecho en los trayectos largos.</p>
-                <div class="chips"><span class="chip">Cruise control</span></div>
-              </article>
-              <article class="feat versioned" data-v="both">
-                <span class="badge-off">No incluido en esta versión</span>
-                <div class="feat-ico">📸</div>
-                <h3>Cámara y sensores 360°</h3>
-                <p>Vista panorámica y sensores de retroceso que hacen sencillo parquear en cualquier espacio, por estrecho que sea.</p>
-                <div class="chips"><span class="chip">360°</span><span class="chip">Sensores</span></div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- /#versiones -->
-  </div>
-</section>
-
-<!-- ==================== PERFILES ==================== -->
-<section class="section profiles-sec" id="perfiles">
-  <div class="wrap">
-    <span class="kicker">Perfiles</span>
-    <h2>¿Para quién es este vehículo?</h2>
-    <p class="sec-sub">Dos versiones, dos formas de vivir la X50. Encuentra la que mejor se adapta a tu ritmo.</p>
-
-    <div class="profiles-grid">
-      <article class="profile">
-        <div class="profile-ico">🎯</div>
-        <div class="p-tag">Versión MANUAL <span class="badge-v">1.5 · 5MT</span></div>
-        <p class="desc">Para el conductor práctico y ahorrador que busca un vehículo confiable, de bajo mantenimiento y que prefiere el control total del cambio de marchas. Perfecto para el uso urbano o como primer vehículo familiar.</p>
-        <ul class="feats-list">
-          <li>Motor atmosférico probado, ideal para la ciudad y de mantenimiento sencillo</li>
-          <li>Control total del cambio con la palanca manual de 5 velocidades</li>
-          <li>El mismo equipamiento tecnológico y de seguridad ADAS que la versión superior</li>
+        <p class="prof-desc">Para el conductor práctico que valora el control total y la simplicidad mecánica: quien da el salto de un sedán a su primer SUV, la familia joven que busca la decisión inteligente y quien usa el carro a diario como herramienta de trabajo.</p>
+        <ul>
+          <li>Casi todo el equipamiento de la versión tope: pantallas duales, cámara 360°, ADAS y suspensión multi-link incluidos de serie.</li>
+          <li>Motor atmosférico probado y de bajo mantenimiento, perfecto si tu manejo es mayormente urbano.</li>
+          <li>Llantas R17 más cómodas frente a calles irregulares y más sencillas de reemplazar.</li>
         </ul>
+        <button class="prof-btn" data-goto="manual">Ver su equipamiento ↓</button>
       </article>
-
-      <article class="profile">
-        <div class="profile-ico">🚀</div>
-        <div class="p-tag">Versión DCT <span class="badge-v">1.5 Turbo · 6DCT</span></div>
-        <p class="desc">Para el conductor exigente que busca una experiencia de manejo moderna, llena de tecnología y confort. Ideal para quienes viajan frecuentemente por carretera, disfrutan de la suavidad de una caja automática y buscan equipamiento premium.</p>
-        <ul class="feats-list">
-          <li>Motor Turbo de 160 HP y 230 Nm con respuesta inmediata en sobrepasos</li>
-          <li>Caja 6DCT de doble embrague húmedo: cambios rápidos, suaves y sin tirones</li>
-          <li>Sun roof, asiento del conductor eléctrico y llantas R18: el extra premium</li>
+      <article class="prof reveal">
+        <div class="prof-top">
+          <span class="prof-ico">🚀</span>
+          <div><span class="prof-tag">Versión DCT</span><h3>El Premium Accesible</h3></div>
+        </div>
+        <p class="prof-desc">Para quien no quiere concesiones: disfruta de la tecnología, viaja con frecuencia por carretera y busca un SUV que se sienta de un segmento superior cada vez que se sube, sin renunciar a la practicidad diaria.</p>
+        <ul>
+          <li>Turbo de 160 HP y 230 Nm: adelantamientos e incorporaciones con respuesta inmediata.</li>
+          <li>Caja 6DCT que convierte el tráfico en un paseo: cambios suaves, sin tirones y sin fatiga.</li>
+          <li>Sun roof, asiento eléctrico, llantas R18 y 4 airbags: los detalles que transforman la experiencia.</li>
         </ul>
+        <button class="prof-btn" data-goto="dct">Ver su equipamiento ↓</button>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ==================== RESPALDO ==================== -->
-<section class="section respaldo-sec dark" id="respaldo">
-  <div class="wrap">
-    <span class="kicker">Respaldo</span>
-    <h2>Respaldo real en Ecuador</h2>
-    <p class="sec-sub">Detrás de cada X50 hay décadas de experiencia, una red nacional de servicio y una garantía que no tiene rival en el segmento.</p>
-
-    <div class="resp-grid">
-      <article class="resp-card">
-        <div class="resp-ico">🏢</div>
-        <h3>Grupo Roldán · Distribuidor exclusivo</h3>
-        <div class="resp-num">+50<small>años</small></div>
-        <p>Distribuidor exclusivo de Jetour en Ecuador, con más de medio siglo de trayectoria, 27 concesionarios a nivel nacional y más de 20.000 vehículos entregados. Visítanos en Plaza Tumbaco.</p>
-        <div class="chips">
-          <span class="chip">Jetour</span><span class="chip">JAC</span><span class="chip">SANY</span><span class="chip">YTO</span><span class="chip">Karry</span><span class="chip">Textron</span><span class="chip">Zongshen</span>
+<!-- Respaldo -->
+<section class="section dark respaldo" id="respaldo">
+  <div class="container">
+    <span class="kicker reveal">Confianza</span>
+    <h2 class="h2 reveal">Respaldo real en Ecuador</h2>
+    <p class="lead reveal">Detrás del X50 hay una marca global y una red nacional que responde por cada kilómetro.</p>
+    <div class="r-grid">
+      <article class="rcard r-wide reveal">
+        <div class="r-big"><b>10</b><span>años</span><small>o 120.000 km</small></div>
+        <div class="r-wide-txt">
+          <h3 class="h3">La garantía más valiente del mercado</h3>
+          <p>Mientras la industria suele ofrecer coberturas de unos pocos años, Jetour responde por una década completa. No es un truco de marketing: cuando un fabricante respalda su producto por diez años, es porque sabe cómo está construido. Y detrás está Chery Holding Group, con más de 12 millones de vehículos vendidos en el mundo.</p>
         </div>
       </article>
-
-      <article class="resp-card">
-        <div class="resp-ico">🤝</div>
-        <h3>Grupo Palacios · Aliado estratégico</h3>
-        <div class="resp-num">48<small>años</small></div>
-        <p>Distribuidor autorizado de Jetour en Ambato y Latacunga. Casi cinco décadas de experiencia respaldando a los conductores de la Sierra centro, como aliado estratégico de la marca.</p>
-        <div class="chips">
-          <span class="chip">Ambato</span><span class="chip">Latacunga</span>
-        </div>
+      <article class="rcard reveal">
+        <span class="r-ico">🏭</span>
+        <h3 class="h3">Herencia Chery · Jetour</h3>
+        <p>Jetour es la submarca de SUV de Chery Holding Group, fundado en 1997 y con más de 25 años de historia. En enero de 2024, Jetour celebró la producción de su vehículo número 1 millón en apenas 65 meses desde su lanzamiento.</p>
       </article>
-
-      <article class="resp-card">
-        <div class="resp-ico">🛡️</div>
-        <h3>Garantía que marca la pauta</h3>
-        <div class="resp-num">10<small>años</small></div>
-        <p>10 años o 120.000 km de cobertura: la garantía más extensa del segmento en Ecuador. Un respaldo que refleja la confianza en la ingeniería de cada X50.</p>
-        <div class="chips">
-          <span class="chip">10 años</span><span class="chip">120.000 km</span>
-        </div>
+      <article class="rcard reveal">
+        <span class="r-ico">🚚</span>
+        <h3 class="h3">Grupo Roldán</h3>
+        <p>Distribuidor exclusivo de Jetour en Ecuador. Fundado en Cuenca en 1970, suma más de 50 años de trayectoria, 27 concesionarios y talleres autorizados a nivel nacional, más de 20.000 vehículos entregados y presencia comercial en Plaza Tumbaco.</p>
+        <div class="brand-chips"><span>Jetour</span><span>JAC</span><span>SANY</span><span>YTO</span><span>Karry</span><span>Textron</span><span>Zongshen</span></div>
       </article>
+      <article class="rcard reveal">
+        <span class="r-ico">🤝</span>
+        <h3 class="h3">Grupo Palacios</h3>
+        <p>Distribuidor autorizado de la marca en Ambato y Latacunga, con 48 años de trayectoria como aliado estratégico. Atención y servicio cerca de ti también en el centro del país.</p>
+      </article>
+      <article class="rcard reveal">
+        <span class="r-ico">🔧</span>
+        <h3 class="h3">Red nacional de servicio</h3>
+        <p>Talleres autorizados, repuestos y mantenimiento programado en todo el territorio: la garantía de 10 años o 120.000 km se respalda con infraestructura real, no solo con promesas.</p>
+      </article>
+    </div>
+
+    <div class="testi-head">
+      <span class="kicker reveal">Voces reales</span>
+      <h2 class="h2 reveal">Lo que dicen los dueños en Ecuador</h2>
+    </div>
+    <div class="testi-grid">
+      <article class="testi reveal"><p>"El confort de la suspensión es increíble, parece un auto de segmento superior."</p><footer>— Propietario de X50, Ecuador</footer></article>
+      <article class="testi reveal"><p>"La garantía de 10 años fue lo que me terminó de convencer. Es una tranquilidad enorme."</p><footer>— Propietario de X50, Ecuador</footer></article>
+      <article class="testi reveal"><p>"En carretera gastó 7,5 L/100 km, un lujo para el espacio que tiene."</p><footer>— Propietario de X50, Ecuador</footer></article>
+    </div>
+
+    <div class="colores reveal">
+      <em>Colores disponibles:</em>
+      <span class="cdot"><i style="background:#f4f5f7"></i>Blanco</span>
+      <span class="cdot"><i style="background:#101114"></i>Negro</span>
+      <span class="cdot"><i style="background:#8a8f98"></i>Gris</span>
+      <span class="cdot"><i style="background:#274b82"></i>Azul</span>
+      <span class="cdot"><i style="background:#c9ced6"></i>Plata</span>
     </div>
   </div>
 </section>
 
-<!-- ==================== FOOTER ==================== -->
+<!-- Footer -->
 <footer class="footer">
-  <div class="wrap footer-in">
-    <a class="brand" href="#top">JETOUR <span class="rojo">X50</span> <small>Ecuador</small></a>
-    <p>Información basada en la ficha técnica oficial del Jetour X50 para Ecuador. Las especificaciones pueden variar según la versión. Distribuido por Grupo Roldán · Grupo Palacios (Ambato y Latacunga).</p>
-    <span class="mini">© <span id="year">2025</span> Grupo Roldán. Todos los derechos reservados.</span>
+  <div class="container">
+    <div class="f-grid">
+      <div class="f-brand">
+        <a class="brand" href="#top"><span class="brand-mark">JETOUR <em>X50</em></span><span class="brand-sub">Ecuador</span></a>
+        <p>SUV compacto con tecnología de segmentos superiores. Distribuido en Ecuador por Grupo Roldán, con el respaldo de Grupo Palacios en Ambato y Latacunga.</p>
+      </div>
+      <div>
+        <h4>Explora</h4>
+        <ul>
+          <li><a href="#detalles">Detalles que marcan la diferencia</a></li>
+          <li><a href="#selector">Versiones Manual y DCT</a></li>
+          <li><a href="#comparativa">Comparativa de versiones</a></li>
+          <li><a href="#perfiles">¿Para quién es el X50?</a></li>
+          <li><a href="#respaldo">Garantía y respaldo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Grupo Roldán</h4>
+        <ul>
+          <li>+50 años de trayectoria</li>
+          <li>27 concesionarios y talleres</li>
+          <li>+20.000 vehículos entregados</li>
+          <li>Plaza Tumbaco · Cuenca 1970</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Garantía</h4>
+        <ul>
+          <li>10 años o 120.000 km</li>
+          <li>Red nacional de servicio</li>
+          <li>Respaldo Chery Holding Group</li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2025 Grupo Roldán — JETOUR Ecuador. Grupo Palacios: Ambato y Latacunga.</span>
+      <span>Especificaciones sujetas a cambio sin previo aviso. Página informativa del Jetour X50.</span>
+    </div>
   </div>
 </footer>
 
 <script>
 (function(){
-  "use strict";
+  var d=document;
 
-  /* ---- Header con sombra al hacer scroll ---- */
-  var hdr = document.getElementById('hdr');
-  window.addEventListener('scroll', function(){
-    hdr.classList.toggle('scrolled', window.scrollY > 8);
-  }, {passive:true});
-
-  /* ---- Año dinámico ---- */
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  /* ---- Selector de versiones ---- */
-  var tabs = Array.prototype.slice.call(document.querySelectorAll('.vtab'));
-  var versioned = Array.prototype.slice.call(document.querySelectorAll('[data-v]'));
-
-  function syncOpenAccordions(){
-    document.querySelectorAll('.acc.open .acc-body').forEach(function(b){
-      b.style.maxHeight = b.scrollHeight + 'px';
+  /* Selector de versiones */
+  var tabs=Array.prototype.slice.call(d.querySelectorAll('.vtab'));
+  var gated=Array.prototype.slice.call(d.querySelectorAll('[data-only]'));
+  var live=d.getElementById('live');
+  var verLabel=d.getElementById('verLabel');
+  function setVersion(v){
+    tabs.forEach(function(b){
+      var on=b.getAttribute('data-version')===v;
+      b.classList.toggle('active',on);
+      b.setAttribute('aria-pressed',on?'true':'false');
     });
+    gated.forEach(function(el){
+      var on=(' '+el.getAttribute('data-only')+' ').indexOf(' '+v+' ')>-1;
+      el.classList.toggle('version-on',on);
+      el.classList.toggle('version-off',!on);
+    });
+    if(verLabel){verLabel.textContent=(v==='dct')?'DCT':'Manual';}
+    if(live){live.textContent='Versión seleccionada: '+((v==='dct')?'DCT':'Manual');}
   }
+  tabs.forEach(function(b){
+    b.addEventListener('click',function(){setVersion(b.getAttribute('data-version'));});
+  });
+  setVersion('dct');
 
-  function applyVersion(v){
-    tabs.forEach(function(t){
-      var isActive = t.getAttribute('data-version') === v;
-      t.classList.toggle('active', isActive);
-      t.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-    });
-    versioned.forEach(function(el){
-      var dv = el.getAttribute('data-v');
-      var on = (dv === 'both' || dv === v);
-      el.classList.toggle('version-on', on);
-      el.classList.toggle('version-off', !on);
-      el.classList.toggle('own-active', on && dv === v);
-    });
-    requestAnimationFrame(syncOpenAccordions);
-  }
-
-  tabs.forEach(function(t){
-    t.addEventListener('click', function(){
-      if (t.classList.contains('active')) return;
-      t.classList.add('pressed');
-      setTimeout(function(){ t.classList.remove('pressed'); }, 180);
-      applyVersion(t.getAttribute('data-version'));
+  /* Botones de perfil que cambian la versión */
+  Array.prototype.forEach.call(d.querySelectorAll('[data-goto]'),function(btn){
+    btn.addEventListener('click',function(){
+      setVersion(btn.getAttribute('data-goto'));
+      var sel=d.getElementById('selector');
+      if(sel){sel.scrollIntoView({behavior:'smooth',block:'start'});}
     });
   });
 
-  /* ---- Acordeones ---- */
-  var accs = Array.prototype.slice.call(document.querySelectorAll('.acc'));
-
-  function openAcc(acc){
-    var body = acc.querySelector('.acc-body');
-    acc.classList.add('open');
-    body.style.maxHeight = body.scrollHeight + 'px';
-    acc.querySelector('.acc-head').setAttribute('aria-expanded','true');
+  /* Acordeones */
+  var accs=Array.prototype.slice.call(d.querySelectorAll('.acc'));
+  function openAcc(a){
+    a.classList.add('open');
+    a.querySelector('.acc-head').setAttribute('aria-expanded','true');
+    var b=a.querySelector('.acc-body');
+    b.style.maxHeight=b.scrollHeight+'px';
   }
-  function closeAcc(acc){
-    var body = acc.querySelector('.acc-body');
-    acc.classList.remove('open');
-    body.style.maxHeight = '0px';
-    acc.querySelector('.acc-head').setAttribute('aria-expanded','false');
+  function closeAcc(a){
+    a.classList.remove('open');
+    a.querySelector('.acc-head').setAttribute('aria-expanded','false');
+    a.querySelector('.acc-body').style.maxHeight='0px';
   }
-
-  accs.forEach(function(acc){
-    var head = acc.querySelector('.acc-head');
-    head.addEventListener('click', function(){
-      if (acc.classList.contains('open')) { closeAcc(acc); }
-      else { openAcc(acc); }
+  accs.forEach(function(a){
+    a.querySelector('.acc-head').addEventListener('click',function(){
+      if(a.classList.contains('open')){closeAcc(a);}else{openAcc(a);}
+    });
+  });
+  if(accs[0]){openAcc(accs[0]);}
+  window.addEventListener('resize',function(){
+    accs.forEach(function(a){
+      if(a.classList.contains('open')){
+        var b=a.querySelector('.acc-body');
+        b.style.maxHeight=b.scrollHeight+'px';
+      }
     });
   });
 
-  /* Recalcular alturas abiertas al redimensionar */
-  var resizeTimer = null;
-  window.addEventListener('resize', function(){
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(syncOpenAccordions, 120);
-  });
+  /* Sombra del header al hacer scroll */
+  var hdr=d.getElementById('siteHeader');
+  function onScroll(){hdr.classList.toggle('scrolled',window.scrollY>10);}
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
 
-  /* ---- Estado inicial: versión DCT y primer acordeón abierto ---- */
-  applyVersion('dct');
-  if (accs.length) { openAcc(accs[0]); }
+  /* Aparición suave de secciones */
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
+    });
+  },{threshold:.12});
+  Array.prototype.forEach.call(d.querySelectorAll('.reveal'),function(el){io.observe(el);});
 })();
 </script>
 </body>

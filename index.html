@@ -3,130 +3,118 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jetour X50 · Ficha Técnica Interactiva</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/saira-condensed@latest/latin-700.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/saira-condensed@latest/latin-600.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/saira-condensed@latest/latin-400.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/barlow@latest/latin-400.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/barlow@latest/latin-600.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/barlow@latest/latin-300.css">
+<title>Jetour X50 · Ficha Técnica Interactiva · Ecuador</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/saira-condensed@latest/latin-400-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/saira-condensed@latest/latin-600-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/saira-condensed@latest/latin-700-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/barlow@latest/latin-400-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/barlow@latest/latin-500-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/barlow@latest/latin-600-normal.css">
 <style>
 :root {
   --accent: #e10613;
-  --accent-glow: rgba(225,6,19,0.3);
-  --accent-soft: rgba(225,6,19,0.08);
-  --dark: #0d0d0d;
-  --dark2: #1a1a1a;
-  --dark3: #222;
+  --accent-rgb: 225, 6, 19;
+  --dark: #0d0d0f;
+  --dark2: #161619;
+  --dark3: #1e1e22;
   --light: #f5f5f7;
-  --light2: #eaeaec;
-  --white: #fff;
-  --gray: #888;
-  --gray2: #aaa;
-  --text-dark: #1a1a1a;
-  --text-light: #ccc;
-  --radius: 16px;
+  --light2: #eaeaee;
+  --white: #ffffff;
+  --gray: #8a8a95;
+  --gray2: #b0b0ba;
+  --radius: 14px;
   --radius-sm: 10px;
+  --font-title: 'Saira Condensed', sans-serif;
+  --font-body: 'Barlow', sans-serif;
   --problem: #e67e22;
   --solution: #27ae60;
   --benefit: #3498db;
-  --font-heading: 'Saira Condensed', sans-serif;
-  --font-body: 'Barlow', sans-serif;
 }
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-body { font-family: var(--font-body); background: var(--dark); color: var(--text-light); line-height: 1.6; overflow-x: hidden; }
 
-/* TOPBAR */
-.topbar {
-  background: var(--accent);
-  color: #fff;
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+
+body {
   font-family: var(--font-body);
-  font-size: 0.72rem;
-  font-weight: 600;
-  padding: 6px 0;
-  white-space: nowrap;
-  overflow-x: auto;
-  letter-spacing: 0.5px;
+  background: var(--dark);
+  color: var(--white);
+  line-height: 1.6;
+  overflow-x: hidden;
 }
-.topbar-inner {
-  display: flex;
-  gap: 2rem;
-  padding: 0 1.5rem;
-  min-width: max-content;
-}
-.topbar-inner span { display: flex; align-items: center; gap: 0.4rem; }
 
 /* HEADER */
 .header {
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: 0; left: 0; right: 0;
   z-index: 1000;
-  background: rgba(13,13,13,0.95);
+  background: rgba(13,13,15,0.95);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255,255,255,0.06);
-  padding: 0 1.5rem;
-}
-.header-inner {
-  max-width: 1280px;
-  margin: 0 auto;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
+  padding: 0 clamp(16px, 4vw, 48px);
 }
-.header-brand {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
+
+.header-logo {
+  font-family: var(--font-title);
   font-weight: 700;
-  color: #fff;
+  font-size: 1.4rem;
+  color: var(--white);
   text-decoration: none;
   letter-spacing: 1px;
 }
-.header-brand span { color: var(--accent); }
-.header-nav { display: flex; gap: 0.2rem; }
+
+.header-logo span { color: var(--accent); }
+
+.header-nav { display: flex; gap: 24px; }
+
 .header-nav a {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
   color: var(--gray2);
   text-decoration: none;
-  font-size: 0.82rem;
-  font-weight: 600;
-  padding: 0.5rem 0.8rem;
-  border-radius: 8px;
-  transition: all 0.2s;
+  transition: color 0.3s;
+  letter-spacing: 0.3px;
 }
-.header-nav a:hover { color: #fff; background: rgba(255,255,255,0.06); }
+
+.header-nav a:hover { color: var(--white); }
+
 .header-mobile { display: none; }
+
 .header-mobile summary {
   list-style: none;
   cursor: pointer;
   font-size: 1.5rem;
-  color: #fff;
-  padding: 0.3rem;
+  color: var(--white);
 }
+
 .header-mobile summary::-webkit-details-marker { display: none; }
-.header-mobile nav {
+
+.header-mobile[open] summary { color: var(--accent); }
+
+.header-mobile-nav {
   position: absolute;
-  top: 64px;
-  right: 1rem;
+  top: 64px; right: 0;
   background: var(--dark2);
   border: 1px solid rgba(255,255,255,0.08);
-  border-radius: var(--radius-sm);
-  padding: 0.5rem;
+  border-radius: 0 0 var(--radius) var(--radius);
+  padding: 16px 24px;
   display: flex;
   flex-direction: column;
+  gap: 12px;
   min-width: 200px;
-  box-shadow: 0 12px 40px rgba(0,0,0,0.5);
 }
-.header-mobile nav a {
+
+.header-mobile-nav a {
+  font-size: 0.9rem;
   color: var(--gray2);
   text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 600;
-  padding: 0.7rem 1rem;
-  border-radius: 8px;
-  transition: all 0.2s;
+  font-weight: 500;
 }
-.header-mobile nav a:hover { color: #fff; background: rgba(255,255,255,0.06); }
 
 @media (max-width: 900px) {
   .header-nav { display: none; }
@@ -136,793 +124,1016 @@ body { font-family: var(--font-body); background: var(--dark); color: var(--text
 /* HERO */
 .hero {
   position: relative;
-  background: var(--dark);
-  padding: clamp(4rem, 10vw, 8rem) 1.5rem clamp(3rem, 8vw, 6rem);
-  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  padding: 120px clamp(16px, 4vw, 48px) 80px;
+  background: var(--dark);
+  overflow: hidden;
 }
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 800px;
-  height: 800px;
-  background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
-  pointer-events: none;
-}
+
 .hero-watermark {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: var(--font-heading);
-  font-size: clamp(20rem, 40vw, 40rem);
+  font-family: var(--font-title);
   font-weight: 700;
-  color: rgba(255,255,255,0.02);
-  pointer-events: none;
+  font-size: clamp(20rem, 40vw, 50rem);
+  color: rgba(var(--accent-rgb), 0.04);
   line-height: 1;
+  pointer-events: none;
   user-select: none;
+  z-index: 0;
 }
-.hero-rings {
+
+.hero-ring {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  border-radius: 50%;
   pointer-events: none;
 }
+
 .hero-ring-1 {
-  width: 500px;
-  height: 500px;
-  border: 1px solid rgba(225,6,19,0.08);
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: clamp(300px, 50vw, 600px);
+  height: clamp(300px, 50vw, 600px);
+  border: 2px solid rgba(var(--accent-rgb), 0.1);
 }
+
 .hero-ring-2 {
-  width: 650px;
-  height: 650px;
-  border: 1px dashed rgba(225,6,19,0.05);
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: clamp(400px, 65vw, 800px);
+  height: clamp(400px, 65vw, 800px);
+  border: 2px dashed rgba(var(--accent-rgb), 0.07);
 }
-.hero-content { position: relative; z-index: 2; max-width: 800px; margin: 0 auto; }
-.hero-badges { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-bottom: 1.5rem; }
+
+.hero-content { position: relative; z-index: 2; max-width: 800px; }
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
 .hero-badge {
-  background: rgba(225,6,19,0.12);
+  background: rgba(var(--accent-rgb), 0.12);
+  border: 1px solid rgba(var(--accent-rgb), 0.3);
   color: var(--accent);
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 600;
-  padding: 0.35rem 0.9rem;
+  padding: 6px 14px;
   border-radius: 20px;
-  border: 1px solid rgba(225,6,19,0.2);
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
+
 .hero-title {
-  font-family: var(--font-heading);
-  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-family: var(--font-title);
+  font-size: clamp(3rem, 8vw, 6rem);
   font-weight: 700;
-  color: #fff;
   line-height: 1;
-  margin-bottom: 0.5rem;
+  margin-bottom: 16px;
+  color: var(--white);
 }
+
 .hero-title span { color: var(--accent); }
+
 .hero-tagline {
-  font-family: var(--font-heading);
-  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  font-family: var(--font-title);
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 600;
   color: var(--gray2);
-  font-weight: 400;
-  margin-bottom: 1rem;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
 }
+
 .hero-subtitle {
-  font-size: 0.95rem;
+  font-size: clamp(0.9rem, 1.5vw, 1.05rem);
   color: var(--gray);
   max-width: 600px;
-  margin: 0 auto 2rem;
+  margin: 0 auto 32px;
   line-height: 1.7;
 }
-.hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+.hero-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
 .btn-accent {
   background: var(--accent);
-  color: #fff;
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 0.8rem 2rem;
+  color: var(--white);
   border: none;
+  padding: 12px 28px;
   border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
   cursor: pointer;
-  letter-spacing: 0.5px;
-  transition: all 0.3s;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
-.btn-accent:hover { background: #c00510; transform: translateY(-2px); box-shadow: 0 8px 25px var(--accent-glow); }
+
+.btn-accent:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(var(--accent-rgb), 0.3);
+}
+
 .btn-ghost {
   background: transparent;
-  color: #fff;
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 0.8rem 2rem;
+  color: var(--white);
   border: 1px solid rgba(255,255,255,0.2);
+  padding: 12px 28px;
   border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
   cursor: pointer;
-  letter-spacing: 0.5px;
-  transition: all 0.3s;
+  text-decoration: none;
+  transition: border-color 0.3s, background 0.3s;
 }
-.btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+.btn-ghost:hover {
+  border-color: var(--accent);
+  background: rgba(var(--accent-rgb), 0.08);
+}
 
 /* STATS */
 .stats {
   background: var(--dark2);
-  padding: clamp(2rem, 5vw, 3.5rem) 1.5rem;
+  padding: clamp(40px, 6vw, 64px) clamp(16px, 4vw, 48px);
   border-top: 1px solid rgba(255,255,255,0.04);
   border-bottom: 1px solid rgba(255,255,255,0.04);
 }
+
 .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 24px;
   max-width: 1100px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-}
-.stat-card {
   text-align: center;
-  padding: 1.5rem 1rem;
-  background: rgba(255,255,255,0.02);
-  border-radius: var(--radius-sm);
-  border: 1px solid rgba(255,255,255,0.04);
-  transition: all 0.3s;
 }
-.stat-card:hover { border-color: rgba(225,6,19,0.2); transform: translateY(-3px); }
+
+.stat-item {
+  padding: 20px 12px;
+}
+
 .stat-number {
-  font-family: var(--font-heading);
+  font-family: var(--font-title);
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
-  color: #fff;
-  line-height: 1.1;
-}
-.stat-unit { color: var(--accent); font-size: 0.7em; }
-.stat-label { font-size: 0.78rem; color: var(--gray); margin-top: 0.4rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
-
-@media (max-width: 700px) {
-  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  color: var(--white);
+  line-height: 1;
 }
 
-/* SECTIONS */
-.section { padding: clamp(3rem, 7vw, 5rem) 1.5rem; }
-.section-dark { background: var(--dark); }
-.section-dark2 { background: var(--dark2); }
-.section-light { background: var(--light); color: var(--text-dark); }
-.section-inner { max-width: 1200px; margin: 0 auto; }
-.section-title {
-  font-family: var(--font-heading);
-  font-size: clamp(1.8rem, 4vw, 2.8rem);
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-.section-light .section-title { color: var(--text-dark); }
-.section-dark .section-title { color: #fff; }
-.section-title span { color: var(--accent); }
-.section-subtitle {
-  font-size: 0.95rem;
-  color: var(--gray);
-  margin-bottom: 2.5rem;
-  max-width: 600px;
-}
-.section-light .section-subtitle { color: #666; }
-
-/* PRESENTACIÓN */
-.presentacion-text { max-width: 800px; }
-.presentacion-text p {
-  font-size: 1rem;
-  line-height: 1.8;
-  margin-bottom: 1.2rem;
-  color: #444;
-}
-.presentacion-text strong { color: var(--accent); font-weight: 600; }
-
-/* VERSION SELECTOR */
-.version-selector-wrapper {
-  background: var(--dark2);
-  border-top: 1px solid rgba(255,255,255,0.06);
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-  z-index: 900;
-  transition: position 0.3s;
-}
-.version-selector-wrapper.is-sticky {
-  position: sticky;
-  top: 64px;
-}
-.version-selector {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem 1.5rem;
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.version-selector-label {
-  font-family: var(--font-heading);
-  font-size: 0.85rem;
-  color: var(--gray);
+.stat-unit {
+  font-family: var(--font-title);
+  font-size: clamp(1rem, 2vw, 1.3rem);
   font-weight: 600;
+  color: var(--accent);
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--gray);
+  margin-top: 8px;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-right: 0.5rem;
-}
-.version-tab {
-  font-family: var(--font-heading);
-  font-size: 0.95rem;
-  font-weight: 600;
-  padding: 0.6rem 1.5rem;
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: var(--radius-sm);
-  background: transparent;
-  color: var(--gray2);
-  cursor: pointer;
-  transition: all 0.3s;
   letter-spacing: 0.5px;
 }
-.version-tab:hover { border-color: var(--accent); color: #fff; }
-.version-tab.active {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #fff;
-  box-shadow: 0 4px 15px var(--accent-glow);
+
+/* PRESENTACIÓN */
+.presentacion {
+  background: var(--light);
+  padding: clamp(48px, 8vw, 96px) clamp(16px, 4vw, 48px);
 }
 
-/* INTRO VERSION */
-.intro-version { max-width: 800px; }
-.intro-version p {
-  font-size: 1rem;
-  line-height: 1.8;
+.presentacion-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-label {
+  font-family: var(--font-title);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: var(--font-title);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.presentacion .section-title { color: var(--dark); }
+
+.presentacion p {
+  font-size: clamp(0.95rem, 1.3vw, 1.05rem);
   color: #444;
-  margin-bottom: 1rem;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.presentacion p strong { color: var(--accent); font-weight: 600; }
+
+/* SELECTOR DE VERSIONES */
+.version-selector {
+  background: var(--dark);
+  padding: 0;
+  position: sticky;
+  top: 64px;
+  z-index: 900;
+  border-bottom: 2px solid rgba(255,255,255,0.06);
+  transition: box-shadow 0.3s;
+}
+
+.version-selector.scrolled {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.version-selector-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 clamp(16px, 4vw, 48px);
+}
+
+.version-tab {
+  flex: 1;
+  padding: 18px 24px;
+  text-align: center;
+  font-family: var(--font-title);
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  font-weight: 600;
+  color: var(--gray);
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.version-tab:hover { color: var(--white); }
+
+.version-tab.active {
+  color: var(--white);
+  border-bottom-color: var(--accent);
+  background: rgba(var(--accent-rgb), 0.05);
+}
+
+/* INTRO VERSIÓN */
+.intro-version {
+  background: var(--light);
+  padding: clamp(40px, 6vw, 72px) clamp(16px, 4vw, 48px);
+  border-top: 1px solid var(--light2);
+}
+
+.intro-version-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.intro-version h3 {
+  font-family: var(--font-title);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 16px;
+}
+
+.intro-version p {
+  font-size: clamp(0.95rem, 1.3vw, 1.05rem);
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 12px;
 }
 
 /* DETALLES */
+.detalles {
+  background: var(--dark);
+  padding: clamp(48px, 8vw, 96px) clamp(16px, 4vw, 48px);
+  background-image: radial-gradient(ellipse at 20% 50%, rgba(var(--accent-rgb), 0.06) 0%, transparent 60%),
+                    radial-gradient(ellipse at 80% 80%, rgba(var(--accent-rgb), 0.04) 0%, transparent 50%);
+}
+
+.detalles-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.detalles .section-title { color: var(--white); }
+
 .detalles-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 1.2rem;
+  gap: 20px;
+  margin-top: 40px;
 }
+
 .detalle-card {
-  background: rgba(255,255,255,0.03);
+  background: var(--dark2);
   border: 1px solid rgba(255,255,255,0.06);
-  border-left: 3px solid var(--accent);
-  border-radius: var(--radius-sm);
-  padding: 1.5rem;
-  transition: all 0.4s;
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  transition: transform 0.3s, opacity 0.3s;
   position: relative;
 }
-.detalle-card:hover { border-color: rgba(225,6,19,0.3); transform: translateY(-3px); background: rgba(255,255,255,0.05); }
+
 .detalle-card.dimmed {
-  opacity: 0.35;
+  opacity: 0.4;
   border-left-color: var(--gray);
 }
-.detalle-card.dimmed:hover { opacity: 0.5; }
-.detalle-badge-exclude {
+
+.detalle-card.dimmed::after {
+  content: 'No incluido en esta versión';
   position: absolute;
-  top: 0.8rem;
-  right: 0.8rem;
+  top: 12px; right: 12px;
   background: rgba(255,255,255,0.08);
   color: var(--gray);
   font-size: 0.65rem;
   font-weight: 600;
-  padding: 0.25rem 0.6rem;
+  padding: 4px 10px;
   border-radius: 10px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
 }
-.detalle-icon { font-size: 1.8rem; margin-bottom: 0.8rem; }
+
+.detalle-card:hover { transform: translateY(-3px); }
+
+.detalle-icon { font-size: 1.8rem; margin-bottom: 12px; }
+
 .detalle-title {
-  font-family: var(--font-heading);
+  font-family: var(--font-title);
   font-size: 1rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--white);
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  margin-bottom: 0.6rem;
+  margin-bottom: 10px;
 }
-.detalle-text { font-size: 0.85rem; color: var(--gray2); line-height: 1.6; }
 
-/* ACORDEONES */
-.accordion-list { display: flex; flex-direction: column; gap: 0.8rem; }
-.accordion {
-  border: 1px solid #ddd;
-  border-radius: var(--radius-sm);
-  overflow: hidden;
-  background: #fff;
-  transition: all 0.3s;
+.detalle-text {
+  font-size: 0.88rem;
+  color: var(--gray2);
+  line-height: 1.6;
 }
-.accordion[open] { box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+
+/* CARACTERÍSTICAS - ACORDEONES */
+.caracteristicas {
+  background: var(--light);
+  padding: clamp(48px, 8vw, 96px) clamp(16px, 4vw, 48px);
+}
+
+.caracteristicas-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.caracteristicas .section-title { color: var(--dark); }
+
+.accordion {
+  margin-bottom: 12px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--light2);
+  background: var(--white);
+}
+
 .accordion summary {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  padding: 1.2rem 1.5rem;
+  gap: 14px;
+  padding: 20px 24px;
   cursor: pointer;
   list-style: none;
+  background: var(--white);
   transition: background 0.2s;
   user-select: none;
 }
+
 .accordion summary::-webkit-details-marker { display: none; }
-.accordion summary:hover { background: rgba(225,6,19,0.03); }
-.accordion-icon { font-size: 1.4rem; flex-shrink: 0; }
-.accordion-title-wrap { flex: 1; }
+
+.accordion summary:hover { background: rgba(0,0,0,0.02); }
+
+.accordion-icon { font-size: 1.4rem; }
+
 .accordion-title {
-  font-family: var(--font-heading);
+  font-family: var(--font-title);
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--text-dark);
+  color: var(--dark);
+  flex: 1;
 }
+
 .accordion-meta {
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   color: var(--gray);
-  font-weight: 600;
-  margin-top: 0.15rem;
-  letter-spacing: 0.3px;
+  font-weight: 500;
+  background: var(--light);
+  padding: 4px 10px;
+  border-radius: 12px;
 }
+
 .accordion-arrow {
   font-size: 1.2rem;
   color: var(--gray);
   transition: transform 0.3s;
-  flex-shrink: 0;
 }
+
 .accordion[open] .accordion-arrow { transform: rotate(180deg); }
+
 .accordion-body {
-  padding: 0 1.5rem 1.5rem;
+  padding: 0 24px 24px;
 }
+
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
 }
+
 .feature-card {
   background: var(--light);
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--light2);
   border-radius: var(--radius-sm);
-  padding: 1.3rem;
-  transition: all 0.3s;
+  padding: 20px;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.feature-card.dimmed {
+  opacity: 0.35;
   position: relative;
 }
-.feature-card:hover { border-color: rgba(225,6,19,0.2); transform: translateY(-2px); box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-.feature-card.dimmed { opacity: 0.3; pointer-events: none; }
+
 .feature-card.dimmed::after {
-  content: 'No incluido en esta versión';
+  content: 'No incluido';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0,0,0,0.7);
-  color: #fff;
-  font-size: 0.7rem;
+  top: 8px; right: 8px;
+  background: rgba(0,0,0,0.06);
+  color: var(--gray);
+  font-size: 0.6rem;
   font-weight: 600;
-  padding: 0.4rem 0.8rem;
-  border-radius: 6px;
-  white-space: nowrap;
-  z-index: 5;
-}
-.feature-header { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 0.8rem; }
-.feature-icon { font-size: 1.5rem; }
-.feature-name {
-  font-family: var(--font-heading);
-  font-size: 0.92rem;
-  font-weight: 700;
-  color: var(--text-dark);
-  line-height: 1.3;
-}
-.feature-desc { font-size: 0.82rem; color: #555; line-height: 1.6; margin-bottom: 1rem; }
-.feature-block {
-  padding: 0.7rem 0.9rem;
+  padding: 3px 8px;
   border-radius: 8px;
-  margin-bottom: 0.6rem;
-  font-size: 0.8rem;
-  line-height: 1.5;
-}
-.feature-block-label {
-  font-weight: 700;
-  font-size: 0.7rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 0.3rem;
+}
+
+.feature-card-header {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: 10px;
+  margin-bottom: 10px;
 }
-.block-problem {
-  background: rgba(230,126,34,0.06);
-  border: 1px solid rgba(230,126,34,0.15);
+
+.feature-card-icon { font-size: 1.3rem; }
+
+.feature-card-name {
+  font-family: var(--font-title);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--dark);
 }
-.block-problem .feature-block-label { color: var(--problem); }
-.block-problem p { color: #8a5a1a; }
-.block-solution {
-  background: rgba(39,174,96,0.06);
-  border: 1px solid rgba(39,174,96,0.15);
+
+.feature-card-desc {
+  font-size: 0.82rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 12px;
 }
-.block-solution .feature-block-label { color: var(--solution); }
-.block-solution p { color: #1a6b3a; }
-.block-benefit {
-  background: rgba(52,152,219,0.06);
-  border: 1px solid rgba(52,152,219,0.15);
-}
-.block-benefit .feature-block-label { color: var(--benefit); }
-.block-benefit p { color: #1a5276; }
-.feature-chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.8rem; }
-.feature-chip {
-  background: rgba(225,6,19,0.07);
-  color: var(--accent);
-  font-size: 0.65rem;
-  font-weight: 600;
-  padding: 0.25rem 0.6rem;
-  border-radius: 12px;
+
+.feature-tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
   letter-spacing: 0.3px;
 }
 
+.tag-problem {
+  color: var(--problem);
+  background: rgba(230, 126, 34, 0.1);
+  border: 1px solid rgba(230, 126, 34, 0.25);
+}
+
+.tag-solution {
+  color: var(--solution);
+  background: rgba(39, 174, 96, 0.1);
+  border: 1px solid rgba(39, 174, 96, 0.25);
+}
+
+.tag-benefit {
+  color: var(--benefit);
+  background: rgba(52, 152, 219, 0.1);
+  border: 1px solid rgba(52, 152, 219, 0.25);
+}
+
+.feature-block {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+
+.feature-block.problem {
+  background: rgba(230, 126, 34, 0.06);
+  border-left: 3px solid var(--problem);
+}
+
+.feature-block.solution {
+  background: rgba(39, 174, 96, 0.06);
+  border-left: 3px solid var(--solution);
+}
+
+.feature-block.benefit {
+  background: rgba(52, 152, 219, 0.06);
+  border-left: 3px solid var(--benefit);
+}
+
+.feature-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.chip {
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: rgba(var(--accent-rgb), 0.08);
+  color: var(--accent);
+  border: 1px solid rgba(var(--accent-rgb), 0.15);
+}
+
 /* PERFILES */
+.perfiles {
+  background: var(--dark);
+  padding: clamp(48px, 8vw, 96px) clamp(16px, 4vw, 48px);
+  background-image: radial-gradient(ellipse at 50% 0%, rgba(var(--accent-rgb), 0.05) 0%, transparent 50%);
+}
+
+.perfiles-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.perfiles .section-title { color: var(--white); }
+
 .perfiles-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1.2rem;
+  gap: 20px;
+  margin-top: 40px;
 }
+
 .perfil-card {
-  background: rgba(255,255,255,0.03);
+  background: var(--dark2);
   border: 1px solid rgba(255,255,255,0.06);
   border-radius: var(--radius);
-  padding: 1.8rem;
-  transition: all 0.3s;
+  padding: 28px 24px;
 }
-.perfil-card:hover { border-color: rgba(225,6,19,0.2); transform: translateY(-3px); }
-.perfil-icon { font-size: 2rem; margin-bottom: 0.8rem; }
+
+.perfil-icon { font-size: 2rem; margin-bottom: 12px; }
+
 .perfil-title {
-  font-family: var(--font-heading);
+  font-family: var(--font-title);
   font-size: 1.1rem;
   font-weight: 700;
-  color: #fff;
-  margin-bottom: 0.3rem;
+  color: var(--white);
+  margin-bottom: 8px;
 }
+
 .perfil-badge {
   display: inline-block;
-  background: var(--accent);
-  color: #fff;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   font-weight: 600;
-  padding: 0.2rem 0.6rem;
+  padding: 4px 10px;
   border-radius: 10px;
-  margin-bottom: 0.8rem;
+  background: rgba(var(--accent-rgb), 0.12);
+  color: var(--accent);
+  margin-bottom: 12px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
 }
-.perfil-desc { font-size: 0.82rem; color: var(--gray2); margin-bottom: 1rem; line-height: 1.6; }
-.perfil-list { list-style: none; }
-.perfil-list li {
-  font-size: 0.8rem;
+
+.perfil-desc {
+  font-size: 0.85rem;
   color: var(--gray2);
-  padding: 0.3rem 0;
-  padding-left: 1rem;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.perfil-list {
+  list-style: none;
+  padding: 0;
+}
+
+.perfil-list li {
+  font-size: 0.82rem;
+  color: var(--gray2);
+  padding: 4px 0;
+  padding-left: 16px;
   position: relative;
 }
+
 .perfil-list li::before {
   content: '';
   position: absolute;
-  left: 0;
-  top: 0.65rem;
-  width: 5px;
-  height: 5px;
-  background: var(--accent);
+  left: 0; top: 11px;
+  width: 6px; height: 6px;
   border-radius: 50%;
+  background: var(--accent);
 }
 
-/* TABLA COMPARATIVA */
-.tech-table-wrap { overflow-x: auto; border-radius: var(--radius-sm); border: 1px solid #ddd; }
+/* FICHA TÉCNICA */
+.ficha-tecnica {
+  background: var(--light);
+  padding: clamp(48px, 8vw, 96px) clamp(16px, 4vw, 48px);
+}
+
+.ficha-tecnica-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.ficha-tecnica .section-title { color: var(--dark); }
+
+.tech-table-wrapper {
+  overflow-x: auto;
+  margin-top: 32px;
+  border-radius: var(--radius);
+  border: 1px solid var(--light2);
+}
+
 .tech-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.85rem;
-  min-width: 500px;
+  font-size: 0.88rem;
 }
+
 .tech-table thead th {
-  background: var(--dark2);
-  color: #fff;
-  font-family: var(--font-heading);
-  font-weight: 700;
-  padding: 1rem 1.2rem;
+  background: var(--dark);
+  color: var(--white);
+  font-family: var(--font-title);
+  font-weight: 600;
+  padding: 14px 18px;
   text-align: left;
   font-size: 0.9rem;
-  letter-spacing: 0.5px;
-  border-bottom: 2px solid var(--accent);
+  letter-spacing: 0.3px;
 }
+
 .tech-table thead th.active-col {
   background: var(--accent);
 }
+
 .tech-table tbody td {
-  padding: 0.8rem 1.2rem;
-  border-bottom: 1px solid #eee;
-  color: #444;
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--light2);
+  color: #333;
 }
+
 .tech-table tbody td.active-col {
-  background: rgba(225,6,19,0.04);
+  background: rgba(var(--accent-rgb), 0.05);
   font-weight: 600;
-  color: var(--text-dark);
+  color: var(--dark);
 }
-.tech-table tbody tr:hover td { background: rgba(225,6,19,0.02); }
-.tech-table tbody tr:hover td.active-col { background: rgba(225,6,19,0.07); }
-.tech-table .cat-row td {
-  background: var(--light2);
-  font-family: var(--font-heading);
+
+.tech-table tbody tr:last-child td { border-bottom: none; }
+
+.tech-table tbody tr:hover td { background: rgba(0,0,0,0.02); }
+.tech-table tbody tr:hover td.active-col { background: rgba(var(--accent-rgb), 0.08); }
+
+.tech-category-row td {
+  background: var(--light2) !important;
+  font-family: var(--font-title);
   font-weight: 700;
-  color: var(--text-dark);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  color: var(--dark);
+  text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 /* RESPALDO */
+.respaldo {
+  background: var(--dark2);
+  padding: clamp(48px, 8vw, 96px) clamp(16px, 4vw, 48px);
+  background-image: radial-gradient(ellipse at 50% 100%, rgba(var(--accent-rgb), 0.06) 0%, transparent 50%);
+}
+
+.respaldo-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.respaldo .section-title { color: var(--white); }
+
 .respaldo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
 }
+
 .respaldo-card {
-  background: rgba(255,255,255,0.03);
+  background: var(--dark3);
   border: 1px solid rgba(255,255,255,0.06);
   border-radius: var(--radius);
-  padding: 2rem;
+  padding: 32px 28px;
   text-align: center;
-  transition: all 0.3s;
 }
-.respaldo-card:hover { border-color: rgba(225,6,19,0.2); transform: translateY(-3px); }
+
 .respaldo-number {
-  font-family: var(--font-heading);
+  font-family: var(--font-title);
   font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-weight: 700;
   color: var(--accent);
   line-height: 1;
-  margin-bottom: 0.3rem;
+  margin-bottom: 8px;
 }
+
 .respaldo-label {
-  font-family: var(--font-heading);
+  font-family: var(--font-title);
   font-size: 1rem;
   font-weight: 600;
-  color: #fff;
-  margin-bottom: 0.5rem;
+  color: var(--white);
+  margin-bottom: 8px;
 }
-.respaldo-text { font-size: 0.82rem; color: var(--gray2); line-height: 1.6; }
+
+.respaldo-desc {
+  font-size: 0.85rem;
+  color: var(--gray);
+  line-height: 1.6;
+}
 
 /* FOOTER */
 .footer {
   background: var(--dark);
   border-top: 1px solid rgba(255,255,255,0.06);
-  padding: 3rem 1.5rem 1.5rem;
+  padding: clamp(40px, 6vw, 64px) clamp(16px, 4vw, 48px) 24px;
 }
-.footer-grid {
-  max-width: 1200px;
+
+.footer-inner {
+  max-width: 1100px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-bottom: 2rem;
 }
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
 .footer-col h4 {
-  font-family: var(--font-heading);
+  font-family: var(--font-title);
   font-size: 1rem;
   font-weight: 700;
-  color: #fff;
-  margin-bottom: 0.8rem;
+  color: var(--white);
+  margin-bottom: 12px;
 }
+
 .footer-col p, .footer-col a {
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   color: var(--gray);
-  line-height: 1.8;
+  line-height: 1.7;
   text-decoration: none;
   display: block;
+  margin-bottom: 4px;
 }
+
 .footer-col a:hover { color: var(--accent); }
+
 .footer-bottom {
-  max-width: 1200px;
-  margin: 0 auto;
   border-top: 1px solid rgba(255,255,255,0.06);
-  padding-top: 1.5rem;
+  padding-top: 20px;
   text-align: center;
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   color: var(--gray);
 }
 
-/* REVEAL */
+/* REVEAL ANIMATION */
 .reveal {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
+
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
 /* RESPONSIVE */
-@media (max-width: 600px) {
-  .features-grid { grid-template-columns: 1fr; }
+@media (max-width: 768px) {
   .detalles-grid { grid-template-columns: 1fr; }
+  .features-grid { grid-template-columns: 1fr; }
   .perfiles-grid { grid-template-columns: 1fr; }
-  .hero-rings { display: none; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
 }
 </style>
 </head>
 <body>
 
-<!-- TOPBAR -->
-<div class="topbar">
-  <div class="topbar-inner">
-    <span>🏎️ JETOUR ECUADOR</span>
-    <span>📍 Distribuido por Grupo Roldán — Desde 1970</span>
-    <span>🔧 +27 Concesionarios y Talleres a Nivel Nacional</span>
-    <span>🛡️ Garantía: 10 años o 120.000 km</span>
-    <span>🏭 Respaldo: Chery Holding Group — +12 millones de vehículos vendidos</span>
-  </div>
-</div>
-
 <!-- HEADER -->
-<header class="header" id="header">
-  <div class="header-inner">
-    <a href="#" class="header-brand">JETOUR <span>X50</span></a>
-    <nav class="header-nav">
+<header class="header">
+  <a href="#" class="header-logo">JETOUR <span>X50</span></a>
+  <nav class="header-nav">
+    <a href="#presentacion">Presentación</a>
+    <a href="#detalles">Detalles</a>
+    <a href="#caracteristicas">Características</a>
+    <a href="#ficha-tecnica">Ficha Técnica</a>
+    <a href="#perfiles">Perfiles</a>
+    <a href="#respaldo">Respaldo</a>
+  </nav>
+  <details class="header-mobile">
+    <summary>☰</summary>
+    <div class="header-mobile-nav">
       <a href="#presentacion">Presentación</a>
       <a href="#detalles">Detalles</a>
       <a href="#caracteristicas">Características</a>
-      <a href="#ficha">Ficha Técnica</a>
+      <a href="#ficha-tecnica">Ficha Técnica</a>
       <a href="#perfiles">Perfiles</a>
       <a href="#respaldo">Respaldo</a>
-    </nav>
-    <details class="header-mobile">
-      <summary>☰</summary>
-      <nav>
-        <a href="#presentacion">Presentación</a>
-        <a href="#detalles">Detalles</a>
-        <a href="#caracteristicas">Características</a>
-        <a href="#ficha">Ficha Técnica</a>
-        <a href="#perfiles">Perfiles</a>
-        <a href="#respaldo">Respaldo</a>
-      </nav>
-    </details>
-  </div>
+    </div>
+  </details>
 </header>
 
 <!-- HERO -->
-<section class="hero" id="hero">
+<section class="hero">
   <div class="hero-watermark">X</div>
-  <div class="hero-rings">
-    <div class="hero-ring-1"></div>
-    <div class="hero-ring-2"></div>
-  </div>
+  <div class="hero-ring hero-ring-1"></div>
+  <div class="hero-ring hero-ring-2"></div>
   <div class="hero-content">
     <div class="hero-badges">
       <span class="hero-badge">SUV Compacto</span>
-      <span class="hero-badge">Turbo 160 HP</span>
+      <span class="hero-badge">Motor Turbo 160 HP</span>
       <span class="hero-badge">ADAS Completo</span>
-      <span class="hero-badge">Cámara 360°</span>
-      <span class="hero-badge">Garantía 10 Años</span>
+      <span class="hero-badge">10 Años de Garantía</span>
     </div>
     <h1 class="hero-title">JETOUR <span>X50</span></h1>
     <p class="hero-tagline">Tecnología de segmento premium a precio de acceso</p>
-    <p class="hero-subtitle">Un SUV compacto que redefine las expectativas de su segmento con suspensión independiente multi link, transmisión DCT de doble embrague húmedo, pantallas duales de 10.25" y un paquete ADAS completo de serie.</p>
+    <p class="hero-subtitle">Un SUV compacto que redefine las expectativas del segmento con suspensión independiente multi link, transmisión DCT de doble embrague húmedo y un paquete ADAS completo de serie.</p>
     <div class="hero-buttons">
       <a href="#caracteristicas" class="btn-accent">Explorar Características</a>
-      <a href="#ficha" class="btn-ghost">Ficha Técnica</a>
+      <a href="#ficha-tecnica" class="btn-ghost">Ver Ficha Técnica</a>
     </div>
   </div>
 </section>
 
 <!-- STATS -->
-<section class="stats" id="stats">
+<section class="stats">
   <div class="stats-grid" id="statsGrid">
-    <!-- Filled by JS -->
+    <div class="stat-item reveal">
+      <div class="stat-number">160</div>
+      <div class="stat-unit">HP</div>
+      <div class="stat-label">Potencia (DCT)</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-number">230</div>
+      <div class="stat-unit">Nm</div>
+      <div class="stat-label">Torque (DCT)</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-number">10.25"</div>
+      <div class="stat-unit">×2</div>
+      <div class="stat-label">Pantallas Duales</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-number">360°</div>
+      <div class="stat-unit">Vista 3D</div>
+      <div class="stat-label">Cámara Panorámica</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-number">10</div>
+      <div class="stat-unit">Años</div>
+      <div class="stat-label">Garantía Total</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-number">6</div>
+      <div class="stat-unit">DCT</div>
+      <div class="stat-label">Velocidades Doble Embrague</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-number">35</div>
+      <div class="stat-unit">km/gal</div>
+      <div class="stat-label">Consumo Carretera</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-number">5</div>
+      <div class="stat-unit">Pasajeros</div>
+      <div class="stat-label">Capacidad</div>
+    </div>
   </div>
 </section>
 
 <!-- PRESENTACIÓN -->
-<section class="section section-light" id="presentacion">
-  <div class="section-inner reveal">
-    <h2 class="section-title">Un SUV que <span>no concede nada</span></h2>
-    <p class="section-subtitle">Diseñado para quienes exigen más sin pagar de más.</p>
-    <div class="presentacion-text">
-      <p>El <strong>Jetour X50</strong> llega al mercado ecuatoriano como una propuesta que desafía las convenciones del segmento de SUV compactos. Con una plataforma madura —derivada del Soueast DX5 y con más de cinco años de desarrollo y refinamiento—, este modelo incorpora soluciones técnicas que habitualmente se encuentran en vehículos de categorías superiores: <strong>suspensión trasera independiente multi link</strong>, transmisión de doble embrague húmedo y un completo paquete de asistencia a la conducción ADAS.</p>
-      <p>Disponible en dos versiones —<strong>Manual</strong> y <strong>DCT</strong>—, el X50 ofrece un equipamiento de serie que incluye pantallas duales de 10.25", cámara panorámica 360° con vista 3D, seis parlantes, asientos de cuero, climatización digital con filtro CN95 y una garantía de <strong>10 años o 120.000 km</strong>. Una combinación que posiciona a este SUV como una de las opciones más completas y respaldadas del mercado.</p>
-      <p>Con dimensiones optimizadas para la movilidad urbana (4.397 mm de largo) y un interior que alberga cómodamente a cinco ocupantes, el X50 equilibra <strong>maniobrabilidad, espacio y tecnología</strong> en un paquete visualmente atractivo con filosofía de diseño "Urban Aesthetic".</p>
-    </div>
+<section class="presentacion" id="presentacion">
+  <div class="presentacion-inner reveal">
+    <div class="section-label">Presentación</div>
+    <h2 class="section-title">Un SUV que no concede nada</h2>
+    <p>El Jetour X50 llega al mercado ecuatoriano con una propuesta que desafía las convenciones del segmento compacto. Equipado con <strong>suspensión trasera independiente multi link</strong> —una configuración reservada para vehículos de segmentos superiores— y una <strong>transmisión DCT de doble embrague húmedo</strong>, este SUV compacto ofrece una experiencia de manejo que normalmente se encuentra en vehículos que cuestan el doble o el triple.</p>
+    <p>Con un diseño <strong>"Urban Aesthetic"</strong> de líneas limpias y definidas, faros LED tipo "Eagle-Eye" y una parrilla tipo cascada que transmite presencia, el X50 combina una estética moderna con una ingeniería que prioriza el confort, la seguridad y la tecnología. Las <strong>dual pantallas de 10.25"</strong>, la cámara 360° con vista panorámica 3D y el paquete ADAS completo (BSD, LDW, RCW) son elementos que hasta hace poco eran exclusivos de vehículos premium europeos.</p>
+    <p>Detrás del X50 está <strong>Chery Holding Group</strong>, con más de 25 años de historia y más de 12 millones de unidades vendidas globalmente. En Ecuador, la distribución está a cargo de <strong>Grupo Roldán</strong>, con más de 27 concesionarios y talleres autorizados a nivel nacional y una garantía de 10 años o 120.000 km que respalda cada componente del vehículo.</p>
   </div>
 </section>
 
-<!-- VERSION SELECTOR -->
-<div class="version-selector-wrapper" id="versionSelectorWrapper">
-  <div class="version-selector" id="versionSelector">
-    <span class="version-selector-label">Versión:</span>
-    <button class="version-tab active" data-version="manual" onclick="setVersion('manual')">MANUAL</button>
-    <button class="version-tab" data-version="dct" onclick="setVersion('dct')">DCT</button>
+<!-- SELECTOR DE VERSIONES -->
+<div class="version-selector" id="versionSelector">
+  <div class="version-selector-inner">
+    <button class="version-tab active" data-version="manual" onclick="setVersion('manual')">⚙️ Versión Manual</button>
+    <button class="version-tab" data-version="dct" onclick="setVersion('dct')">🏎️ Versión DCT</button>
   </div>
 </div>
 
-<!-- INTRO VERSION -->
-<section class="section section-light" id="introVersion">
-  <div class="section-inner reveal">
-    <div class="intro-version" id="introContent">
-      <!-- Filled by JS -->
+<!-- INTRO VERSIÓN -->
+<section class="intro-version" id="introVersion">
+  <div class="intro-version-inner reveal">
+    <div class="section-label" id="introLabel">Versión Seleccionada</div>
+    <h3 id="introTitle">Versión Manual — "El Guerrero Urbano"</h3>
+    <div id="introContent">
+      <p>La versión Manual del Jetour X50 está pensada para el conductor práctico que valora el control mecánico y la conexión directa con el vehículo. Con un motor atmosférico de 1.5L confiable y de bajo mantenimiento, esta configuración ofrece el 95% del equipamiento de la versión tope de gama — incluyendo las pantallas duales, la cámara 360°, el paquete ADAS y la suspensión multi link — con una mecánica más simple y probada en el tiempo.</p>
+      <p>Ideal como primer SUV familiar, para conductores de aplicaciones que priorizan la eficiencia o para quienes recorren principalmente trayectos urbanos donde la potencia del turbo no es indispensable. Es la decisión inteligente para quienes buscan el mejor vehículo posible por la menor inversión, sin sacrificar seguridad ni tecnología.</p>
     </div>
   </div>
 </section>
 
-<!-- DETALLES -->
-<section class="section section-dark" id="detalles">
-  <div class="section-inner reveal">
-    <h2 class="section-title">Detalles que <span>marcan la diferencia</span></h2>
-    <p class="section-subtitle">Cada elemento pensado para superar las expectativas del segmento.</p>
+<!-- DETALLES QUE MARCAN LA DIFERENCIA -->
+<section class="detalles" id="detalles">
+  <div class="detalles-inner">
+    <div class="section-label reveal">Lo que lo hace diferente</div>
+    <h2 class="section-title reveal">Detalles que marcan la diferencia</h2>
     <div class="detalles-grid" id="detallesGrid">
-      <!-- Filled by JS -->
+      <!-- Cards generadas por JS -->
     </div>
   </div>
 </section>
 
-<!-- CARACTERÍSTICAS -->
-<section class="section section-light" id="caracteristicas">
-  <div class="section-inner reveal">
-    <h2 class="section-title">Características <span>técnicas</span></h2>
-    <p class="section-subtitle">Cada sistema, cada componente, explicado en detalle.</p>
-    <div class="accordion-list" id="accordionList">
-      <!-- Filled by JS -->
+<!-- CARACTERÍSTICAS TÉCNICAS -->
+<section class="caracteristicas" id="caracteristicas">
+  <div class="caracteristicas-inner">
+    <div class="section-label reveal">Equipamiento completo</div>
+    <h2 class="section-title reveal">Características Técnicas</h2>
+    <div id="accordionsContainer">
+      <!-- Accordions generados por JS -->
     </div>
   </div>
 </section>
 
-<!-- PERFILES -->
-<section class="section section-dark" id="perfiles">
-  <div class="section-inner reveal">
-    <h2 class="section-title">Perfiles de <span>usuario</span></h2>
-    <p class="section-subtitle">Conductores que encuentran en el X50 su compañero ideal.</p>
+<!-- PERFILES DE USUARIO -->
+<section class="perfiles" id="perfiles">
+  <div class="perfiles-inner">
+    <div class="section-label reveal">¿Para quién es?</div>
+    <h2 class="section-title reveal">Perfiles de Usuario</h2>
     <div class="perfiles-grid" id="perfilesGrid">
-      <!-- Filled by JS -->
+      <!-- Cards generadas por JS -->
     </div>
   </div>
 </section>
 
 <!-- FICHA TÉCNICA -->
-<section class="section section-light" id="ficha">
-  <div class="section-inner reveal">
-    <h2 class="section-title">Ficha <span>Técnica</span></h2>
-    <p class="section-subtitle">Comparativa completa entre versiones.</p>
-    <div class="tech-table-wrap">
+<section class="ficha-tecnica" id="ficha-tecnica">
+  <div class="ficha-tecnica-inner">
+    <div class="section-label reveal">Comparativa entre versiones</div>
+    <h2 class="section-title reveal">Ficha Técnica Comparativa</h2>
+    <div class="tech-table-wrapper reveal">
       <table class="tech-table" id="techTable">
-        <!-- Filled by JS -->
+        <!-- Tabla generada por JS -->
       </table>
     </div>
   </div>
 </section>
 
 <!-- RESPALDO -->
-<section class="section section-dark2" id="respaldo">
-  <div class="section-inner reveal">
-    <h2 class="section-title" style="color:#fff">Respaldo y <span>garantía</span></h2>
-    <p class="section-subtitle">La confianza de una marca que responde por lo que vende.</p>
+<section class="respaldo" id="respaldo">
+  <div class="respaldo-inner">
+    <div class="section-label reveal">Confianza y respaldo</div>
+    <h2 class="section-title reveal">Respaldo Comercial</h2>
     <div class="respaldo-grid">
-      <div class="respaldo-card">
+      <div class="respaldo-card reveal">
         <div class="respaldo-number">10</div>
         <div class="respaldo-label">Años de Garantía</div>
-        <div class="respaldo-text">O 120.000 km, la cobertura más extensa del mercado ecuatoriano. Un respaldo que supera a marcas tradicionales como Toyota, Honda, Kia y Hyundai.</div>
+        <div class="respaldo-desc">O 120.000 km, la garantía más extensa del segmento. Una declaración de confianza en la calidad del producto que pocas marcas se atreven a igualar.</div>
       </div>
-      <div class="respaldo-card">
+      <div class="respaldo-card reveal">
         <div class="respaldo-number">+27</div>
-        <div class="respaldo-label">Concesionarios y Talleres</div>
-        <div class="respaldo-text">Red de distribución de Grupo Roldán con presencia nacional. Más de 50 años de experiencia en el sector automotriz ecuatoriano desde 1970.</div>
+        <div class="respaldo-label">Concesionarios Nacionales</div>
+        <div class="respaldo-desc">Red de distribución de Grupo Roldán con talleres autorizados en las principales ciudades del Ecuador: Quito, Guayaquil, Cuenca, Ambato y más.</div>
       </div>
-      <div class="respaldo-card">
+      <div class="respaldo-card reveal">
         <div class="respaldo-number">+12M</div>
-        <div class="respaldo-label">Vehículos Chery Group</div>
-        <div class="respaldo-text">Jetour es la submarca SUV de Chery Holding Group, fundada en 1997. En enero de 2024, Jetour celebró la producción de su vehículo número 1 millón en solo 65 meses.</div>
+        <div class="respaldo-label">Vehículos Chery Global</div>
+        <div class="respaldo-desc">Jetour es la submarca SUV de Chery Holding Group, fundada en 1997. En enero 2024 celebró la producción del vehículo número 1 millón en solo 65 meses.</div>
       </div>
     </div>
   </div>
@@ -930,92 +1141,120 @@ body { font-family: var(--font-body); background: var(--dark); color: var(--text
 
 <!-- FOOTER -->
 <footer class="footer">
-  <div class="footer-grid">
-    <div class="footer-col">
-      <h4>JETOUR X50</h4>
-      <p>SUV compacto con tecnología de segmento premium. Disponible en versiones Manual y DCT. Diseñado para el conductor ecuatoriano que exige más.</p>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Jetour X50</h4>
+        <p>Ficha técnica interactiva de consulta para asesores de venta y clientes finales. Información basada en especificaciones oficiales del fabricante para el mercado ecuatoriano.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Secciones</h4>
+        <a href="#presentacion">Presentación</a>
+        <a href="#detalles">Detalles</a>
+        <a href="#caracteristicas">Características</a>
+        <a href="#ficha-tecnica">Ficha Técnica</a>
+        <a href="#perfiles">Perfiles</a>
+        <a href="#respaldo">Respaldo</a>
+      </div>
+      <div class="footer-col">
+        <h4>Respaldo</h4>
+        <p>Grupo Roldán — Distribuidor oficial</p>
+        <p>+27 concesionarios a nivel nacional</p>
+        <p>Garantía: 10 años / 120.000 km</p>
+        <p>Chery Holding Group — Desde 1997</p>
+      </div>
     </div>
-    <div class="footer-col">
-      <h4>Navegación</h4>
-      <a href="#presentacion">Presentación</a>
-      <a href="#detalles">Detalles</a>
-      <a href="#caracteristicas">Características</a>
-      <a href="#ficha">Ficha Técnica</a>
-      <a href="#perfiles">Perfiles</a>
-      <a href="#respaldo">Respaldo</a>
+    <div class="footer-bottom">
+      Jetour X50 · Ecuador · Ficha de consulta técnica. Los datos corresponden a especificaciones oficiales del fabricante y pueden variar según la versión comercializada.
     </div>
-    <div class="footer-col">
-      <h4>Respaldo Comercial</h4>
-      <p>Distribuido por Grupo Roldán</p>
-      <p>Tumbaco · Ambato · Latacunga</p>
-      <p>Garantía: 10 años o 120.000 km</p>
-      <p>Colores: Negro, Blanco, Azul, Gris, Plata</p>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>Jetour X50 · Ecuador · Ficha de consulta para asesores de venta y clientes finales. Información basada en especificaciones técnicas del fabricante. Las características pueden variar según la versión y el año modelo.</p>
   </div>
 </footer>
 
 <script>
-// ==================== DATA ====================
-let currentVersion = 'manual';
+// ===================== DATA =====================
 
-const statsData = {
-  manual: [
-    { number: '116', unit: 'HP', label: 'Potencia' },
-    { number: '143', unit: 'Nm', label: 'Torque' },
-    { number: '20.5', unit: '"', label: 'Pantallas LCD' },
-    { number: '360°', unit: '', label: 'Cámara Panorámica' },
-    { number: '10', unit: 'años', label: 'Garantía Total' },
-    { number: '5', unit: '', label: 'Pasajeros' },
-    { number: '398', unit: 'L', label: 'Cajuela' },
-    { number: '45', unit: 'L', label: 'Tanque Combustible' }
-  ],
-  dct: [
-    { number: '160', unit: 'HP', label: 'Potencia Turbo' },
-    { number: '230', unit: 'Nm', label: 'Torque Turbo' },
-    { number: '20.5', unit: '"', label: 'Pantallas LCD' },
-    { number: '360°', unit: '', label: 'Cámara Panorámica' },
-    { number: '10', unit: 'años', label: 'Garantía Total' },
-    { number: '5', unit: '', label: 'Pasajeros' },
-    { number: '398', unit: 'L', label: 'Cajuela' },
-    { number: '45', unit: 'L', label: 'Tanque Combustible' }
-  ]
-};
+let currentVersion = 'manual';
 
 const versionData = {
   manual: {
-    name: 'Versión MANUAL',
-    subtitle: 'El Guerrero Urbano',
+    name: 'Versión Manual',
+    subtitle: '"El Guerrero Urbano"',
     paragraphs: [
-      'La versión Manual del Jetour X50 está concebida para el conductor práctico que valora el control mecánico directo y la simplicidad operativa. Con un motor atmosférico de 1.500 cc y 116 HP, esta configuración prioriza la confiabilidad, el bajo mantenimiento y la eficiencia en el uso urbano cotidiano, sin renunciar al equipamiento tecnológico y de seguridad que define al X50.',
-      'Ideal como primer SUV familiar o como vehículo de trabajo para conductores de aplicaciones, esta versión concentra el 95% del equipamiento de la gama —incluyendo pantallas duales, cámara 360°, ADAS completo y suspensión multi link— en una propuesta de inversión accesible y racional.'
+      'La versión Manual del Jetour X50 está pensada para el conductor práctico que valora el control mecánico y la conexión directa con el vehículo. Con un motor atmosférico de 1.5L confiable y de bajo mantenimiento, esta configuración ofrece el 95% del equipamiento de la versión tope de gama — incluyendo las pantallas duales, la cámara 360°, el paquete ADAS y la suspensión multi link — con una mecánica más simple y probada en el tiempo.',
+      'Ideal como primer SUV familiar, para conductores de aplicaciones que priorizan la eficiencia o para quienes recorren principalmente trayectos urbanos donde la potencia del turbo no es indispensable. Es la decisión inteligente para quienes buscan el mejor vehículo posible por la menor inversión, sin sacrificar seguridad ni tecnología.'
     ]
   },
   dct: {
     name: 'Versión DCT',
-    subtitle: 'El Premium Accesible',
+    subtitle: '"El Premium Accesible"',
     paragraphs: [
-      'La versión DCT del Jetour X50 representa la expresión más completa de la gama. Equipada con un motor 1.5 Turbo de 160 HP y 230 Nm de torque, acoplado a una transmisión automática de doble embrague húmedo de seis velocidades, esta configuración transforma la experiencia de conducción con una respuesta inmediata, cambios en milisegundos y un confort de marcha superior.',
-      'Incorpora elementos exclusivos de alta gama como techo solar, asiento del conductor con ajuste eléctrico, retrovisores plegables, llantas R18 y cuatro airbags frontales. Diseñada para el conductor exigente que busca tecnología, deportividad y confort premium en un vehículo de segmento accesible.'
+      'La versión DCT del Jetour X50 representa la máxima expresión tecnológica del modelo. Con un motor 1.5 Turbo de 160 HP y 230 Nm de torque, acoplado a una transmisión de doble embrague húmedo de 6 velocidades, esta configuración transforma por completo la experiencia de manejo: cambios en milisegundos, respuesta inmediata y una conducción suave incluso en el tráfico urbano más exigente.',
+      'Diseñada para quienes no quieren concesiones: el sun roof ilumina el habitáculo, el asiento eléctrico ofrece ergonomía perfecta, los 4 airbags protegen a toda la familia y los modos de manejo (Eco, Normal, Sport) permiten adaptar el carácter del vehículo a cada momento. Es prácticamente un vehículo de segmento superior a un precio de acceso.'
     ]
   }
 };
 
 const detallesData = [
-  { icon: '🔥', title: 'Motor Turbo 1.5 — 160 HP / 230 Nm', text: 'El motor SQRE4T15C con turbocompresor entrega su torque máximo desde bajas revoluciones, proporcionando una respuesta inmediata en adelantamientos, pendientes y incorporaciones a autopista. Una relación peso-potencia excepcional para el segmento.', versions: ['dct'] },
-  { icon: '⚡', title: 'Transmisión 6DCT — Doble Embrague Húmedo', text: 'La caja de doble embrague húmedo realiza cambios en menos de 0.2 segundos sin interrupción de potencia. Los discos bañados en aceite reducen el desgaste y garantizan suavidad. Una tecnología propia de vehículos de segmentos superiores.', versions: ['dct'] },
-  { icon: '🔗', title: 'Suspensión Trasera Independiente Multi Link', text: 'Cada rueda trasera se mueve de forma independiente, absorbiendo irregularidades sin afectar al otro lado del eje. Una configuración que la mayoría de competidores del segmento sustituye por un económico eje de torsión.', versions: ['manual', 'dct'] },
-  { icon: '🛡️', title: 'Carrocería Tipo Jaula 360° — Acero Ultra Alta Resistencia', text: 'La estructura de seguridad envolvente absorbe y distribuye la energía del impacto alrededor de la cabina, protegiendo a los ocupantes con acero de ultra alta resistencia. La misma filosofía constructiva de los vehículos premium europeos.', versions: ['manual', 'dct'] },
-  { icon: '👁️', title: 'ADAS Completo — BSD, LDW, RCW', text: 'Detección de Punto Ciego (BSD), Advertencia de Cambio de Carril (LDW) y Advertencia de Colisión Trasera (RCW) actúan como un copiloto electrónico que reduce drásticamente los riesgos en carretera.', versions: ['manual', 'dct'] },
-  { icon: '📺', title: 'Dual Pantallas 10.25" + 10.25"', text: 'Veinte pulgadas y media de superficie LCD dedicadas a instrumentación digital y entretenimiento. La configuración de pantalla dual es un sello distintivo de marcas premium como Mercedes-Benz con su sistema MBUX.', versions: ['manual', 'dct'] },
-  { icon: '📷', title: 'Cámara 360° con Vista Panorámica 3D', text: 'Cuatro cámaras HD generan una vista cenital tridimensional del entorno del vehículo. Estacionar en espacios reducidos se convierte en una operación precisa y sin riesgos de roce.', versions: ['manual', 'dct'] },
-  { icon: '🌬️', title: 'Filtro de Aire CN95 — Protección Hospitalaria', text: 'El elemento filtrante retiene el 95% de las partículas de 0.3 micras, equivalente al estándar de una mascarilla KN95. El aire que ingresa a la cabina se purifica a un nivel superior al de un vehículo convencional.', versions: ['manual', 'dct'] },
-  { icon: '☀️', title: 'Techo Solar (Sun Roof)', text: 'El techo solar ilumina el habitáculo con luz natural y permite ventilación sin necesidad de abrir las ventanas, reduciendo la entrada de ruido exterior. Un elemento que transforma la experiencia de viaje.', versions: ['dct'] },
-  { icon: '💺', title: 'Asiento Conductor con Ajuste Eléctrico', text: 'La regulación eléctrica del asiento permite encontrar la posición ergonómica perfecta con precisión milimétrica, sin esfuerzo físico. Un confort típico de vehículos de categorías superiores.', versions: ['dct'] },
-  { icon: '🎛️', title: 'Modos de Conducción — Eco / Normal / Sport', text: 'Tres perfiles de respuesta que adaptan la entrega de potencia del motor y la sensibilidad del acelerador al tipo de trayecto o al estilo de conducción deseado.', versions: ['dct'] },
-  { icon: '🏅', title: 'Garantía de 10 Años o 120.000 km', text: 'La cobertura más extensiva del mercado ecuatoriano. Ninguna marca tradicional ofrece un respaldo comparable. Una declaración de confianza en la ingeniería y la calidad del producto.', versions: ['manual', 'dct'] }
+  {
+    icon: '🔥', title: 'Motor Turbo 1.5L — 160 HP / 230 Nm',
+    text: 'El motor turbo entrega su torque máximo desde bajas revoluciones, proporcionando un "extra de empuje" en pendientes y adelantamientos. Este nivel de torque es el que se encuentra en SUV de marcas europeas que cuestan el doble.',
+    versions: ['dct']
+  },
+  {
+    icon: '⚡', title: 'Transmisión 6DCT Doble Embrague Húmedo',
+    text: 'La misma filosofía que usan marcas deportivas en sus modelos de alta gama. Los cambios se producen en menos de 0.2 segundos, sin interrupción de potencia. Los discos bañados en aceite reducen el desgaste y garantizan suavidad.',
+    versions: ['dct']
+  },
+  {
+    icon: '🛞', title: 'Suspensión Trasera Independiente Multi Link',
+    text: 'Cada rueda trasera se mueve de forma independiente. Si una rueda cae en un hueco, la otra no se entera. Esta configuración es típica de SUV de segmentos superiores como el BMW X1 o el Mercedes GLA.',
+    versions: ['manual', 'dct']
+  },
+  {
+    icon: '🛡️', title: 'Carrocería Tipo Jaula 360° — Acero Ultra Alta Resistencia',
+    text: 'Estructura que absorbe y distribuye la energía del impacto alrededor de los pasajeros. La misma construcción que utilizan los vehículos de las marcas premium europeas en sus modelos más seguros.',
+    versions: ['manual', 'dct']
+  },
+  {
+    icon: '👁️', title: 'ADAS Completo — BSD, LDW, RCW',
+    text: 'El vehículo detecta lo que el conductor no puede ver: punto ciego, cambio involuntario de carril y colisión trasera. Estos sistemas son obligatorios en Europa para vehículos nuevos desde 2022.',
+    versions: ['manual', 'dct']
+  },
+  {
+    icon: '📺', title: 'Dual Pantallas 10.25" + 10.25"',
+    text: '20.5 pulgadas de superficie de pantalla en total. La configuración "pantalla dual" es un sello de marcas como Mercedes-Benz con su MBUX. Aquí disponible en un vehículo de acceso.',
+    versions: ['manual', 'dct']
+  },
+  {
+    icon: '📷', title: 'Cámara 360° con Vista Panorámica 3D',
+    text: 'Sistema de 4 cámaras HD que generan una vista del vehículo desde arriba como en un videojuego. Era exclusivo de SUV de lujo hace pocos años; hoy viene de serie en toda la gama X50.',
+    versions: ['manual', 'dct']
+  },
+  {
+    icon: '🔒', title: 'Garantía de 10 Años o 120.000 km',
+    text: 'La marca está tan segura de la calidad del X50 que lo respalda por una década. Ni Toyota, ni Honda, ni las premium europeas ofrecen esta extensión. Es una declaración de principios.',
+    versions: ['manual', 'dct']
+  },
+  {
+    icon: '🌬️', title: 'Filtro de Aire CN95 — Nivel Hospitalario',
+    text: 'Retiene el 95% de las partículas de 0.3 micras, similar a una mascarilla KN95. El aire que entra a la cabina se filtra a un nivel superior al de un auto convencional.',
+    versions: ['manual', 'dct']
+  },
+  {
+    icon: '☀️', title: 'Sun Roof — Techo Solar',
+    text: 'Luz natural y ventilación que transforman la experiencia de viaje. Permite ventilación sin abrir las ventanas, reduciendo el ruido exterior en carretera.',
+    versions: ['dct']
+  },
+  {
+    icon: '💺', title: 'Asiento del Conductor con Ajuste Eléctrico',
+    text: 'Ergonomía perfecta con solo presionar un botón. Permite ajustar la posición con precisión milimétrica mientras se conduce, mejorando seguridad y confort.',
+    versions: ['dct']
+  },
+  {
+    icon: '🎮', title: 'Modos de Manejo — Eco / Normal / Sport',
+    text: 'Adaptan la respuesta del acelerador y la dirección al tipo de trayecto. Eco para ahorrar combustible, Sport para una conducción más dinámica en carretera.',
+    versions: ['dct']
+  }
 ];
 
 const featuresData = {
@@ -1023,484 +1262,439 @@ const featuresData = {
     {
       icon: '🔥', name: 'Motor 1.5 Turbo — 160 HP / 230 Nm',
       versions: ['dct'],
-      desc: 'Bloque SQRE4T15C de 1.498 cc, 16 válvulas, cuatro cilindros en línea, con doble árbol de levas (DOHC), distribución variable DVVT y turbocompresor. Potencia máxima de 160 HP y torque máximo de 230 Nm.',
-      problem: 'Los SUV del segmento suelen experimentar falta de respuesta al acelerar en pendientes pronunciadas o al realizar adelantamientos en carretera, generando maniobras inseguras.',
-      solution: 'El turbocompresor entrega el torque máximo de 230 Nm desde bajas revoluciones, proporcionando empuje inmediato sin necesidad de esperar a que el motor suba de régimen.',
-      benefit: 'Adelantar en carretera o incorporarse a una autopista se convierte en una maniobra segura y contundente, incluso con el vehículo cargado y en pendientes pronunciadas de la geografía ecuatoriana.',
-      chips: ['Turbo', '160 HP', '230 Nm', 'DOHC', 'DVVT']
+      desc: 'Bloque de 1.498 cc, 16 válvulas, cuatro cilindros en línea con doble árbol de levas, distribución variable DVVT y turbocompresor. Entrega 160 HP y 230 Nm de torque disponibles desde bajas revoluciones.',
+      problem: 'Los SUV económicos suelen sentir "falta de respuesta" al acelerar en pendientes o al adelantar en carretera, generando situaciones de riesgo.',
+      solution: 'El turbocompresor fuerza la entrada de aire al motor, permitiendo una combustión más eficiente y entregando el torque máximo desde regímenes bajos. Los 230 Nm están disponibles mucho antes que en un motor atmosférico.',
+      benefit: 'Adelantar en carretera o incorporarse a una autopista se convierte en una experiencia segura y placentera. En pendientes pronunciadas con el vehículo lleno, el motor responde sin esfuerzo.',
+      chips: ['Turbo', '160 HP', '230 Nm', 'DVVT']
     },
     {
       icon: '⚙️', name: 'Motor 1.5 Atmosférico — 116 HP / 143 Nm',
       versions: ['manual'],
-      desc: 'Motor atmosférico de 1.498 cc, 16 válvulas, cuatro cilindros en línea, con distribución variable DVVT. Potencia máxima de 116 HP y torque máximo de 143 Nm. Emisión estándar EURO 5+.',
-      problem: 'El mantenimiento de motores turbo puede generar costos adicionales y complejidad mecánica que no todos los conductores están dispuestos a asumir.',
-      solution: 'El motor atmosférico ofrece una mecánica probada, de bajo mantenimiento y alta confiabilidad, con una curva de entrega de potencia lineal y predecible.',
-      benefit: 'Ideal para el uso urbano cotidiano y para conductores que priorizan la simplicidad mecánica, la economía de mantenimiento y la confiabilidad a largo plazo.',
-      chips: ['Atmosférico', '116 HP', '143 Nm', 'EURO 5+', 'DVVT']
-    },
+      desc: 'Motor SQRE4T15C de 1.498 cc, 16 válvulas, cuatro cilindros con doble árbol de levas y distribución variable DVVT. Configuración atmosférica de probada confiabilidad y bajo mantenimiento.',
+      problem: 'Algunos conductores priorizan la simplicidad mecánica y el menor costo de mantenimiento sobre la deportividad, especialmente para uso predominantemente urbano.',
+      solution: 'El motor atmosférico elimina la complejidad del turbocompresor, ofreciendo una mecánica más simple con menos componentes sujetos a desgaste. Comparte plataforma con otros modelos del grupo Chery con miles de unidades validadas.',
+      benefit: 'Mantenimiento más económico y predecible. Ideal para recorridos urbanos donde la potencia extra del turbo no es indispensable. Confiabilidad probada en el tiempo.',
+      chips: ['Atmosférico', '116 HP', '143 Nm', 'DVVT']
+    }
+  ],
+  accTransmision: [
     {
-      icon: '🔄', name: 'Transmisión 6DCT — Doble Embrague Húmedo',
+      icon: '⚡', name: 'Transmisión 6DCT — Doble Embrague Húmedo',
       versions: ['dct'],
-      desc: 'Caja automática de seis velocidades con tecnología de doble embrague húmedo (Wet DCT). Los discos de embrague están bañados en aceite, lo que reduce el desgaste térmico y permite cambios en menos de 0.2 segundos.',
-      problem: 'Las transmisiones automáticas convencionales presentan "tirones" en los cambios de marcha y demoras en la respuesta, especialmente en tráfico denso o en arranques en pendiente.',
-      solution: 'El sistema de doble embrague mantiene siempre preparado el siguiente cambio, permitiendo transiciones instantáneas sin interrupción de la entrega de potencia al wheels.',
-      benefit: 'La aceleración se siente lineal y continua, como una caja manual perfecta ejecutada por un sistema electrónico. El tráfico urbano deja de ser una fuente de fatiga.',
-      chips: ['6DCT', 'Doble Embrague', 'Húmedo', 'Automática', '< 0.2s cambios']
+      desc: 'Caja automática de 6 velocidades con doble embrague bañado en aceite. Mientras un embrague transmite la potencia, el otro ya tiene preparada la siguiente marcha. Los cambios se ejecutan en menos de 0.2 segundos.',
+      problem: 'Las automáticas tradicionales (convertidor de par) tienen "tirones" en los cambios y demoras en la respuesta, además de consumir más combustible por la pérdida de energía en el convertidor.',
+      solution: 'La tecnología DCT elimina el convertidor de par y utiliza dos embragues independientes que se alternan. El "húmedo" (bañado en aceite) reduce el desgaste y permite cambios más suaves que una DCT "seca".',
+      benefit: 'Aceleración lineal y continua sin interrupciones. El tráfico urbano deja de ser una tortura para el pie izquierdo. La eficiencia de combustible mejora respecto a una automática convencional.',
+      chips: ['6 Velocidades', 'Doble Embrague', 'Húmedo', '<0.2s cambios']
     },
     {
       icon: '🕹️', name: 'Transmisión Manual — 5 Velocidades + Reversa',
       versions: ['manual'],
-      desc: 'Caja manual de cinco velocidades hacia adelante más marcha atrás. Relación de cambios optimizada para eficiencia de combustible en uso urbano y carretera.',
-      problem: 'Algunos conductores prefieren el control directo sobre la selección de marchas para maximizar la eficiencia o disfrutar de una conducción más participativa.',
-      solution: 'La caja manual de cinco velocidades ofrece al conductor el control total sobre la relación de transmisión, permitiendo aprovechar cada rango del motor.',
-      benefit: 'Control mecánico directo, máxima eficiencia de combustible y una conexión más íntima entre conductor y vehículo. Ideal para quienes disfrutan manejar.',
-      chips: ['Manual', '5 Velocidades', '+ Reversa', 'Control Directo']
-    },
-    {
-      icon: '⛽', name: 'Tanque de Combustible — 45 Litros',
-      versions: ['manual', 'dct'],
-      desc: 'Capacidad de tanque de 45 litros. En la versión DCT, el consumo en carretera alcanza aproximadamente 35 km/galón, lo que se traduce en una autonomía de hasta 672 km con un solo tanque.',
-      problem: 'La autonomía limitada obliga a detenciones frecuentes para reabastecimiento, especialmente en viajes largos por carreteras con poca disponibilidad de estaciones de servicio.',
-      solution: 'Con 45 litros y un consumo eficiente de hasta 35 km/galón en carretera (versión DCT), el X50 ofrece una autonomía superior a los 650 km entre tanque y tanque.',
-      benefit: 'Viajes largos con menos paradas, mayor tranquilidad en rutas con escasa infraestructura de servicio y menor frecuencia de visitas a la estación de combustible.',
-      chips: ['45 L', '~672 km autonomía', 'Eficiencia', 'EURO 5+']
+      desc: 'Caja manual de 5 velocidades con recorrido preciso y feedback mecánico directo. Control total sobre la relación de marcha para maximizar eficiencia o respuesta según la situación.',
+      problem: 'Algunos conductores prefieren el control total sobre el vehículo y la conexión mecánica que solo una caja manual puede ofrecer, además de buscar el máximo ahorro en mantenimiento.',
+      solution: 'La caja manual de 5 velocidades permite al conductor seleccionar la marcha óptima en cada momento, aprovechando al máximo las características del motor atmosférico.',
+      benefit: 'Control absoluto en pendientes, curvas y situaciones de manejo exigente. Menor costo de mantenimiento a largo plazo y máxima eficiencia de combustible en manos de un conductor experimentado.',
+      chips: ['5 Velocidades', 'Manual', 'Control Total']
     }
   ],
   accSuspension: [
     {
-      icon: '🔧', name: 'Suspensión Frontal — MacPherson Independiente',
+      icon: '🛞', name: 'Suspensión Trasera Independiente Multi Link',
       versions: ['manual', 'dct'],
-      desc: 'Suspensión delantera independiente tipo MacPherson. Configuración estándar en vehículos modernos por su equilibrio entre confort de marcha, precisión de manejo y eficiencia de espacio.',
-      problem: 'Las suspensiones delanteras de baja calidad transmiten las irregularidades del pavimento al habitáculo, comprometiendo el confort y la precisión de manejo.',
-      solution: 'El esquema MacPherson independiente permite que cada rueda delantera responda de forma aislada a las irregularidades, manteniendo el contacto óptimo del neumático con el suelo.',
-      benefit: 'Dirección precisa, respuesta predecible en curvas y absorción eficaz de los impactos frontales. La base de un comportamiento dinámico equilibrado.',
-      chips: ['MacPherson', 'Independiente', 'Confort', 'Precisión']
+      desc: 'Configuración de suspensión trasera con múltiples brazos que permiten a cada rueda moverse de forma completamente independiente. Cada rueda absorbe las irregularidades del terreno sin afectar a la otra.',
+      problem: 'En caminos rotos o con baches —realidad habitual en las carreteras ecuatorianas— muchos SUV del segmento "brincan" la parte trasera, incomodando a los pasajeros y reduciendo la estabilidad.',
+      solution: 'El sistema multi link permite que cada rueda reaccione individualmente a las irregularidades del terreno. Si una rueda cae en un hueco, la otra permanece estable, manteniendo el contacto con el suelo.',
+      benefit: 'Los pasajeros traseros viajan notablemente más cómodos en carreteras en mal estado. El vehículo se mantiene plantado en curvas con menos inclinación de la carrocería. Es una configuración típica de SUV premium que ningún competidor en este rango de precio ofrece.',
+      chips: ['Multi Link', 'Independiente', 'Confort Superior', 'Premium']
     },
     {
-      icon: '🔗', name: 'Suspensión Posterior — Independiente Multi Link',
+      icon: '🔧', name: 'Suspensión Delantera MacPherson',
       versions: ['manual', 'dct'],
-      desc: 'Suspensión trasera independiente multi link. Cada rueda trasera se articula de forma autónoma mediante múltiples brazos de control. Una configuración que la mayoría de competidores del segmento sustituye por un eje de torsión.',
-      problem: 'En caminos con baches o superficies irregulares —una constante en la red vial ecuatoriana—, los SUV con eje de torsión trasero "brincan" la parte posterior, incomodando a los pasajeros y reduciendo la estabilidad.',
-      solution: 'Al ser independiente, cada rueda trasera absorbe los impactos sin transmitirlos al otro lado del eje. Si una rueda cae en un hueco, la otra no se ve afectada.',
-      benefit: 'Los pasajeros de la fila trasera viajan significativamente más cómodos. El vehículo se mantiene plantado en curvas con menor inclinación de la carrocería. Ningún competidor en este rango de precio ofrece esta solución.',
-      chips: ['Multi Link', 'Independiente', 'Confort Superior', 'Estabilidad']
+      desc: 'Configuración independiente tipo MacPherson con brazo inferior de control y amortiguador integrado. Estándar en vehículos modernos por su equilibrio entre confort de marcha y precisión de manejo.',
+      problem: 'Las suspensiones delanteras de eje rígido transmiten todas las irregularidades al volante, comprometiendo tanto el confort como la precisión direccional.',
+      solution: 'El sistema MacPherson aísla las irregularidades del terreno antes de que lleguen al volante, manteniendo una geometría de rueda óptima en todo momento.',
+      benefit: 'Dirección precisa y predecible. Confort de marcha superior en el tren delantero. Configuración probada y ampliamente respaldada por la industria automotriz mundial.',
+      chips: ['MacPherson', 'Independiente', 'Precisión']
     },
     {
       icon: '🎯', name: 'Dirección Electroasistida (EPS)',
       versions: ['manual', 'dct'],
-      desc: 'Sistema de dirección con asistencia eléctrica variable según la velocidad. No utiliza bomba hidráulica, lo que reduce el mantenimiento y mejora la eficiencia energética.',
-      problem: 'Las direcciones hidráulicas tradicionales requieren mantenimiento periódico del fluido y no se adaptan a las diferentes velocidades de circulación.',
-      solution: 'La asistencia eléctrica ajusta automáticamente el esfuerzo del volante: ligero en maniobras de estacionamiento a baja velocidad y firme en carretera para mayor precisión y confianza.',
-      benefit: 'Estacionar requiere mínimo esfuerzo físico, mientras que a alta velocidad el volante transmite seguridad y estabilidad. Sin mantenimiento de fluido hidráulico.',
-      chips: ['Electroasistida', 'Variable', 'Sin Hidráulico', 'Eficiente']
-    },
-    {
-      icon: '🛞', name: 'Neumáticos 215/60 R17 (Manual) / R18 (DCT)',
-      versions: ['manual', 'dct'],
-      desc: 'La versión Manual equipa llantas R17 bitono, optimizadas para confort y economía de reemplazo. La versión DCT incorpora llantas R18 de diseño deportivo, con mayor superficie de contacto y presencia visual.',
-      problem: 'Las llantas de perfil bajo en vehículos económicos suelen sacrificar confort al transmitir más las irregularidades del pavimento al habitáculo.',
-      solution: 'El perfil 60 de los neumáticos 215/60 R17 ofrece un flanco generoso que absorbe los impactos. La versión DCT con R18 prioriza agarre y estética deportiva.',
-      benefit: 'Equilibrio entre confort de marcha, agarre en curvas y presencia visual. Las R17 son más económicas de reemplazar; las R18 ofrecen mayor deportividad.',
-      chips: ['215/60 R17', 'R18 DCT', 'Bitono', 'Deportivas']
+      desc: 'Sistema de dirección con asistencia eléctrica variable que ajusta automáticamente el esfuerzo requerido según la velocidad del vehículo. Ligera en ciudad, firme en carretera.',
+      problem: 'Las direcciones hidráulicas consumen potencia del motor constantemente y no se adaptan a las diferentes velocidades, resultando pesadas en ciudad o demasiado ligeras en autopista.',
+      solution: 'La asistencia eléctrica solo consume energía cuando se gira el volante y varía su nivel según la velocidad. A baja velocidad asiste más (volante ligero para estacionar); a alta velocidad asiste menos (volante firme para estabilidad).',
+      benefit: 'Estacionar requiere mínimo esfuerzo. En carretera, el volante transmite confianza y estabilidad. Además, al no usar bomba hidráulica, se elimina un punto de mantenimiento y se mejora la eficiencia de combustible.',
+      chips: ['Electroasistida', 'Variable', 'EPS', 'Eficiencia']
     }
   ],
   accSeguridadActiva: [
     {
       icon: '🛑', name: 'ABS — Sistema Antibloqueo de Frenos',
       versions: ['manual', 'dct'],
-      desc: 'Sistema que evita el bloqueo de las ruedas durante frenadas bruscas, permitiendo mantener la capacidad de dirección mientras se frena.',
-      problem: 'En frenadas de emergencia sobre superficies resbalosas, las ruedas bloqueadas hacen que el vehículo derrape sin posibilidad de girar el volante para esquivar obstáculos.',
-      solution: 'El ABS modula la presión de frenado en cada rueda miles de veces por segundo, evitando el bloqueo y manteniendo la adherencia direccional.',
-      benefit: 'La capacidad de maniobrar mientras se frena a fondo puede ser la diferencia entre un susto y un accidente. Especialmente crítico en lluvia o superficies irregulares.',
-      chips: ['Antibloqueo', 'Frenado', 'Seguridad Activa', 'Direccional']
+      desc: 'Sistema que evita el bloqueo total de las ruedas durante una frenada brusca, manteniendo la capacidad de dirección del vehículo. Modulador electrónico que ajusta la presión de frenado rueda por rueda.',
+      problem: 'En frenadas de emergencia sobre superficie mojada o irregular, las ruedas pueden bloquearse completamente, haciendo que el vehículo se deslice sin control y haciendo imposible esquivar obstáculos.',
+      solution: 'El ABS modula la presión de frenado cientos de veces por segundo, evitando que ninguna rueda se bloquee. Esto mantiene la tracción y permite al conductor seguir dirigiendo el vehículo mientras frena.',
+      benefit: 'Capacidad de maniobra preservada incluso en frenadas de pánico. Reducción significativa de la distancia de frenado en superficies de baja adherencia. Base fundamental de todo el sistema de seguridad activa.',
+      chips: ['Antibloqueo', 'Frenado', 'Seguridad Activa']
     },
     {
       icon: '⚖️', name: 'EBD — Distribución Electrónica de Frenado',
       versions: ['manual', 'dct'],
-      desc: 'Sistema que distribuye la fuerza de frenado entre las ruedas según la carga y las condiciones de adherencia de cada eje.',
-      problem: 'Sin distribución inteligente, las ruedas traseras pueden bloquearse antes que las delanteras al frenar con el vehículo cargado, provocando pérdida de estabilidad.',
-      solution: 'El EBD calcula en tiempo real la carga sobre cada eje y ajusta la presión de frenado para optimizar la distancia de detención y mantener la estabilidad.',
-      benefit: 'Frenadas más cortas y estables independientemente de la carga del vehículo. Protección constante para los cinco ocupantes.',
-      chips: ['Distribución', 'Frenado', 'Estabilidad', 'Electrónico']
+      desc: 'Sistema que distribuye la fuerza de frenado entre las ruedas de forma óptima según la carga, la velocidad y las condiciones de adherencia de cada rueda.',
+      problem: 'Sin distribución electrónica, al frenar con el vehículo cargado o en curvas, las ruedas pueden recibir más fuerza de la que pueden soportar, provocando desequilibrios y pérdida de control.',
+      solution: 'El EBD calcula en tiempo real cuánta fuerza de frenado puede aplicar cada rueda sin que se bloquee, redistribuyendo la presión hacia las ruedas con mayor adherencia.',
+      benefit: 'Frenadas más estables y predecibles en cualquier condición de carga. Especialmente valioso cuando el vehículo lleva pasajeros o equipaje, compensando los cambios en la distribución de peso.',
+      chips: ['Distribución', 'Frenado', 'Equilibrio']
     },
     {
-      icon: '🌀', name: 'TCS — Control de Tracción',
+      icon: '🔄', name: 'TCS — Control de Tracción',
       versions: ['manual', 'dct'],
-      desc: 'Sistema que detecta y corrige el patinaje de las ruedas motrices al acelerar, especialmente en superficies de baja adherencia.',
-      problem: 'Al acelerar sobre pavimento mojado, tierra o líneas pintadas, las ruedas motrices pueden patinar, perdiendo tracción y control del vehículo.',
-      solution: 'El TCS monitorea la velocidad de cada rueda y frena selectivamente la que patina, o reduce el torque del motor para recuperar la adherencia.',
-      benefit: 'Arranques seguros en superficies resbalosas y confianza al acelerar en curvas. Especialmente relevante en la temporada invernal ecuatoriana.',
-      chips: ['Tracción', 'Antipatinaje', 'Adherencia', 'Seguridad']
+      desc: 'Sistema que detecta cuando una rueda motriz pierde tracción (patina) y aplica frenado selectivo o reduce la potencia del motor para recuperar el agarre.',
+      problem: 'Al acelerar sobre superficies mojadas, con grava o en arranques desde semáforo, las ruedas motrices pueden patinar, provocando pérdida de direccionalidad y riesgo de accidente.',
+      solution: 'Sensores de velocidad en cada rueda detectan cuando una gira más rápido que las demás (patinaje). El sistema frena selectivamente esa rueda o reduce el torque del motor hasta recuperar la tracción.',
+      benefit: 'Arranques seguros en superficies resbaladizas. Mayor confianza en días de lluvia o en caminos de tierra. Protección constante contra la pérdida de tracción sin intervención del conductor.',
+      chips: ['Tracción', 'Antipatinaje', 'Seguridad']
     },
     {
-      icon: '🎯', name: 'ESC — Control Dinámico de Estabilidad (Bosch ESP 9.3)',
+      icon: '🌀', name: 'ESC — Control Dinámico de Estabilidad',
       versions: ['manual', 'dct'],
-      desc: 'Sistema de última generación Bosch ESP 9.3 que monitora la trayectoria del vehículo y corrige subvirajes o sobrevirajes frenando ruedas individuales.',
-      problem: 'En curvas tomadas a velocidad excesiva o en maniobras evasivas repentinas, el vehículo puede perder la trayectoria deseada y derrapar.',
-      solution: 'El ESC compara la trayectoria real con la intención del conductor (ángulo del volante) y frena selectivamente las ruedas necesarias para corregir la trayectoria.',
-      benefit: 'Una de las tecnologías de seguridad activa más importantes jamás desarrolladas. Reduce significativamente el riesgo de accidentes por pérdida de control.',
-      chips: ['Bosch 9.3', 'Estabilidad', 'Última Generación', 'Corrección']
+      desc: 'Sistema Bosch ESP 9.3 de última generación que monitorea constantemente la trayectoria real del vehículo y la compara con la intención del conductor. Si detecta subviraje o sobreviraje, frena ruedas individuales para corregir.',
+      problem: 'En curvas tomadas a velocidad excesiva o en maniobras evasivas repentinas, el vehículo puede derrapar (subviraje: no gira lo suficiente; sobreviraje: gira de más), llevando a la pérdida total de control.',
+      solution: 'El ESC 9.3 de Bosch utiliza sensores de guiñada, aceleración lateral y ángulo de dirección para detectar la pérdida de estabilidad en milisegundos. Frena selectivamente las ruedas necesarias y puede reducir el torque del motor para recuperar la trayectoria.',
+      benefit: 'Corrección automática de situaciones de pérdida de control antes de que el conductor pueda reaccionar. La versión 9.3 de Bosch ofrece una respuesta más rápida y precisa que generaciones anteriores. Considerado uno de los sistemas de seguridad más importantes jamás desarrollados.',
+      chips: ['ESP 9.3', 'Bosch', 'Estabilidad', 'Última Generación']
     },
     {
-      icon: '🔄', name: 'ROP — Protección contra Vuelco',
+      icon: '🔃', name: 'ROP — Protección contra Vuelco',
       versions: ['manual', 'dct'],
-      desc: 'Sistema que detecta condiciones de riesgo de vuelco y actúa frenando selectivamente las ruedas para estabilizar el vehículo.',
-      problem: 'Los SUV, por su mayor altura respecto al suelo, son más susceptibles al vuelco en maniobras bruscas o en curvas pronunciadas a velocidad elevada.',
-      solution: 'El ROP monitorea los ángulos de inclinación lateral y la velocidad de giro. Al detectar riesgo de vuelco, frena las ruedas necesarias y reduce el torque del motor.',
-      benefit: 'Una tecnología que muchos SUV de precio similar no incluyen. Protección adicional para los ocupantes ante una de las situaciones más peligrosas al volante.',
-      chips: ['Anti-vuelco', 'Protección', 'SUV', 'Frenado Selectivo']
+      desc: 'Sistema que detecta condiciones de riesgo de vuelco (giros bruscos a alta velocidad, maniobras evasivas extremas) y frena selectivamente las ruedas para reducir la velocidad y estabilizar el vehículo.',
+      problem: 'Los SUV, por su mayor altura respecto al suelo, tienen un centro de gravedad más elevado que los sedanes, lo que incrementa el riesgo de vuelco en maniobras bruscas. Muchos SUV del segmento no incluyen esta tecnología.',
+      solution: 'Sensores de aceleración lateral y guiñada evalúan constantemente el ángulo de inclinación del vehículo. Si se detecta un riesgo inminente de vuelco, el sistema frena selectivamente las ruedas del lado exterior de la curva para contrarrestar la inclinación.',
+      benefit: 'Protección adicional específica para la geometría de un SUV. Una tecnología que muchos competidores en este rango de precio no incluyen. Puede ser la diferencia entre un susto y un accidente grave.',
+      chips: ['Anti-vuelco', 'SUV', 'Protección', 'Estabilidad']
     },
     {
       icon: '⬆️', name: 'HSA — Asistente de Arranque en Pendiente',
       versions: ['manual', 'dct'],
-      desc: 'Sistema que mantiene el freno aplicado durante unos segundos al soltar el pedal en una pendiente, evitando el retroceso del vehículo.',
-      problem: 'Arrancar en una cuesta pronunciada —especialmente con tráfico detrás— genera estrés por el riesgo de retroceder y colisionar con el vehículo de atrás.',
-      solution: 'El HSA mantiene la presión de frenado durante aproximadamente 2-3 segundos después de soltar el pedal, dando tiempo suficiente para acelerar sin retroceder.',
-      benefit: 'Cero estrés en semáforos en cuesta o en garajes con rampa pronunciada. La transición entre freno y acelerador se realiza sin retroceso ni ansiedad.',
-      chips: ['Arranque', 'Pendiente', 'Anti-retroceso', 'Confort']
+      desc: 'Sistema que mantiene el frenado durante 2-3 segundos después de soltar el pedal de freno en una pendiente, permitiendo al conductor transicionar del freno al acelerador sin que el vehículo retroceda.',
+      problem: 'En semáforos o paradas en subidas pronunciadas (frecuentes en ciudades como Quito o Cuenca), el vehículo retrocede al soltar el freno, generando estrés y riesgo de colisión con el vehículo de atrás.',
+      solution: 'Al detectar una pendiente y que el vehículo está detenido, el HSA mantiene la presión de frenado por unos segundos después de soltar el pedal, dando tiempo suficiente para acelerar sin retroceder ni un milímetro.',
+      benefit: 'Arranques en cuesta sin estrés ni riesgo de retroceso. Especialmente valioso en la versión manual, donde la coordinación de embrague, freno y acelerador es más compleja. Confianza total en pendientes pronunciadas.',
+      chips: ['Pendiente', 'Arranque', 'Hill Start', 'Confort']
     },
     {
       icon: '👁️', name: 'BSD — Detección de Punto Ciego',
       versions: ['manual', 'dct'],
-      desc: 'Sistema ADAS que monitorea las zonas laterales posteriores del vehículo donde los retrovisores no alcanzan a cubrir, alertando al conductor sobre la presencia de otros vehículos.',
-      problem: 'Los puntos ciegos laterales son responsables de numerosos accidentes al cambiar de carril, especialmente en autopistas con tráfico denso.',
-      solution: 'Sensores de radar detectan vehículos en las zonas no visibles por los espejos y activan una alerta visual en los retrovisores laterales.',
-      benefit: 'Cambios de carril con plena conciencia del entorno. Un "copiloto electrónico" que ve lo que los espejos no pueden mostrar.',
-      chips: ['ADAS', 'Punto Ciego', 'Radar', 'Alerta Visual']
+      desc: 'Sistema ADAS que utiliza sensores de radar para monitorear las zonas laterales traseras del vehículo que no son visibles por los espejos retrovisores. Alerta al conductor con una luz en el retrovisor cuando un vehículo está en el punto ciego.',
+      problem: 'Los puntos ciegos laterales son responsables de numerosos accidentes al cambiar de carril. El conductor mira el espejo, no ve nada, y al girar el volante hay un vehículo que no podía ver.',
+      solution: 'Sensores de radar ubicados en el parachoques trasero escanean constantemente los carriles adyacentes. Cuando un vehículo entra en la zona de punto ciego, un indicador luminoso se enciende en el retrovisor correspondiente. Si se activa el direccionales, la alerta se intensifica.',
+      benefit: 'Cambio de carril con confianza total. El vehículo "ve" lo que el conductor no puede ver. Obligatorio en Europa desde 2022 para vehículos nuevos; en el segmento de entrada en Ecuador es prácticamente inédito.',
+      chips: ['ADAS', 'Punto Ciego', 'Radar', 'Cambio de Carril']
     },
     {
-      icon: '🛤️', name: 'LDW — Advertencia de Cambio de Carril',
+      icon: '📏', name: 'LDW — Advertencia de Cambio de Carril',
       versions: ['manual', 'dct'],
-      desc: 'Sistema ADAS que detecta cuando el vehículo se desplaza involuntariamente fuera de su carril sin haber activado la señal de giro.',
-      problem: 'La fatiga, la distracción momentánea o la mala señalización vial pueden provocar salidas involuntarias del carril, una causa frecuente de accidentes en carretera.',
-      solution: 'Una cámara identifica las líneas de demarcación del carril y alerta al conductor mediante una señal visual y/o sonora cuando se detecta un desplazamiento sin indicador.',
-      benefit: 'Protección contra la distracción y la fatiga en viajes largos por carretera. Un sistema obligatorio en Europa desde 2022, disponible de serie en el X50.',
-      chips: ['ADAS', 'Carril', 'Alerta', 'Carretera']
+      desc: 'Sistema ADAS que utiliza una cámara para detectar las líneas de demarcación del carril. Si el vehículo se desvía sin activar las direccionales, emite una alerta visual y sonora.',
+      problem: 'En viajes largos por carretera, la fatiga o la distracción pueden provocar desviaciones involuntarias del carril, una de las principales causas de accidentes frontales y salidas de vía.',
+      solution: 'Una cámara montada en el parabrisas lee las marcas viales en tiempo real. Si el vehículo comienza a cruzar la línea del carril sin que se hayan activado las direccionales, el sistema alerta al conductor para que corrija la trayectoria.',
+      benefit: 'Copiloto electrónico que previene accidentes por distracción o somnolencia. Especialmente valioso en viajes largos por carretera o en conducciones monótonas donde la atención puede disminuir.',
+      chips: ['ADAS', 'Carril', 'Cámara', 'Alerta']
     },
     {
-      icon: '🔙', name: 'RCW — Advertencia de Colisión Trasera',
+      icon: '🔔', name: 'RCW — Advertencia de Colisión Trasera',
       versions: ['manual', 'dct'],
-      desc: 'Sistema ADAS que alerta sobre la posibilidad de una colisión por parte de un vehículo que se aproxima desde atrás a alta velocidad.',
-      problem: 'Los alcance por detrás son uno de los tipos de accidente más frecuentes, especialmente en tráfico detenido o en reducciones súbitas de velocidad.',
-      solution: 'Los sensores posteriores monitorean la velocidad y distancia de los vehículos que se aproximan y emiten una alerta para que el conductor tome acción evasiva.',
-      benefit: 'Conciencia situacional completa, incluso de lo que ocurre detrás del vehículo. Reducción del riesgo de alcances en situaciones de tráfico detenido.',
-      chips: ['ADAS', 'Colisión Trasera', 'Rear', 'Alerta']
+      desc: 'Sistema ADAS que alerta al conductor sobre la presencia de vehículos que se acercan rápidamente por detrás, especialmente útil al realizar maniobras de giro o al detenerse en intersecciones.',
+      problem: 'Al detenerse en una intersección para girar, el conductor se enfoca en el tráfico frontal y no percibe un vehículo que se aproxima rápidamente por detrás, generando riesgo de colisión trasera.',
+      solution: 'Sensores posteriores monitorean el tráfico que se aproxima por detrás. Si detectan un vehículo acercándose a alta velocidad mientras el vehículo está detenido o a punto de girar, emiten una alerta para que el conductor espere.',
+      benefit: 'Protección contra un tipo de accidente que el conductor difícilmente puede percibir por sí mismo. Complementa los espejos retrovisores con tecnología de detección activa.',
+      chips: ['ADAS', 'Colisión Trasera', 'Rear Cross', 'Alerta']
     },
     {
-      icon: '⚠️', name: 'Alarma de Límite de Velocidad',
+      icon: '🔵', name: 'TPMS — Monitor de Presión de Neumáticos',
       versions: ['manual', 'dct'],
-      desc: 'Sistema que alerta al conductor cuando se supera un umbral de velocidad preconfigurado, promoviendo la conducción responsable.',
-      problem: 'El exceso de velocidad —aunque sea involuntario— es una de las principales causas de multas y accidentes en las carreteras ecuatorianas.',
-      solution: 'El sistema emite una alerta audible y visual cuando se supera el límite configurado, recordando al conductor que ajuste su velocidad.',
-      benefit: 'Conducción más segura y consciente, con reducción del riesgo de multas por exceso de velocidad. Especialmente útil en zonas escolares y urbanas.',
-      chips: ['Velocidad', 'Alerta', 'Seguridad', 'Prevención']
-    },
-    {
-      icon: '📡', name: 'TPMS — Sensor de Presión de Neumáticos',
-      versions: ['manual', 'dct'],
-      desc: 'Sistema de monitoreo de presión de neumáticos que alerta en tiempo real cuando la presión de alguna llanta se encuentra por debajo del nivel recomendado.',
-      problem: 'Las llantas con presión inadecuada aumentan el consumo de combustible, reducen la vida útil del neumático y elevan el riesgo de reventón, especialmente a alta velocidad.',
-      solution: 'Sensores en cada rueda monitorean la presión continuamente y envían la información al panel de instrumentos, activando alertas ante cualquier anomalía.',
-      benefit: 'Seguridad preventiva constante. Detección temprana de pérdida de presión que puede evitar reventones y mejorar la eficiencia de combustible.',
-      chips: ['Presión', 'Neumáticos', 'Monitoreo', 'Tiempo Real']
+      desc: 'Sistema que monitorea en tiempo real la presión de cada neumático y alerta al conductor si detecta una pérdida de presión que pueda comprometer la seguridad o la eficiencia.',
+      problem: 'Un neumático con presión baja incrementa el consumo de combustible, desgasta irregularmente la llanta y, en casos extremos, puede provocar un reventón a alta velocidad.',
+      solution: 'Sensores en cada rueda miden la presión continuamente y envían los datos al panel de instrumentos. Si la presión cae por debajo del umbral recomendado, se activa una alerta visual inmediata.',
+      benefit: 'Prevención de reventones y mejora de la eficiencia de combustible. Detección temprana de fugas lentas que podrían pasar desapercibidas. Información en tiempo real desde el panel.',
+      chips: ['Neumáticos', 'Presión', 'Tiempo Real', 'Seguridad']
     }
   ],
   accSeguridadPasiva: [
     {
       icon: '🛡️', name: 'Carrocería Tipo Jaula 360° — Acero Ultra Alta Resistencia',
       versions: ['manual', 'dct'],
-      desc: 'Estructura de carrocería tipo jaula de seguridad envolvente, construida con acero de ultra alta resistencia que absorbe y distribuye la energía del impacto alrededor de la cabina.',
-      problem: 'En un accidente, la integridad estructural de la cabina es la última línea de defensa para la supervivencia de los ocupantes.',
-      solution: 'La estructura tipo jaula 360° crea una celda de seguridad rígida alrededor de los pasajeros, mientras las zonas deformables delanteras y traseras absorben la energía del impacto.',
-      benefit: 'Máxima protección estructural para todos los ocupantes. La misma filosofía constructiva utilizada por las marcas premium europeas en sus modelos más seguros.',
+      desc: 'Estructura de carrocería que forma una "jaula de seguridad" alrededor del habitáculo, fabricada con acero de ultra alta resistencia. Absorbe y distribuye la energía del impacto lejos de los ocupantes.',
+      problem: 'En un accidente, la estructura del vehículo es la última línea de defensa. Si la cabina se deforma, los ocupantes sufren las consecuencias directas de la energía del impacto.',
+      solution: 'La carrocería combina zonas de deformación programada (delante y detrás) que absorben la energía con una jaula rígida alrededor de los pasajeros que mantiene el habitáculo intacto. El acero de ultra alta resistencia proporciona la máxima rigidez con el menor peso.',
+      benefit: 'Máxima protección estructural para todos los ocupantes en caso de colisión. La misma filosofía constructiva que utilizan las marcas premium europeas en sus modelos más seguros.',
       chips: ['Jaula 360°', 'Ultra Alta Resistencia', 'Estructura', 'Protección']
     },
     {
-      icon: '🎈', name: 'Airbags Frontales — 2 (Manual) / 4 (DCT)',
-      versions: ['manual', 'dct'],
-      desc: 'La versión Manual cuenta con 2 airbags frontales (conductor y acompañante). La versión DCT incorpora 4 airbags frontales incluyendo laterales, proporcionando protección adicional para el tórax.',
-      problem: 'En un impacto frontal, los ocupantes pueden golpear violentamente contra el volante, el tablero o el parabrisas si no cuentan con protección de airbag.',
-      solution: 'Los airbags se despliegan en milisegundos al detectar un impacto de suficiente magnitud, creando un colchón de aire entre el ocupante y las estructuras rígidas del vehículo.',
-      benefit: 'Reducción drástica del riesgo de lesiones graves en cabeza, cuello y tórax. La versión DCT duplica la protección con airbags laterales.',
-      chips: ['2 Airbags (M)', '4 Airbags (DCT)', 'Frontales', 'Laterales DCT']
+      icon: '🎈', name: 'Airbags Frontales (2 — Versión Manual)',
+      versions: ['manual'],
+      desc: 'Dos airbags frontales (conductor y acompañante) que se despliegan en milisegundos en caso de colisión frontal, amortiguando el impacto contra el volante y el tablero.',
+      problem: 'En una colisión frontal, el cuerpo de los ocupantes se desplaza hacia adelante con una fuerza enorme. Sin airbag, el impacto contra el volante o el tablero puede ser fatal.',
+      solution: 'Sensores de impacto detectan la severidad de la colisión y despliegan los airbags en menos de 30 milisegundos. Se combinan con los cinturones de 3 puntos para retener el cuerpo de forma controlada.',
+      benefit: 'Protección esencial para conductor y acompañante en el tipo de accidente más frecuente. Trabaja en conjunto con la estructura de jaula 360° para un sistema de protección integral.',
+      chips: ['2 Airbags', 'Frontales', 'Protección', 'Pasiva']
     },
     {
-      icon: '🔒', name: 'Anclajes ISOFIX — Sillas Infantiles',
-      versions: ['manual', 'dct'],
-      desc: 'Sistema de anclaje ISOFIX integrado en los asientos traseros para la instalación segura de sillas infantiles, sin necesidad de utilizar el cinturón de seguridad.',
-      problem: 'La instalación de sillas infantiles con cinturón de seguridad puede resultar insegura si no se realiza correctamente, dejando holguras peligrosas.',
-      solution: 'Los anclajes ISOFIX proporcionan un punto de fijación rígido y estandarizado entre la silla infantil y la estructura del vehículo, eliminando el juego y el error de instalación.',
-      benefit: 'Seguridad máxima para los pasajeros más pequeños del vehículo. Instalación rápida, firme y sin margen de error. Estándar internacional de seguridad infantil.',
-      chips: ['ISOFIX', 'Infantil', 'Anclaje Rígido', 'Seguridad']
+      icon: '🎈', name: 'Airbags Frontales + Laterales (4 — Versión DCT)',
+      versions: ['dct'],
+      desc: 'Cuatro airbags: dos frontales (conductor y acompañante) más dos laterales integrados en los asientos delanteros. Protección ampliada para el tórax y la pelvis en colisiones laterales.',
+      problem: 'Las colisiones laterales son especialmente peligrosas porque la distancia entre el punto de impacto y el ocupante es mínima. No hay una zona de deformación significativa que absorba la energía.',
+      solution: 'Los airbags laterales se despliegan desde los asientos delanteros, creando una barrera protectora entre el ocupante y la puerta. Combinados con los frontales, ofrecen una cobertura de 360° en el habitáculo.',
+      benefit: 'Protección adicional crítica para el tórax y la pelvis en impactos laterales. Los ocupantes delanteros cuentan con una cobertura integral que reduce significativamente el riesgo de lesiones graves.',
+      chips: ['4 Airbags', 'Frontales + Laterales', '360°', 'Premium']
     },
     {
-      icon: '🦺', name: 'Cinturones de 3 Puntos — 5 Plazas',
+      icon: '🔗', name: 'Cinturones de 3 Puntos (5 plazas)',
       versions: ['manual', 'dct'],
-      desc: 'Cinco cinturones de seguridad de tres puntos (uno por cada ocupante), con pretensores y limitadores de carga para optimizar la retención en caso de impacto.',
-      problem: 'Los cinturones de dos puntos (subabdominales) ofrecen protección significativamente inferior y pueden causar lesiones internas en caso de accidente.',
-      solution: 'Los cinturones de tres puntos distribuyen la fuerza del impacto sobre el hombro, el tórax y la cadera, las zonas más resistentes del cuerpo humano.',
-      benefit: 'Protección integral para los cinco ocupantes del vehículo. Cada pasajero cuenta con un cinturón de tres puntos, sin excepciones.',
-      chips: ['3 Puntos', '5 Cinturones', 'Pretensores', 'Retención']
+      desc: 'Cinco cinturones de seguridad de 3 puntos (uno por cada ocupante), con pretensores y limitadores de carga para una retención óptima en caso de impacto.',
+      problem: 'Los cinturones de 2 puntos (subabdominales) no retienen adecuadamente el torso y pueden causar lesiones internas graves en una colisión.',
+      solution: 'El cinturón de 3 puntos cruza el pecho, la clavícula y la pelvis, distribuyendo las fuerzas del impacto sobre las zonas más resistentes del cuerpo. Los pretensores eliminan la holgura en milisegundos.',
+      benefit: 'Máxima retención para los cinco ocupantes. Elemento de seguridad más importante del vehículo que, combinado con los airbags y la estructura de jaula, forma un sistema de protección completo.',
+      chips: ['5 Cinturones', '3 Puntos', 'Pretensores', 'Retención']
     },
     {
-      icon: '🔴', name: 'Frenos de Disco Ventilados (Del.) / Sólidos (Tras.)',
+      icon: '👶', name: 'Anclajes ISOFIX para Sillas Infantiles',
       versions: ['manual', 'dct'],
-      desc: 'Frenos de disco ventilados en el eje delantero para mejor disipación térmica, y discos sólidos en el eje trasero. Configuración que ofrece frenadas seguras incluso en condiciones exigentes.',
-      problem: 'Los frenos de tambor traseros —aún presentes en muchos vehículos del segmento— sufren de fade térmico (pérdida de eficacia) en descensos prolongados o uso intensivo.',
-      solution: 'Los discos ventilados delanteros disipan el calor eficientemente mediante cámaras de aire internas, mientras los discos traseros sólidos complementan con frenada equilibrada.',
-      benefit: 'Frenadas consistentes y seguras incluso en uso intensivo. Mayor vida útil y mejor sensación al pedal que configuraciones con tambor trasero.',
-      chips: ['Disco Ventilado', 'Delantero', 'Sólido Trasero', 'Frenado']
+      desc: 'Puntos de anclaje ISOFIX integrados en los asientos traseros para la instalación segura de sillas infantiles, eliminando la dependencia del cinturón de seguridad.',
+      problem: 'Instalar sillas infantiles con el cinturón de seguridad puede resultar en una fijación incorrecta o insegura, poniendo en riesgo a los pasajeros más vulnerables del vehículo.',
+      solution: 'El sistema ISOFIX proporciona una conexión directa y rígida entre la silla infantil y la estructura del vehículo, con indicadores visuales que confirman la correcta instalación.',
+      benefit: 'Instalación segura, rápida y sin errores para sillas infantiles. Tranquilidad para las familias con niños pequeños. Estándar internacional de seguridad infantil.',
+      chips: ['ISOFIX', 'Infantil', 'Seguridad', 'Anclaje']
+    },
+    {
+      icon: '🔴', name: 'Frenos de Disco Ventilados (Delanteros) / Sólidos (Traseros)',
+      versions: ['manual', 'dct'],
+      desc: 'Sistema de frenado con discos ventilados en el eje delantero para una mejor disipación del calor y discos sólidos en el eje trasero. Configuración que garantiza frenadas consistentes incluso en uso exigente.',
+      problem: 'Los frenos de tambor (comunes en el eje trasero de vehículos económicos) sufren "fading" (pérdida de eficacia) tras uso intensivo, especialmente en descensos prolongados.',
+      solution: 'Los discos ventilados tienen cámaras internas que permiten la circulación de aire, enfriando el disco más rápidamente. Los discos traseros sólidos proporcionan frenado adecuado para el peso del vehículo.',
+      benefit: 'Frenadas más seguras y consistentes en condiciones exigentes. Mayor durabilidad del sistema de frenado. Confianza en descensos de montaña y uso intensivo.',
+      chips: ['Disco', 'Ventilado', 'Frenado', 'Seguridad']
+    },
+    {
+      icon: '🅿️', name: 'Freno de Mano Electrónico con Auto Hold',
+      versions: ['manual', 'dct'],
+      desc: 'Freno de estacionamiento accionado por botón (sin palanca mecánica) con función Auto Hold que mantiene el vehículo frenado automáticamente al detenerse, liberándose al acelerar.',
+      problem: 'El freno de mano mecánico ocupa espacio en la consola, requiere fuerza para accionarlo y es fácil de olvidar liberarlo. En pendientes, mantener el vehículo frenado requiere coordinación de pies.',
+      solution: 'El botón electrónico activa las pinzas traseras mediante un motor eléctrico. La función Auto Hold mantiene el frenado en paradas (semáforos, pendientes) y lo libera automáticamente al pisar el acelerador.',
+      benefit: 'Consola central más limpia y espaciosa. Sin esfuerzo físico para accionarlo. La función Auto Hold elimina el estrés de las arrancadas en pendiente. Tecnología típica de vehículos de categoría superior.',
+      chips: ['Electrónico', 'Auto Hold', 'EPB', 'Premium']
     }
   ],
   accTecnologia: [
     {
-      icon: '📺', name: 'Pantalla Táctil 10.25" LCD — Multimedia',
+      icon: '📺', name: 'Pantalla Táctil 10.25" LCD — Sistema Multimedia',
       versions: ['manual', 'dct'],
-      desc: 'Pantalla táctil LCD de 10.25 pulgadas integrada en el tablero, que centraliza las funciones de entretenimiento, navegación, cámara 360° y configuración del vehículo.',
-      problem: 'Las pantallas pequeñas o de baja resolución en vehículos económicos hacen que la interacción con el sistema de infoentretenimiento sea frustrante y la experiencia se sienta anticuada.',
-      solution: 'Una pantalla de 10.25 pulgadas con resolución HD y respuesta táctil fluida que muestra con claridad mapas, multimedia, la cámara 360° y los ajustes del vehículo.',
-      benefit: 'Una experiencia visual premium que no desentona con los vehículos de categorías superiores. Interfaz intuitiva y legible en todas las condiciones de iluminación.',
-      chips: ['10.25"', 'LCD', 'Táctil', 'HD']
+      desc: 'Pantalla táctil LCD de 10.25 pulgadas integrada en el tablero, con interfaz intuitiva para control de multimedia, navegación, configuración del vehículo y funciones conectadas.',
+      problem: 'Las pantallas pequeñas o de baja resolución en vehículos económicos hacen que la experiencia tecnológica se sienta anticuada y la interacción sea frustrante.',
+      solution: 'Panel LCD de alta resolución con 10.25 pulgadas de diagonal, tamaño comparable al de vehículos premium. Interfaz gráfica moderna con respuesta táctil fluida.',
+      benefit: 'Experiencia visual premium en el segmento de acceso. Toda la información del vehículo, entretenimiento y conectividad en una pantalla grande y legible.',
+      chips: ['10.25"', 'LCD', 'Táctil', 'Multimedia']
     },
     {
       icon: '📊', name: 'Panel Digital de Instrumentos 10.25" LCD',
       versions: ['manual', 'dct'],
-      desc: 'Cluster de instrumentos completamente digital con pantalla LCD de 10.25 pulgadas. Muestra velocímetro, tacómetro, información de viaje, ADAS y configuración personalizable.',
-      problem: 'Los paneles analógicos tradicionales ofrecen información limitada y no permiten personalización de la visualización según las preferencias del conductor.',
-      solution: 'El panel digital de 10.25" muestra toda la información del vehículo en alta definición, con diseños personalizables y integración de los sistemas ADAS en tiempo real.',
-      benefit: 'Información completa y personalizable al alcance de la vista. La configuración de pantalla dual (instrumentos + multimedia) es un sello de marcas como Mercedes-Benz.',
-      chips: ['10.25"', 'Digital', 'Personalizable', 'Cluster']
+      desc: 'Cluster de instrumentos completamente digital con pantalla LCD de 10.25 pulgadas. Muestra velocímetro, tacómetro, información del computador de viaje, ADAS y configuración personalizable.',
+      problem: 'Los instrumentos analógicos tradicionales ofrecen información limitada y no se pueden personalizar. La lectura de datos del vehículo y los sistemas ADAS queda restringida.',
+      solution: 'El panel digital permite configurar la información mostrada, integrar datos del ADAS en tiempo real (como la visualización de los sensores de punto ciego) y personalizar la presentación según las preferencias del conductor.',
+      benefit: 'Información completa y personalizable al alcance de la vista. Integración visual con los sistemas ADAS. Estética premium que eleva la percepción general del habitáculo.',
+      chips: ['10.25"', 'Digital', 'Configurable', 'Premium']
     },
     {
       icon: '📱', name: 'Apple CarPlay / Android Auto',
       versions: ['manual', 'dct'],
-      desc: 'Integración completa con smartphones a través de Apple CarPlay y Android Auto, permitiendo proyectar las aplicaciones del teléfono directamente en la pantalla del vehículo.',
-      problem: 'Usar el teléfono montado en un soporte mientras se conduce es incómodo, peligroso y no permite aprovechar la pantalla del vehículo para navegación y multimedia.',
-      solution: 'CarPlay y Android Auto proyectan las aplicaciones del smartphone —mapas, música, mensajería— directamente en la pantalla de 10.25" del X50 con interfaz optimizada.',
-      benefit: 'Navegación, música y comunicaciones en la pantalla grande del vehículo, con control táctil o por voz. Conexión total sin distracciones.',
-      chips: ['CarPlay', 'Android Auto', 'Integración', 'Smartphone']
-    },
-    {
-      icon: '📞', name: 'Sistema Manos Libres — Bluetooth',
-      versions: ['manual', 'dct'],
-      desc: 'Conectividad Bluetooth para llamadas telefónicas manos libres y streaming de audio desde dispositivos compatibles.',
-      problem: 'Manipular el teléfono mientras se conduce para contestar llamadas o cambiar de canción es una de las principales causas de distracción al volante.',
-      solution: 'El sistema Bluetooth permite emparejar el teléfono de forma automática al encender el vehículo, habilitando llamadas por voz y control de música desde el volante o la pantalla.',
-      benefit: 'Comunicación segura y legal mientras se conduce. Las manos permanecen en el volante y la atención en la carretera.',
-      chips: ['Bluetooth', 'Manos Libres', 'Llamadas', 'Audio']
-    },
-    {
-      icon: '🔊', name: 'Sistema de Audio — 6 Parlantes',
-      versions: ['manual', 'dct'],
-      desc: 'Sistema de sonido con seis parlantes distribuidos estratégicamente en el habitáculo para una experiencia auditiva envolvente para todos los ocupantes.',
-      problem: 'Los sistemas de audio básicos con pocos parlantes generan una experiencia sonora plana que no aprovecha la acústica del habitáculo.',
-      solution: 'Seis parlantes distribuidos en posiciones optimizadas (tablero, puertas delanteras y traseras) crean un campo sonoro equilibrado para conductor y pasajeros.',
-      benefit: 'Calidad de audio superior para viajes largos, donde la música se convierte en compañera indispensable. Todos los ocupantes disfrutan de un sonido envolvente.',
-      chips: ['6 Parlantes', 'Audio', 'Envolvente', 'Hi-Fi']
-    },
-    {
-      icon: '🔑', name: 'Llave Inteligente / Encendido por Botón',
-      versions: ['manual', 'dct'],
-      desc: 'Sistema de acceso sin llave (Keyless Entry) con botón de encendido (Push Start). El vehículo detecta la llave en el bolsillo o bolso del conductor.',
-      problem: 'Buscar la llave en bolsillos o bolsos cada vez que se aborda el vehículo resulta incómodo, especialmente con las manos ocupadas o en condiciones de lluvia.',
-      solution: 'La llave inteligente se comunica con el vehículo por proximidad, permitiendo abrir las puertas y arrancar el motor sin necesidad de extraerla del bolsillo.',
-      benefit: 'Acceso y arranque sin esfuerzo. Una experiencia de uso premium que se repite cada vez que se aborda el vehículo.',
-      chips: ['Keyless', 'Push Start', 'Sin Llave', 'Proximidad']
-    },
-    {
-      icon: '🔌', name: '4 Puertos USB (Tipo A + Tipo C)',
-      versions: ['manual', 'dct'],
-      desc: 'Cuatro puertos de carga USB distribuidos en el habitáculo, combinando conectores Tipo A (estándar) y Tipo C (nuevo estándar), para carga simultánea de dispositivos.',
-      problem: 'Los vehículos con pocos puertos USB obligan a los pasajeros a turnarse para cargar sus dispositivos, generando incomodidad en viajes largos.',
-      solution: 'Cuatro puertos USB (Tipo A + C) permiten que todos los ocupantes carguen sus teléfonos, tablets o dispositivos simultáneamente.',
-      benefit: 'Todos los pasajeros conectados y con batería durante todo el viaje. La inclusión de USB-C asegura compatibilidad con los dispositivos más recientes.',
-      chips: ['4 USB', 'Tipo A', 'Tipo C', 'Carga Simultánea']
-    },
-    {
-      icon: '🎛️', name: 'Control Crucero',
-      versions: ['manual', 'dct'],
-      desc: 'Sistema de control de velocidad crucero que mantiene una velocidad constante preestablecida sin necesidad de mantener el pie sobre el acelerador.',
-      problem: 'Mantener una velocidad constante en trayectos largos de carretera genera fatiga en la pierna derecha y puede provocar variaciones involuntarias de velocidad.',
-      solution: 'El control crucero fija la velocidad deseada y la mantiene automáticamente, liberando al conductor de la tarea de regular el acelerador constantemente.',
-      benefit: 'Viajes por carretera más relajados y con menor fatiga. Contribuye además a un consumo de combustible más eficiente al evitar aceleraciones innecesarias.',
-      chips: ['Crucero', 'Velocidad Constante', 'Confort', 'Carretera']
+      desc: 'Integración completa con smartphones mediante Apple CarPlay y Android Auto. Proyecta las aplicaciones del teléfono directamente en la pantalla del vehículo: mapas, música, llamadas y mensajes.',
+      problem: 'Usar el teléfono mientras se conduce es peligroso, pero no tener acceso a mapas o música en la pantalla del vehículo obliga a mirar el celular constantemente.',
+      solution: 'CarPlay y Android Auto proyectan una versión simplificada y optimizada para conducción de las apps del teléfono directamente en la pantalla de 10.25", con controles desde el volante o la pantalla táctil.',
+      benefit: 'Mapas de Google Maps o Waze en la pantalla grande. Música de Spotify sin distracciones. Llamadas manos libres integradas. Todo el ecosistema del teléfono, seguro y accesible.',
+      chips: ['CarPlay', 'Android Auto', 'Integración', 'Conectividad']
     },
     {
       icon: '📷', name: 'Cámara 360° con Vista Panorámica 3D',
       versions: ['manual', 'dct'],
-      desc: 'Sistema de cuatro cámaras HD que generan una vista cenital 360° con perspectiva tridimensional del entorno del vehículo, visible en la pantalla multimedia.',
-      problem: 'Estacionar un SUV en espacios reducidos —comunes en ciudades ecuatorianas— genera riesgo de roces y golpes costosos en parachoques y llantas.',
-      solution: 'Cuatro cámaras ubicadas estratégicamente capturan el entorno completo del vehículo y lo procesan en una vista panorámica 3D que se muestra en la pantalla de 10.25".',
-      benefit: 'Estacionar se convierte en una operación precisa y sin estrés. La vista cenital muestra bordes, obstáculos y distancias con claridad. Un sistema que hace pocos años era exclusivo de SUV de lujo.',
-      chips: ['360°', 'Vista 3D', '4 Cámaras', 'HD']
+      desc: 'Sistema de 4 cámaras de alta definición que generan una vista panorámica del entorno del vehículo desde una perspectiva aérea tridimensional, como si se observara desde arriba.',
+      problem: 'Estacionar un SUV en espacios reducidos (comunes en ciudades ecuatorianas) genera roces y golpes costosos porque los espejos no muestran lo que hay junto a las ruedas.',
+      solution: 'Cuatro cámaras (frontal, trasera y laterales) capturan imágenes del entorno y las procesan para crear una vista 360° unificada en la pantalla. La perspectiva 3D permite ver bordes, obstáculos y líneas de estacionamiento con precisión.',
+      benefit: 'Estacionamiento sin estrés ni golpes. Visión completa del entorno que elimina los puntos ciegos al maniobrar. Tecnología que era exclusiva de SUV de lujo hace pocos años.',
+      chips: ['360°', 'Vista 3D', '4 Cámaras', 'Estacionamiento']
     },
     {
-      icon: '🅿️', name: 'Sensores de Estacionamiento',
+      icon: '🔌', name: 'Cargador Inalámbrico para Celulares',
+      versions: ['dct'],
+      desc: 'Base de carga por inducción integrada en la consola central, compatible con dispositivos que soporten carga inalámbrica (Qi). Permite recargar el teléfono sin cables.',
+      problem: 'Los cables de carga ocupan espacio, se enredan y se deterioran con el uso. Mantener el teléfono cargado durante los trayectos requiere conectar y desconectar constantemente.',
+      solution: 'La base de carga inalámbrica transfiere energía al dispositivo simplemente al apoyarlo sobre la superficie. Sin cables, sin conectores, sin desgaste.',
+      benefit: 'Consola limpia y ordenada. El teléfono siempre cargado con solo apoyarlo. Comodidad y practicidad en cada trayecto.',
+      chips: ['Inalámbrico', 'Qi', 'Carga', 'Sin Cables']
+    },
+    {
+      icon: '🔑', name: 'Llave Inteligente con Encendido por Botón',
       versions: ['manual', 'dct'],
-      desc: 'Sensores ultrasónicos de estacionamiento que complementan la cámara 360° con alertas acústicas de proximidad a obstáculos.',
-      problem: 'En maniobras de estacionamiento, los obstáculos bajos o los objetos situados fuera del campo visual de las cámaras pueden pasar desapercibidos.',
-      solution: 'Los sensores ultrasónicos emiten alertas acústicas progresivas (pitidos más frecuentes al acercarse) que indican la distancia a obstáculos en los alrededores del vehículo.',
-      benefit: 'Doble sistema de asistencia para estacionar: visual (cámara 360°) y auditivo (sensores). Ningún obstáculo pasa desapercibido.',
-      chips: ['Sensores', 'Ultrasónicos', 'Proximidad', 'Alerta Acústica']
+      desc: 'Sistema de acceso sin llave (keyless entry) que permite abrir las puertas con solo tocar la manija, y arrancar el motor presionando un botón sin necesidad de extraer la llave del bolsillo.',
+      problem: 'Buscar la llave en bolsillos o bolsos cada vez que se aborda el vehículo es una molestia cotidiana, especialmente con las manos ocupadas (bolsas, niños, equipaje).',
+      solution: 'La llave inteligente se comunica con el vehículo por radiofrecuencia. Al acercarse, las puertas se desbloquean. Para arrancar, basta con pisar el freno y presionar el botón "Start/Stop".',
+      benefit: 'Acceso y arranque sin sacar la llave del bolsillo. Experiencia premium en cada abordaje. Funcionalidad que se espera en vehículos de segmentos superiores.',
+      chips: ['Keyless', 'Push Start', 'Inteligente', 'Confort']
+    },
+    {
+      icon: '🔋', name: '4 Puertos USB (Tipo A + Tipo C)',
+      versions: ['manual', 'dct'],
+      desc: 'Cuatro puertos de carga distribuidos entre las filas delantera y trasera, combinando conectores USB Tipo A (estándar) y Tipo C (nuevo estándar), permitiendo que todos los pasajeros carguen sus dispositivos simultáneamente.',
+      problem: 'Los vehículos con solo 1 o 2 puertos USB obligan a los pasajeros traseros a compartir o a llevar cables extensiones, generando incomodidad en viajes largos.',
+      solution: 'Distribución de 4 puertos (delanteros y traseros) con ambos estándares (A y C) para compatibilidad universal. Cada pasajero tiene su propio punto de carga.',
+      benefit: 'Todos los ocupantes cargan sus dispositivos al mismo tiempo. Viajes largos sin disputas por los enchufes. Compatibilidad con dispositivos antiguos y nuevos.',
+      chips: ['4 Puertos', 'USB-A', 'USB-C', 'Carga']
+    },
+    {
+      icon: '🎵', name: 'Sistema de Audio — 6 Parlantes',
+      versions: ['manual', 'dct'],
+      desc: 'Sistema de audio con 6 parlantes distribuidos estratégicamente en el habitáculo para una experiencia sonora envolvente. Compatible con Bluetooth, USB y las proyecciones de CarPlay/Android Auto.',
+      problem: 'Los sistemas de audio básicos con 2 o 4 parlantes ofrecen una experiencia sonora plana, especialmente para quienes pasan mucho tiempo en el vehículo.',
+      solution: 'Seis parlantes distribuidos en puertas delanteras, puertas traseras y tablero proporcionan una cobertura sonora más uniforme en todo el habitáculo.',
+      benefit: 'Calidad de audio superior para todos los ocupantes. La música se disfruta con mayor claridad y presencia en todo el habitáculo.',
+      chips: ['6 Parlantes', 'Audio', 'Bluetooth', 'Envolvente']
+    },
+    {
+      icon: '🎮', name: 'Modos de Manejo — Eco / Normal / Sport',
+      versions: ['dct'],
+      desc: 'Sistema que permite seleccionar entre tres perfiles de conducción que modifican la respuesta del acelerador, el patrón de cambios de la transmisión DCT y la asistencia de la dirección.',
+      problem: 'Un único perfil de conducción no se adapta a todas las situaciones: lo que funciona para ahorrar combustible en ciudad no sirve para una carretera sinuosa de montaña.',
+      solution: 'El modo Eco suaviza la respuesta del acelerador y prioriza cambios tempranos para ahorrar combustible. Normal ofrece un equilibrio. Sport endurece la respuesta para una conducción más dinámica y deportiva.',
+      benefit: 'El vehículo se adapta al estado de ánimo y al tipo de trayecto. Ahorro de combustible cuando se necesita, diversión cuando se desea. Versatilidad en un solo vehículo.',
+      chips: ['Eco', 'Normal', 'Sport', 'Adaptable']
+    },
+    {
+      icon: '🎛️', name: 'Control de Crucero',
+      versions: ['manual', 'dct'],
+      desc: 'Sistema que mantiene una velocidad constante preestablecida por el conductor sin necesidad de pisar el acelerador. Ideal para trayectos largos en carretera.',
+      problem: 'Mantener el pie en el acelerador durante viajes largos en carretera genera fatiga y puede provocar variaciones involuntarias de velocidad que derivan en multas.',
+      solution: 'El control de crucero fija la velocidad deseada y el vehículo la mantiene constante mediante el sistema de gestión del motor, liberando al conductor de la tarea de acelerar.',
+      benefit: 'Viajes largos más relajados y sin fatiga en la pierna derecha. Velocidad constante que contribuye al ahorro de combustible y al cumplimiento de los límites.',
+      chips: ['Crucero', 'Velocidad', 'Confort', 'Carretera']
     }
   ],
-  accInterior: [
+  accConfort: [
     {
-      icon: '🎯', name: 'Volante de Cuero Multifunción',
+      icon: '❄️', name: 'Climatización Digital con Salidas Traseras y Filtro CN95',
       versions: ['manual', 'dct'],
-      desc: 'Volante revestido en cuero con botones de control multifunción integrados para audio, teléfono y control crucero, permitiendo operar sistemas sin soltar el volante.',
-      problem: 'Tener que soltar el volante para ajustar el volumen, contestar una llamada o activar el control crucero distrae la atención de la carretera.',
-      solution: 'Los botones multifunción integrados en el volante permiten controlar audio, llamadas y crucero con los pulgares, sin retirar las manos de la posición de manejo.',
-      benefit: 'Conducción más segura con todos los controles al alcance de los dedos. Acabado en cuero para un tacto premium y mayor agarre.',
-      chips: ['Cuero', 'Multifunción', 'Controles', 'Ergonómico']
+      desc: 'Sistema de aire acondicionado con control digital de temperatura, salidas de aire delanteras y traseras, y filtro de aire CN95 que retiene el 95% de partículas de 0.3 micras.',
+      problem: 'La contaminación urbana y el polvo de carretera afectan la salud de los pasajeros. Además, los sistemas sin salidas traseras dejan a los pasajeros de atrás con climatización deficiente.',
+      solution: 'El climatizador digital mantiene la temperatura exacta seleccionada. Las salidas traseras aseguran que todos los ocupantes reciban aire acondicionado. El filtro CN95 (similar a una mascarilla KN95) purifica el aire que ingresa al habitáculo.',
+      benefit: 'Confort térmico uniforme para los cinco ocupantes. Aire limpio a nivel hospitalario dentro de la cabina. Un guiño de "salud a bordo" que hasta hace poco solo mencionaban marcas de lujo.',
+      chips: ['Digital', 'Salidas Traseras', 'CN95', 'Climatización']
     },
     {
       icon: '💺', name: 'Asientos de Cuero',
       versions: ['manual', 'dct'],
-      desc: 'Tapicería completa en cuero sintético de alta calidad para los cinco asientos del vehículo. Acabado premium con costuras decorativas.',
-      problem: 'Los asientos de tela se manchan con facilidad, absorben olores y resultan más difíciles de limpiar, especialmente con niños o mascotas a bordo.',
-      solution: 'La tapicería en cuero sintético ofrece una superficie resistente a manchas, fácil de limpiar con un paño húmedo y con un aspecto visual premium.',
-      benefit: 'Interior con aspecto y tacto de categoría superior. Mantenimiento sencillo y durabilidad a largo plazo. Ideal para familias con niños.',
-      chips: ['Cuero', 'Premium', 'Fácil Limpieza', '5 Plazas']
+      desc: 'Revestimiento de los asientos en material tipo cuero que ofrece un tacto premium, mayor durabilidad y facilidad de limpieza respecto a los asientos de tela.',
+      problem: 'Los asientos de tela se manchan con facilidad, absorben olores y son más difíciles de limpiar, especialmente con niños o mascotas.',
+      solution: 'El material tipo cuero proporciona una superficie no porosa que se limpia con un paño húmedo, resiste mejor el desgaste diario y ofrece una sensación táctil de mayor calidad.',
+      benefit: 'Interior con aspecto premium y fácil mantenimiento. Limpieza rápida ante derrames o manchas. Sensación de calidad superior en cada viaje.',
+      chips: ['Cuero', 'Premium', 'Fácil Limpieza', 'Confort']
     },
     {
-      icon: '💺', name: 'Asiento Conductor con Ajuste Eléctrico',
+      icon: '💺', name: 'Asiento del Conductor con Ajuste Eléctrico',
       versions: ['dct'],
-      desc: 'El asiento del conductor cuenta con regulación eléctrica que permite ajustar la posición (altura, inclinación, distancia) con precisión milimétrica mediante controles integrados.',
-      problem: 'Los ajustes manuales del asiento requieren esfuerzo físico y no permiten微调 (ajustes finos) mientras se está sentado en el vehículo.',
-      solution: 'Los motores eléctricos del asiento permiten ajustes precisos con solo presionar un botón, facilitando encontrar la posición ergonómica perfecta.',
-      benefit: 'Ergonomía perfecta sin esfuerzo. Ajuste preciso mientras se está sentado, lo que permite optimizar la posición de manejo y la visibilidad.',
-      chips: ['Eléctrico', 'Ergonómico', 'Precisión', 'Exclusivo DCT']
+      desc: 'Asiento del conductor con regulación eléctrica de posición (adelante/atrás, respaldo, altura) mediante botones laterales. Permite encontrar la posición ergonómica perfecta con precisión milimétrica.',
+      problem: 'Los ajustes manuales de asiento requieren esfuerzo y no permiten microajustes precisos. Encontrar la posición ideal puede ser frustrante, especialmente si comparten el vehículo.',
+      solution: 'Los motores eléctricos permiten ajustar cada parámetro del asiento con solo presionar un botón, sin esfuerzo físico y con una precisión que los mecanismos manuales no pueden igualar.',
+      benefit: 'Ergonomía perfecta sin esfuerzo. Ajuste preciso mientras se conduce para maximizar confort y visibilidad. Tecnología que se asocia a vehículos de segmentos superiores.',
+      chips: ['Eléctrico', 'Ergonómico', 'Ajuste', 'Premium']
     },
     {
-      icon: '🤲', name: 'Apoyabrazos Centrales Delanteros y Traseros',
-      versions: ['manual', 'dct'],
-      desc: 'Apoyabrazos centrales tanto en la fila delantera como en la trasera, proporcionando confort adicional para los ocupantes en viajes prolongados.',
-      problem: 'Los viajes largos sin apoyo para los brazos generan fatiga en hombros y espalda, especialmente para el conductor y los pasajeros centrales.',
-      solution: 'Los apoyabrazos centrales acolchados permiten descansar los brazos de forma natural, reduciendo la tensión muscular en trayectos prolongados.',
-      benefit: 'Confort superior para todos los ocupantes en viajes de larga distancia. El pasajero trasero central también dispone de apoyo.',
-      chips: ['Apoyabrazos', 'Delantero', 'Trasero', 'Confort']
-    },
-    {
-      icon: '❄️', name: 'A/C Digital con Salidas Delanteras y Traseras — Filtro CN95',
-      versions: ['manual', 'dct'],
-      desc: 'Sistema de climatización con control digital, salidas de aire para las filas delantera y trasera, y filtro de aire CN95 que retiene el 95% de partículas de 0.3 micras.',
-      problem: 'Los sistemas de climatización sin salidas traseras dejan a los pasajeros de la segunda fila con ventilación insuficiente, especialmente en el clima cálido de la costa ecuatoriana.',
-      solution: 'Las salidas de aire traseras independientes garantizan flujo de aire fresco para todos los ocupantes. El filtro CN95 purifica el aire a nivel hospitalario.',
-      benefit: 'Confort térmico uniforme para las cinco plazas. Aire limpio y filtrado que protege la salud respiratoria de toda la familia.',
-      chips: ['Climatización Digital', 'Salidas Traseras', 'CN95', 'Filtro']
-    },
-    {
-      icon: '🧳', name: 'Cajuela — 398 L / 1.262 L',
-      versions: ['manual', 'dct'],
-      desc: 'Capacidad de carga de 398 litros con asientos en posición normal, expandible a 1.262 litros con los asientos traseros abatidos. Apertura electrónica desde la llave inteligente.',
-      problem: 'Muchos SUV compactos sacrifican espacio de carga en favor del diseño, limitando la capacidad para equipaje de viajes familiares o compras voluminosas.',
-      solution: 'Con 398 litros disponibles y hasta 1.262 litros con asientos abatidos, el X50 ofrece capacidad suficiente para el equipaje de una familia de cinco en un viaje de fin de semana.',
-      benefit: 'Versatilidad de carga para cualquier necesidad: desde la compra semanal hasta el equipaje completo de unas vacaciones familiares. Apertura manos libres desde la llave.',
-      chips: ['398 L', '1.262 L', 'Asientos Abatibles', 'Apertura Electrónica']
-    },
-    {
-      icon: '🔘', name: 'Freno de Mano Electrónico con Auto Hold',
-      versions: ['manual', 'dct'],
-      desc: 'Freno de estacionamiento electrónico con función Auto Hold, que mantiene el vehículo detenido automáticamente al detenerse en pendientes o semáforos.',
-      problem: 'El freno de mano mecánico tradicional ocupa espacio en la consola, requiere fuerza para accionarlo y no ofrece la función de retención automática.',
-      solution: 'El freno electrónico se activa con un botón, liberando espacio en la consola central. La función Auto Hold mantiene el vehículo inmóvil sin necesidad de mantener el pie en el freno.',
-      benefit: 'Consola central más limpia y espaciosa. Comodidad en semáforos y pendientes sin esfuerzo. Tecnología asociada a vehículos de categoría superior.',
-      chips: ['Electrónico', 'Auto Hold', 'Botón', 'Premium']
-    },
-    {
-      icon: '🔒', name: 'Bloqueo Central de Puertas — 5 Puntos',
-      versions: ['manual', 'dct'],
-      desc: 'Sistema de bloqueo centralizado para las cinco puertas, con control remoto desde la llave inteligente y botón interior.',
-      problem: 'Los sistemas de bloqueo individuales por puerta son incómodos y pueden dejar puertas sin asegurar por olvido.',
-      solution: 'Un solo comando bloquea o desbloquea las cinco puertas simultáneamente, con confirmación visual y sonora.',
-      benefit: 'Seguridad perimetral completa con un solo gesto. Tranquilidad al estacionar sabiendo que todo el vehículo está asegurado.',
-      chips: ['Centralizado', '5 Puertas', 'Remoto', 'Seguridad']
-    }
-  ],
-  accExterior: [
-    {
-      icon: '💡', name: 'Iluminación Full LED — Eagle-Eye',
-      versions: ['manual', 'dct'],
-      desc: 'Sistema de iluminación 100% LED con faros tipo "Eagle-Eye" de diseño cristalino, luces diurnas LED automáticas y función "sígueme a casa" (Follow Me Home).',
-      problem: 'Las luces halógenas convencionales ofrecen menor visibilidad nocturna, consumen más energía y tienen una vida útil significativamente inferior.',
-      solution: 'La tecnología LED proporciona mayor intensidad lumínica, mejor distribución del haz, menor consumo eléctrico y una vida útil muy superior a las bombillas halógenas.',
-      benefit: 'Visibilidad nocturna superior, diseño visual distintivo y moderno, y menor costo de mantenimiento a largo plazo. La función "sígueme a casa" ilumina el camino al estacionar.',
-      chips: ['Full LED', 'Eagle-Eye', 'DRL', 'Follow Me Home']
+      icon: '☀️', name: 'Sun Roof — Techo Solar',
+      versions: ['dct'],
+      desc: 'Techo solar eléctrico que permite la entrada de luz natural al habitáculo y ventilación adicional. Transforma la experiencia de viaje con una sensación de amplitud y conexión con el exterior.',
+      problem: 'Los habitáculos cerrados pueden sentirse opresivos en viajes largos, y la ventilación por ventanas genera ruido aerodinámico considerable a velocidades de carretera.',
+      solution: 'El techo solar permite la entrada de luz natural que amplía visualmente el espacio interior. Al abrirlo, la ventilación se produce por el efecto Venturi (succión) con menos ruido que abrir las ventanas.',
+      benefit: 'Ambiente más luminoso y agradable para todos los ocupantes. Ventilación silenciosa en carretera. Los pasajeros traseros (especialmente niños) disfrutan de la vista al cielo.',
+      chips: ['Techo Solar', 'Luz Natural', 'Ventilación', 'Exclusivo DCT']
     },
     {
       icon: '🪟', name: 'Vidrios Eléctricos One Touch',
       versions: ['manual', 'dct'],
-      desc: 'Los cuatro vidrios eléctricos cuentan con función "one touch" (un toque) para apertura y cierre completo con solo presionar una vez el botón.',
-      problem: 'Los vidrios eléctricos convencionales requieren mantener presionado el botón durante todo el recorrido de apertura o cierre, resultando incómodo.',
-      solution: 'La función one touch permite abrir o cerrar completamente cada vidrio con una sola pulsación breve, de forma automática.',
-      benefit: 'Comodidad en el uso diario, especialmente al pagar en peajes o estaciones de servicio. Operación rápida y sin esfuerzo.',
-      chips: ['One Touch', '4 Vidrios', 'Eléctricos', 'Automático']
+      desc: 'Los cuatro vidrios eléctricos cuentan con función "one touch" (un toque) para apertura y cierre completo con solo presionar una vez el botón. Incluye función antipinzamiento.',
+      problem: 'Los vidrios que requieren mantener presionado el botón hasta completar el recorrido son incómodos y distraen al conductor de la atención en la vía.',
+      solution: 'La función one touch permite abrir o cerrar cada vidrio completamente con un solo toque breve. El sistema antipinzamiento detecta obstáculos y revierte el movimiento para evitar accidentes.',
+      benefit: 'Comodidad y rapidez en el manejo de los vidrios. Seguridad con la función antipinzamiento, especialmente importante con niños en el vehículo.',
+      chips: ['One Touch', '4 Vidrios', 'Antipinzamiento', 'Eléctricos']
     },
     {
-      icon: '🪞', name: 'Retrovisores Eléctricos y Desempañados',
+      icon: '🪞', name: 'Retrovisores Eléctricos con Desempañador',
       versions: ['manual', 'dct'],
-      desc: 'Retrovisores exteriores con ajuste eléctrico y función de desempañado integrado para mantener la visibilidad en condiciones de humedad o lluvia.',
-      problem: 'Los retrovisores sin desempañado se empañan en climas húmedos, eliminando la visibilidad lateral en momentos críticos.',
-      solution: 'La resistencia calefactable integrada en los retrovisores elimina el empañamiento en segundos, restaurando la visibilidad lateral.',
-      benefit: 'Visibilidad lateral constante en todas las condiciones climáticas. Ajuste eléctrico preciso desde el interior del vehículo.',
-      chips: ['Eléctricos', 'Desempañados', 'Calefactables', 'Ajuste Interior']
+      desc: 'Retrovisores exteriores con ajuste eléctrico de posición y función de desempañamiento eléctrico para mantener la visibilidad en condiciones de humedad o lluvia.',
+      problem: 'Los retrovisores sin ajuste eléctrico requieren calibración manual que puede descalibrarse fácilmente. En días de lluvia o humedad, el espejo se empaña y pierde visibilidad.',
+      solution: 'El ajuste eléctrico permite calibrar la posición desde el interior del vehículo con un selector. La resistencia térmica integrada elimina la condensación del espejo en segundos.',
+      benefit: 'Posición perfecta del espejo sin salir del vehículo. Visibilidad garantizada incluso en las condiciones climáticas más adversas de la sierra ecuatoriana.',
+      chips: ['Eléctricos', 'Desempañador', 'Visibilidad', 'Seguridad']
     },
     {
       icon: '🪞', name: 'Retrovisores Plegables Eléctricos',
       versions: ['dct'],
-      desc: 'Los retrovisores exteriores se pliegan eléctricamente al bloquear el vehículo, protegiéndolos de golpes en espacios de estacionamiento estrechos.',
-      problem: 'En espacios de estacionamiento reducidos, los retrovisores sobresalen y son vulnerables a golpes de otros vehículos o transeúntes.',
-      solution: 'Al bloquear el vehículo con la llave inteligente, los retrovisores se pliegan automáticamente, reduciendo el ancho del vehículo y protegiendo los espejos.',
-      benefit: 'Protección automática al estacionar. Menor riesgo de daños costosos en los retrovisores. Un detalle premium que marca la diferencia.',
+      desc: 'Los retrovisores exteriores se pliegan eléctricamente contra la carrocería con solo presionar un botón, protegiéndolos al estacionar en espacios estrechos o al lavar el vehículo.',
+      problem: 'Los retrovisores fijos sobresalen de la carrocería y son vulnerables a golpes al estacionar en espacios reducidos o al pasar por lavaderos automáticos.',
+      solution: 'Un motor eléctrico integrado permite plegar los retrovisores contra la carrocería. Se activan/despliegan con el cierre/apertura del vehículo o manualmente desde el interior.',
+      benefit: 'Protección de los retrovisores al estacionar. Imagen más estilizada del vehículo cerrado. Evita reparaciones costosas por golpes en espejos.',
       chips: ['Plegables', 'Eléctricos', 'Protección', 'Exclusivo DCT']
+    }
+  ],
+  accExterior: [
+    {
+      icon: '💡', name: 'Iluminación 100% LED con Función "Sígueme a Casa"',
+      versions: ['manual', 'dct'],
+      desc: 'Todas las luces del vehículo son LED: luces diurnas automáticas (DRL), faros principales, luces de posición y función "sígueme a casa" que mantiene los faros encendidos unos segundos después de apagar el motor para iluminar el camino.',
+      problem: 'Las bombillas halógenas tradicionales consumen más energía, tienen menor vida útil y ofrecen una iluminación menos potente y con peor color que los LED.',
+      solution: 'La tecnología LED consume hasta un 80% menos energía que las halógenas, dura significativamente más y proporciona una luz más blanca y brillante que mejora la visibilidad nocturna.',
+      benefit: 'Mejor visibilidad nocturna con menor consumo energético. Estética moderna y premium. La función "sígueme a casa" proporciona seguridad al caminar hacia la puerta de casa en la oscuridad.',
+      chips: ['LED', 'DRL', 'Sígueme a Casa', 'Eficiencia']
     },
     {
-      icon: '🌧️', name: 'Plumas Automáticas — Delanteras y Traseras',
+      icon: '🛞', name: 'Llantas R17 Bitono (Manual) / R18 Bitono (DCT)',
       versions: ['manual', 'dct'],
-      desc: 'Limpiaparabrisas delanteros y trasero con funcionamiento automático, activados por sensor de lluvia.',
-      problem: 'Activar manualmente los limpiaparabrisas cada vez que cambia la intensidad de la lluvia distrae al conductor de la carretera.',
-      solution: 'El sensor de lluvia detecta la intensidad de la precipitación y ajusta automáticamente la velocidad de los limpiaparabrisas sin intervención del conductor.',
-      benefit: 'Conducción más segura en lluvia al mantener la atención en la carretera. El limpiador trasero asegura visibilidad al retroceder.',
-      chips: ['Automáticas', 'Sensor Lluvia', 'Delanteras', 'Trasera']
+      desc: 'Llantas de aleación con diseño bitono deportivo. R17 en la versión manual (perfil más alto para mayor confort en calles en mal estado) y R18 en la versión DCT (mayor presencia y agarre).',
+      problem: 'Las llantas de acero con tapacuchos ofrecen una estética económica y menor agarre en curvas. Las llantas de mayor diámetro pueden comprometer el confort si el perfil es muy bajo.',
+      solution: 'La versión manual equipa R17 con perfil 215/60, que ofrece un buen equilibrio entre agarre y confort en calles irregulares. La versión DCT equipa R18 con diseño bitono para mayor presencia deportiva manteniendo un perfil adecuado.',
+      benefit: 'Estética deportiva y diferenciada. La R17 prioriza confort y economía de reemplazo; la R18 prioriza presencia y agarre. Ambas con diseño bitono que realza el perfil del vehículo.',
+      chips: ['R17/R18', 'Bitono', 'Aleación', 'Deportivo']
+    },
+    {
+      icon: '📐', name: 'Dimensiones Optimizadas — 4.397 × 1.841 × 1.694 mm',
+      versions: ['manual', 'dct'],
+      desc: 'Dimensiones compactas para maniobrabilidad urbana (4.397 mm de largo) con distancia entre ejes de 2.601 mm que maximiza el espacio interior. Ancho de 1.841 mm que proporciona estabilidad sin exagerar el tamaño.',
+      problem: 'Los SUV demasiado grandes son difíciles de estacionar en ciudades con espacios reducidos; los demasiado pequeños sacrifican espacio interior y estabilidad.',
+      solution: 'El X50 se posiciona en el punto óptimo: lo suficientemente compacto para maniobrar y estacionar fácilmente, pero con una distancia entre ejes que genera un habitáculo espacioso para 5 pasajeros.',
+      benefit: 'Maniobrabilidad urbana sin sacrificar espacio interior. Fácil de estacionar en la ciudad pero espacioso para viajes familiares. El tamaño justo para el uso cotidiano ecuatoriano.',
+      chips: ['Compacto', 'Espacioso', '2.601 mm', 'Urbano']
+    },
+    {
+      icon: '🧳', name: 'Cajuela — 398 L / 1.262 L (Asientos Abatidos)',
+      versions: ['manual', 'dct'],
+      desc: 'Capacidad de carga de 398 litros con los asientos en posición normal, expandible a 1.262 litros con los asientos traseros abatidos. Suficiente para el equipaje de una familia de 5 en un viaje de fin de semana.',
+      problem: 'Muchos SUV compactos sacrifican la cajuela por el diseño, limitando la capacidad de carga para viajes familiares o compras grandes.',
+      solution: 'Los 398 litros con asientos arriba superan a muchos competidores del segmento. Al abatir los asientos traseros, los 1.262 litros permiten transportar objetos voluminosos o equipaje para viajes largos.',
+      benefit: 'Versatilidad de carga para el día a día y para aventuras de fin de semana. Espacio suficiente para mudanzas pequeñas, compras grandes o el equipaje de toda la familia.',
+      chips: ['398 L', '1.262 L', 'Versátil', 'Familiar']
     },
     {
       icon: '🏔️', name: 'Barras de Techo',
       versions: ['manual', 'dct'],
-      desc: 'Barras de techo longitudinales integradas en el diseño, que permiten la instalación de portaequipajes, portabicicletas o baúles exteriores.',
-      problem: 'Cuando la cajuela se llena con el equipaje de cinco pasajeros, no queda espacio para elementos voluminosos como bicicletas, tablas o equipamiento deportivo.',
-      solution: 'Las barras de techo permiten instalar accesorios portacarga que liberan espacio en la cajuela y habilitan el transporte de elementos voluminosos de forma segura.',
-      benefit: 'Versatilidad para viajes familiares, excursiones y actividades al aire libre. Capacidad de carga expandida sin comprometer el espacio interior.',
-      chips: ['Barras', 'Techo', 'Portaequipajes', 'Versatilidad']
-    }
-  ],
-  accModos: [
-    {
-      icon: '🌿', name: 'Modo Eco — Conducción Eficiente',
-      versions: ['dct'],
-      desc: 'Perfil de conducción que suaviza la respuesta del acelerador y optimiza los puntos de cambio de la transmisión DCT para maximizar la eficiencia de combustible.',
-      problem: 'En el tráfico urbano cotidiano, la respuesta agresiva del acelerador puede generar consumo innecesario de combustible y fatiga en el pie derecho.',
-      solution: 'El modo Eco reduce la sensibilidad del acelerador y prioriza los cambios a marchas altas, manteniendo el régimen del motor en la zona de mayor eficiencia.',
-      benefit: 'Ahorro de combustible significativo en el uso urbano. Conducción más relajada y suave para el día a día en la ciudad.',
-      chips: ['Eco', 'Eficiencia', 'Ahorro', 'Urbano']
+      desc: 'Barras de techo integrales de serie que permiten instalar portaequipajes, portabicicletas o cofres de techo para ampliar la capacidad de carga en viajes.',
+      problem: 'Cuando la cajuela no es suficiente para todo el equipaje (viajes largos, deportes al aire libre, mudanzas), no hay forma de aprovechar el espacio del techo.',
+      solution: 'Las barras de techo permiten instalar accesorios portaequipajes que multiplican la capacidad de carga del vehículo sin comprometer el espacio interior.',
+      benefit: 'Versatilidad ampliada para viajes largos, deportes y actividades al aire libre. Preparación de fábrica que evita instalaciones posteriores costosas.',
+      chips: ['Techo', 'Portaequipajes', 'Versátil', 'Serie']
     },
     {
-      icon: '🏁', name: 'Modo Sport — Conducción Deportiva',
-      versions: ['dct'],
-      desc: 'Perfil de conducción que aumenta la respuesta del acelerador, mantiene el motor en regímenes más altos y endurece la dirección para una experiencia dinámica.',
-      problem: 'En carreteras sinuosas o al buscar una conducción más envolvente, la respuesta estándar del acelerador puede sentirse perezosa.',
-      solution: 'El modo Sport retrasa los puntos de cambio, mantiene el turbo en presión y ofrece una respuesta más directa e inmediata del motor al acelerador.',
-      benefit: 'Respuesta contundente para adelantamientos seguros y conducción deportiva en carretera. Una experiencia de manejo que transforma el carácter del vehículo.',
-      chips: ['Sport', 'Deportivo', 'Respuesta', 'Dinámico']
-    },
-    {
-      icon: '⚖️', name: 'Modo Normal — Equilibrio Total',
-      versions: ['dct'],
-      desc: 'Perfil de conducción balanceado que ofrece una respuesta lineal del acelerador y cambios de marcha optimizados para confort y eficiencia.',
-      problem: 'No siempre se necesita un modo extremo: la mayoría del tiempo se busca un equilibrio entre respuesta y suavidad.',
-      solution: 'El modo Normal calibra el acelerador y la transmisión para ofrecer una conducción equilibrada, adaptable a la mayoría de las situaciones cotidianas.',
-      benefit: 'El modo ideal para el uso mixto ciudad-carretera. Sin renunciar a la diversión ni sacrificar la eficiencia.',
-      chips: ['Normal', 'Equilibrio', 'Mixto', 'Confort']
+      icon: '⛽', name: 'Tanque de 45 L — Autonomía de hasta 672 km',
+      versions: ['manual', 'dct'],
+      desc: 'Tanque de combustible de 45 litros que, combinado con la eficiencia del motor, proporciona una autonomía de aproximadamente 500 km en ciudad y hasta 672 km en carretera con un solo tanque.',
+      problem: 'La ansiedad por el combustible es real: parar a cargar constantemente interrumpe los viajes y genera gastos imprevistos cuando el consumo es elevado.',
+      solution: 'Con un consumo de ~27 km/galón en ciudad y ~35 km/galón en carretera (versión DCT), los 45 litros del tanque permiten recorridos extensos sin necesidad de reabastecer.',
+      benefit: 'Viajes largos sin paradas frecuentes para cargar combustible. Autonomía superior a 600 km en carretera que da tranquilidad en trayectos interprovinciales.',
+      chips: ['45 L', '672 km', 'Autonomía', 'Eficiencia']
     }
   ]
 };
@@ -1510,343 +1704,318 @@ const perfilesData = [
     icon: '🏙️',
     title: 'El Guerrero Urbano',
     badge: 'Versión Manual',
-    desc: 'Conductor práctico que valora el control mecánico, la confiabilidad y el bajo mantenimiento. Busca el mejor vehículo posible por la inversión más racional.',
-    items: [
-      'Uso predominantemente urbano (90% ciudad)',
-      'Primer SUV familiar con presupuesto ajustado',
-      'Conductor de aplicaciones que prioriza simplicidad',
-      'Familias jóvenes que no sacrificar seguridad',
-      'Preferencia por el control manual del vehículo'
-    ]
+    desc: 'Conductor práctico que valora el control mecánico, el bajo mantenimiento y la eficiencia en el uso diario.',
+    items: ['Primer comprador de SUV que da el salto desde un sedán', 'Uso 90% urbano donde el turbo no es indispensable', 'Prioriza simplicidad mecánica y ahorro', 'Familias jóvenes con presupuesto ajustado pero que no sacrifican seguridad']
   },
   {
-    icon: '🛣️',
-    title: 'El Viajero Exigente',
+    icon: '🚗',
+    title: 'El Eficiente Productivo',
+    badge: 'Versión Manual',
+    desc: 'Conductor de aplicaciones o profesional que necesita un vehículo confiable, de bajo costo operativo y con la mejor relación equipamiento-precio.',
+    items: ['Taxi, delivery o uso intensivo diario', 'Mantenimiento económico y predecible', 'Equipamiento premium sin el costo del turbo', 'Misma seguridad ADAS y suspensión multi link que la versión tope']
+  },
+  {
+    icon: '🏎️',
+    title: 'El Premium Accesible',
     badge: 'Versión DCT',
-    desc: 'Conductor que recorre frecuentemente carreteras y valora la potencia del turbo para adelantamientos seguros, junto con la suavidad de la caja automática.',
-    items: [
-      'Viajes frecuentes por carretera',
-      'Necesita potencia para pendientes y adelantamientos',
-      'Valora la transmisión automática de alto rendimiento',
-      'Disfruta de modos de conducción adaptables',
-      'Busca seguridad activa completa (ADAS)'
-    ]
+    desc: 'Conductor exigente que disfruta de la tecnología, busca confort premium y no quiere concesiones en su vehículo.',
+    items: ['Viajes frecuentes por carretera con turbo para adelantamientos seguros', 'Tecnología DCT que elimina la fatiga del tráfico', 'Sun roof, asiento eléctrico y modos de manejo', 'Profesional exitoso que quiere presencia premium sin precio premium']
   },
   {
     icon: '👨‍👩‍👧‍👦',
-    title: 'La Familia Premium',
+    title: 'La Familia Protegida',
     badge: 'Versión DCT',
-    desc: 'Familia con niños que busca un vehículo seguro, tecnológico y confortable, con elementos premium como techo solar y asientos eléctricos.',
-    items: [
-      'Techo solar que entretiene a los niños',
-      '4 airbags para máxima protección familiar',
-      'Asiento eléctrico para ergonomía perfecta',
-      'Climatización trasera y filtro CN95',
-      'ISOFIX y seguridad integral para los pequeños'
-    ]
-  },
-  {
-    icon: '💼',
-    title: 'El Profesional Consciente',
-    badge: 'Ambas Versiones',
-    desc: 'Profesional exitoso que busca un vehículo con presencia premium sin pagar precio premium. Valora la relación equipamiento-precio y la garantía extendida.',
-    items: [
-      'Imagen premium a precio accesible',
-      'Garantía de 10 años como declaración de calidad',
-      'Tecnología de segmento superior de serie',
-      'Bajo costo de mantenimiento y operación',
-      'Modelo maduro con +5 años en el mercado'
-    ]
+    desc: 'Familia con niños pequeños que prioriza la seguridad integral, el confort de los pasajeros traseros y la tranquilidad a largo plazo.',
+    items: ['4 airbags para protección máxima de los seres queridos', 'Suspensión multi link que cuida a los pasajeros traseros', 'Cámara 360° para estacionar sin riesgos', 'Garantía de 10 años que da tranquilidad para toda la vida útil']
   }
 ];
 
 const techTableData = [
-  { cat: 'MOTOR Y TRANSMISIÓN', rows: [
-    { param: 'Motor', manual: '1.500 cc Atmosférico', dct: '1.500 cc Turbo' },
+  { category: 'MOTOR Y TRANSMISIÓN', rows: [
+    { param: 'Motor', manual: '1.5L Atmosférico', dct: '1.5L Turbo' },
     { param: 'Potencia', manual: '116 HP', dct: '160 HP' },
     { param: 'Torque', manual: '143 Nm', dct: '230 Nm' },
+    { param: 'Transmisión', manual: 'Manual 5 velocidades + R', dct: '6DCT Doble Embrague Húmedo' },
     { param: 'Emisión', manual: 'EURO 5+', dct: 'EURO 5+' },
-    { param: 'Transmisión', manual: 'Manual 5 vel. + R', dct: '6DCT Doble Embrague Húmedo' }
+    { param: 'Modos de Manejo', manual: 'No', dct: 'Eco / Normal / Sport' },
   ]},
-  { cat: 'SUSPENSIÓN Y DIRECCIÓN', rows: [
-    { param: 'Suspensión Frontal', manual: 'MacPherson Independiente', dct: 'MacPherson Independiente' },
-    { param: 'Suspensión Posterior', manual: 'Multi Link Independiente', dct: 'Multi Link Independiente' },
-    { param: 'Neumáticos', manual: '215/60 R17', dct: '215/60 R18' },
-    { param: 'Dirección', manual: 'Electroasistida', dct: 'Electroasistida' }
+  { category: 'SUSPENSIÓN Y DIRECCIÓN', rows: [
+    { param: 'Suspensión Delantera', manual: 'MacPherson Independiente', dct: 'MacPherson Independiente' },
+    { param: 'Suspensión Trasera', manual: 'Multi Link Independiente', dct: 'Multi Link Independiente' },
+    { param: 'Dirección', manual: 'Electroasistida', dct: 'Electroasistida' },
+    { param: 'Neumáticos', manual: '215/60 R17', dct: 'R18 Bitono' },
   ]},
-  { cat: 'SEGURIDAD', rows: [
-    { param: 'Airbags Frontales', manual: '2', dct: '4' },
-    { param: 'Anclaje ISOFIX', manual: 'Sí', dct: 'Sí' },
-    { param: 'TPMS', manual: 'Sí', dct: 'Sí' },
-    { param: 'ABS / EBD / TCS / ESC / ROP', manual: 'Sí', dct: 'Sí' },
-    { param: 'Asistente Arranque en Pendiente', manual: 'Sí', dct: 'Sí' },
-    { param: 'Frenos Disco (Vent. del. / Sólido tras.)', manual: 'Sí', dct: 'Sí' },
+  { category: 'SEGURIDAD ACTIVA', rows: [
+    { param: 'ABS + EBD', manual: 'Sí', dct: 'Sí' },
+    { param: 'TCS (Control de Tracción)', manual: 'Sí', dct: 'Sí' },
+    { param: 'ESC (Control de Estabilidad)', manual: 'Sí (Bosch ESP 9.3)', dct: 'Sí (Bosch ESP 9.3)' },
+    { param: 'ROP (Protección Anti-vuelco)', manual: 'Sí', dct: 'Sí' },
+    { param: 'Asistente de Arranque en Pendiente', manual: 'Sí', dct: 'Sí' },
+    { param: 'BSD (Detección Punto Ciego)', manual: 'Sí', dct: 'Sí' },
+    { param: 'LDW (Advertencia Cambio de Carril)', manual: 'Sí', dct: 'Sí' },
+    { param: 'RCW (Advertencia Colisión Trasera)', manual: 'Sí', dct: 'Sí' },
+    { param: 'TPMS (Monitor de Presión)', manual: 'Sí', dct: 'Sí' },
+  ]},
+  { category: 'SEGURIDAD PASIVA', rows: [
+    { param: 'Airbags Frontales', manual: '2', dct: '4 (Frontales + Laterales)' },
+    { param: 'Carrocería Jaula 360°', manual: 'Acero Ultra Alta Resistencia', dct: 'Acero Ultra Alta Resistencia' },
     { param: 'Cinturones 3 Puntos', manual: '5', dct: '5' },
-    { param: 'ADAS (BSD, LDW, RCW)', manual: 'Sí', dct: 'Sí' }
+    { param: 'Anclajes ISOFIX', manual: 'Sí', dct: 'Sí' },
+    { param: 'Frenos Delanteros', manual: 'Disco Ventilado', dct: 'Disco Ventilado' },
+    { param: 'Freno de Mano', manual: 'Electrónico + Auto Hold', dct: 'Electrónico + Auto Hold' },
   ]},
-  { cat: 'TECNOLOGÍA Y MULTIMEDIA', rows: [
-    { param: 'Pantalla Táctil 10.25" LCD', manual: 'Sí', dct: 'Sí' },
-    { param: 'Panel Digital 10.25" LCD', manual: 'Sí', dct: 'Sí' },
+  { category: 'TECNOLOGÍA Y MULTIMEDIA', rows: [
+    { param: 'Pantalla Táctil', manual: '10.25" LCD', dct: '10.25" LCD' },
+    { param: 'Panel Digital Instrumentos', manual: '10.25" LCD', dct: '10.25" LCD' },
     { param: 'Apple CarPlay / Android Auto', manual: 'Sí', dct: 'Sí' },
-    { param: 'Bluetooth Manos Libres', manual: 'Sí', dct: 'Sí' },
+    { param: 'Cámara 360° Vista 3D', manual: 'Sí', dct: 'Sí' },
+    { param: 'Llave Inteligente + Botón Encendido', manual: 'Sí', dct: 'Sí' },
     { param: 'Parlantes', manual: '6', dct: '6' },
-    { param: 'Llave Inteligente / Push Start', manual: 'Sí', dct: 'Sí' },
-    { param: 'Vidrios One Touch', manual: 'Sí', dct: 'Sí' },
     { param: 'Puertos USB (A + C)', manual: '4', dct: '4' },
-    { param: 'Control Crucero', manual: 'Sí', dct: 'Sí' },
-    { param: 'Cámara 360°', manual: 'Sí', dct: 'Sí' },
-    { param: 'Modos de Manejo', manual: 'No', dct: 'Eco / Normal / Sport' }
+    { param: 'Control de Crucero', manual: 'Sí', dct: 'Sí' },
+    { param: 'Cargador Inalámbrico', manual: 'No', dct: 'Sí' },
+    { param: 'Bluetooth / Manos Libres', manual: 'Sí', dct: 'Sí' },
   ]},
-  { cat: 'INTERIOR', rows: [
-    { param: 'Volante Cuero Multifunción', manual: 'Sí', dct: 'Sí' },
-    { param: 'Cajuela (asientos arriba / abajo)', manual: '398 L / 1.262 L', dct: '398 L / 1.262 L' },
-    { param: 'Apoyabrazos Centrales', manual: 'Sí', dct: 'Sí' },
+  { category: 'CONFORT E INTERIOR', rows: [
     { param: 'Asientos de Cuero', manual: 'Sí', dct: 'Sí' },
-    { param: 'A/C Digital Salidas Del. y Tras.', manual: 'Sí', dct: 'Sí' },
-    { param: 'Pasajeros', manual: '5', dct: '5' },
-    { param: 'Freno de Mano Electrónico', manual: 'Sí', dct: 'Sí' },
+    { param: 'Climatización Digital', manual: 'Sí (con salidas traseras)', dct: 'Sí (con salidas traseras)' },
     { param: 'Filtro de Aire CN95', manual: 'Sí', dct: 'Sí' },
+    { param: 'Volante de Cuero Multifunción', manual: 'Sí', dct: 'Sí' },
     { param: 'Asiento Conductor Eléctrico', manual: 'No', dct: 'Sí' },
-    { param: 'Techo Solar (Sun Roof)', manual: 'No', dct: 'Sí' }
+    { param: 'Sun Roof', manual: 'No', dct: 'Sí' },
+    { param: 'Vidrios Eléctricos One Touch', manual: 'Sí', dct: 'Sí' },
+    { param: 'Apoyabrazos Central', manual: 'Sí (del. y tras.)', dct: 'Sí (del. y tras.)' },
   ]},
-  { cat: 'EXTERIOR', rows: [
-    { param: 'Luces LED Diurnas / Automáticas', manual: 'Sí', dct: 'Sí' },
-    { param: 'Tanque de Gasolina', manual: '45 L', dct: '45 L' },
-    { param: 'Plumas Automáticas', manual: 'Sí', dct: 'Sí' },
-    { param: 'Aros Deportivos', manual: 'R17 Bitono', dct: 'R18' },
-    { param: 'Retrovisores Eléc. y Desempañados', manual: 'Sí', dct: 'Sí' },
-    { param: 'Retrovisores Plegables', manual: 'No', dct: 'Sí' },
-    { param: 'Barras de Techo', manual: 'Sí', dct: 'Sí' }
+  { category: 'EXTERIOR', rows: [
+    { param: 'Luces LED (100%)', manual: 'Sí (DRL + Sigue a casa)', dct: 'Sí (DRL + Sigue a casa)' },
+    { param: 'Retrovisores Eléctricos', manual: 'Sí (desempañados)', dct: 'Sí (desempañados)' },
+    { param: 'Retrovisores Plegables', manual: 'No', dct: 'Sí (eléctricos)' },
+    { param: 'Llantas', manual: 'R17 Bitono', dct: 'R18 Bitono' },
+    { param: 'Barras de Techo', manual: 'Sí', dct: 'Sí' },
+    { param: 'Plumas Automáticas', manual: 'Sí (del. y tras.)', dct: 'Sí (del. y tras.)' },
   ]},
-  { cat: 'DIMENSIONES', rows: [
+  { category: 'CAPACIDAD Y DIMENSIONES', rows: [
+    { param: 'Pasajeros', manual: '5', dct: '5' },
+    { param: 'Cajuela (asientos arriba)', manual: '398 L', dct: '398 L' },
+    { param: 'Cajuela (asientos abajo)', manual: '1.262 L', dct: '1.262 L' },
+    { param: 'Tanque de Combustible', manual: '45 L', dct: '45 L' },
     { param: 'Largo', manual: '4.397 mm', dct: '4.397 mm' },
     { param: 'Ancho', manual: '1.841 mm', dct: '1.841 mm' },
     { param: 'Alto', manual: '1.694 mm', dct: '1.694 mm' },
-    { param: 'Distancia entre Ejes', manual: '2.601 mm', dct: '2.601 mm' }
+    { param: 'Distancia entre Ejes', manual: '2.601 mm', dct: '2.601 mm' },
   ]},
-  { cat: 'COLORES DISPONIBLES', rows: [
-    { param: 'Colores', manual: 'Negro, Blanco, Azul, Gris, Plata', dct: 'Negro, Blanco, Azul, Gris, Plata' }
+  { category: 'GARANTÍA', rows: [
+    { param: 'Garantía', manual: '10 años / 120.000 km', dct: '10 años / 120.000 km' },
+    { param: 'Distribuidor', manual: 'Grupo Roldán (Ecuador)', dct: 'Grupo Roldán (Ecuador)' },
   ]},
-  { cat: 'GARANTÍA', rows: [
-    { param: 'Garantía Total', manual: '10 años o 120.000 km', dct: '10 años o 120.000 km' }
-  ]}
 ];
 
-// ==================== RENDER FUNCTIONS ====================
-
-function renderStats() {
-  const grid = document.getElementById('statsGrid');
-  const data = statsData[currentVersion];
-  grid.innerHTML = data.map(s => `
-    <div class="stat-card">
-      <div class="stat-number">${s.number}<span class="stat-unit">${s.unit}</span></div>
-      <div class="stat-label">${s.label}</div>
-    </div>
-  `).join('');
-}
-
-function renderIntro() {
-  const el = document.getElementById('introContent');
-  const v = versionData[currentVersion];
-  el.innerHTML = `
-    <h2 class="section-title" style="font-size:clamp(1.4rem,3vw,2rem)">${v.name} — <span>${v.subtitle}</span></h2>
-    ${v.paragraphs.map(p => `<p>${p}</p>`).join('')}
-  `;
-}
+// ===================== RENDER FUNCTIONS =====================
 
 function renderDetalles() {
   const grid = document.getElementById('detallesGrid');
-  grid.innerHTML = detallesData.map(d => {
-    const included = d.versions.includes(currentVersion);
-    return `
-      <div class="detalle-card ${included ? '' : 'dimmed'}">
-        ${!included ? '<span class="detalle-badge-exclude">No incluido en esta versión</span>' : ''}
-        <div class="detalle-icon">${d.icon}</div>
-        <div class="detalle-title">${d.title}</div>
-        <div class="detalle-text">${d.text}</div>
-      </div>
+  grid.innerHTML = '';
+  detallesData.forEach(item => {
+    const isDimmed = !item.versions.includes(currentVersion);
+    const card = document.createElement('div');
+    card.className = `detalle-card reveal${isDimmed ? ' dimmed' : ''}`;
+    card.innerHTML = `
+      <div class="detalle-icon">${item.icon}</div>
+      <div class="detalle-title">${item.title}</div>
+      <div class="detalle-text">${item.text}</div>
     `;
-  }).join('');
+    grid.appendChild(card);
+  });
+  observeReveal();
 }
-
-let openAccordions = new Set();
 
 function renderAccordions() {
-  const list = document.getElementById('accordionList');
+  const container = document.getElementById('accordionsContainer');
+  container.innerHTML = '';
+  
   const categories = [
-    { key: 'accMotor', icon: '🔥', title: 'Motor y Transmisión', meta: () => currentVersion === 'dct' ? '1.5 Turbo · 160 HP · 6DCT' : '1.5 Atmosférico · 116 HP · 5MT' },
-    { key: 'accSuspension', icon: '🔗', title: 'Suspensión y Dirección', meta: () => 'MacPherson · Multi Link · EPS' },
-    { key: 'accSeguridadActiva', icon: '🛡️', title: 'Seguridad Activa', meta: () => 'ABS · EBD · TCS · ESC · ROP · ADAS' },
-    { key: 'accSeguridadPasiva', icon: '🦺', title: 'Seguridad Pasiva', meta: () => 'Jaula 360° · Airbags · ISOFIX · Cinturones' },
-    { key: 'accTecnologia', icon: '📺', title: 'Tecnología y Multimedia', meta: () => 'Dual 10.25" · CarPlay · 360° · Bluetooth' },
-    { key: 'accInterior', icon: '💺', title: 'Interior y Confort', meta: () => 'Cuero · A/C Digital · 5 Plazas · 398-1262 L' },
-    { key: 'accExterior', icon: '💡', title: 'Exterior', meta: () => 'Full LED · One Touch · Barras Techo' },
-    { key: 'accModos', icon: '🎛️', title: 'Modos de Conducción', meta: () => 'Eco · Normal · Sport' }
+    { key: 'accMotor', icon: '🔥', title: 'Motor', meta: '1.5L · 116/160 HP' },
+    { key: 'accTransmision', icon: '⚡', title: 'Transmisión', meta: '5MT / 6DCT' },
+    { key: 'accSuspension', icon: '🛞', title: 'Suspensión y Dirección', meta: 'Multi Link · EPS' },
+    { key: 'accSeguridadActiva', icon: '🛡️', title: 'Seguridad Activa y ADAS', meta: 'ESC · BSD · LDW · RCW' },
+    { key: 'accSeguridadPasiva', icon: '🔒', title: 'Seguridad Pasiva', meta: 'Jaula 360° · Airbags' },
+    { key: 'accTecnologia', icon: '📺', title: 'Tecnología y Multimedia', meta: 'Dual 10.25" · 360°' },
+    { key: 'accConfort', icon: '💺', title: 'Confort e Interior', meta: 'Cuero · Climatización' },
+    { key: 'accExterior', icon: '💡', title: 'Exterior y Dimensiones', meta: 'LED · R17/R18' },
   ];
 
-  list.innerHTML = categories.map(cat => {
+  categories.forEach(cat => {
     const features = featuresData[cat.key] || [];
-    const isOpen = openAccordions.has(cat.key);
-    return `
-      <details class="accordion" data-acc="${cat.key}" ${isOpen ? 'open' : ''}>
-        <summary onclick="toggleAccordion('${cat.key}')">
-          <span class="accordion-icon">${cat.icon}</span>
-          <div class="accordion-title-wrap">
-            <div class="accordion-title">${cat.title}</div>
-            <div class="accordion-meta">${cat.meta()}</div>
+    const details = document.createElement('details');
+    details.className = 'accordion reveal';
+    
+    let featuresHTML = '';
+    features.forEach(f => {
+      const isDimmed = !f.versions.includes(currentVersion);
+      featuresHTML += `
+        <div class="feature-card${isDimmed ? ' dimmed' : ''}">
+          <div class="feature-card-header">
+            <span class="feature-card-icon">${f.icon}</span>
+            <span class="feature-card-name">${f.name}</span>
           </div>
-          <span class="accordion-arrow">▼</span>
-        </summary>
-        <div class="accordion-body">
-          <div class="features-grid">
-            ${features.map(f => {
-              const included = f.versions.includes(currentVersion);
-              return `
-                <div class="feature-card ${included ? '' : 'dimmed'}">
-                  <div class="feature-header">
-                    <span class="feature-icon">${f.icon}</span>
-                    <span class="feature-name">${f.name}</span>
-                  </div>
-                  <div class="feature-desc">${f.desc}</div>
-                  <div class="feature-block block-problem">
-                    <div class="feature-block-label">⚠ Problema</div>
-                    <p>${f.problem}</p>
-                  </div>
-                  <div class="feature-block block-solution">
-                    <div class="feature-block-label">✅ Solución</div>
-                    <p>${f.solution}</p>
-                  </div>
-                  <div class="feature-block block-benefit">
-                    <div class="feature-block-label">→ Beneficio</div>
-                    <p>${f.benefit}</p>
-                  </div>
-                  <div class="feature-chips">
-                    ${f.chips.map(c => `<span class="feature-chip">${c}</span>`).join('')}
-                  </div>
-                </div>
-              `;
-            }).join('')}
+          <p class="feature-card-desc">${f.desc}</p>
+          <span class="feature-tag tag-problem">⚠ Problema</span>
+          <div class="feature-block problem">${f.problem}</div>
+          <span class="feature-tag tag-solution">✅ Solución</span>
+          <div class="feature-block solution">${f.solution}</div>
+          <span class="feature-tag tag-benefit">→ Beneficio</span>
+          <div class="feature-block benefit">${f.benefit}</div>
+          <div class="feature-chips">
+            ${f.chips.map(c => `<span class="chip">${c}</span>`).join('')}
           </div>
         </div>
-      </details>
-    `;
-  }).join('');
-}
+      `;
+    });
 
-function toggleAccordion(key) {
-  if (openAccordions.has(key)) {
-    openAccordions.delete(key);
-  } else {
-    openAccordions.add(key);
-  }
+    details.innerHTML = `
+      <summary>
+        <span class="accordion-icon">${cat.icon}</span>
+        <span class="accordion-title">${cat.title}</span>
+        <span class="accordion-meta">${cat.meta}</span>
+        <span class="accordion-arrow">▼</span>
+      </summary>
+      <div class="accordion-body">
+        <div class="features-grid">
+          ${featuresHTML}
+        </div>
+      </div>
+    `;
+    container.appendChild(details);
+  });
+  observeReveal();
 }
 
 function renderPerfiles() {
   const grid = document.getElementById('perfilesGrid');
-  grid.innerHTML = perfilesData.map(p => `
-    <div class="perfil-card">
+  grid.innerHTML = '';
+  perfilesData.forEach(p => {
+    const card = document.createElement('div');
+    card.className = 'perfil-card reveal';
+    card.innerHTML = `
       <div class="perfil-icon">${p.icon}</div>
       <div class="perfil-title">${p.title}</div>
       <span class="perfil-badge">${p.badge}</span>
-      <div class="perfil-desc">${p.desc}</div>
+      <p class="perfil-desc">${p.desc}</p>
       <ul class="perfil-list">
         ${p.items.map(i => `<li>${i}</li>`).join('')}
       </ul>
-    </div>
-  `).join('');
+    `;
+    grid.appendChild(card);
+  });
+  observeReveal();
 }
 
 function renderTechTable() {
   const table = document.getElementById('techTable');
+  const activeCol = currentVersion === 'manual' ? 1 : 2;
+  
   let html = `
     <thead>
       <tr>
         <th>Característica</th>
-        <th class="${currentVersion === 'manual' ? 'active-col' : ''}">MANUAL</th>
-        <th class="${currentVersion === 'dct' ? 'active-col' : ''}">DCT</th>
+        <th class="${activeCol === 1 ? 'active-col' : ''}">MANUAL</th>
+        <th class="${activeCol === 2 ? 'active-col' : ''}">DCT</th>
       </tr>
     </thead>
     <tbody>
   `;
+
   techTableData.forEach(cat => {
-    html += `<tr class="cat-row"><td colspan="3">${cat.cat}</td></tr>`;
-    cat.rows.forEach(r => {
+    html += `<tr class="tech-category-row"><td colspan="3">${cat.category}</td></tr>`;
+    cat.rows.forEach(row => {
       html += `
         <tr>
-          <td>${r.param}</td>
-          <td class="${currentVersion === 'manual' ? 'active-col' : ''}">${r.manual}</td>
-          <td class="${currentVersion === 'dct' ? 'active-col' : ''}">${r.dct}</td>
+          <td>${row.param}</td>
+          <td class="${activeCol === 1 ? 'active-col' : ''}">${row.manual}</td>
+          <td class="${activeCol === 2 ? 'active-col' : ''}">${row.dct}</td>
         </tr>
       `;
     });
   });
+
   html += '</tbody>';
   table.innerHTML = html;
 }
 
-// ==================== VERSION SWITCH ====================
-
-function setVersion(v) {
-  currentVersion = v;
+function setVersion(version) {
+  currentVersion = version;
+  
+  // Update tabs
   document.querySelectorAll('.version-tab').forEach(tab => {
-    tab.classList.toggle('active', tab.dataset.version === v);
+    tab.classList.toggle('active', tab.dataset.version === version);
   });
-  renderStats();
-  renderIntro();
+
+  // Update intro
+  const data = versionData[version];
+  document.getElementById('introTitle').textContent = `${data.name} — ${data.subtitle}`;
+  document.getElementById('introContent').innerHTML = data.paragraphs.map(p => `<p>${p}</p>`).join('');
+
+  // Update detalles
   renderDetalles();
+
+  // Update accordions (preserve open state)
+  const openAccordions = [];
+  document.querySelectorAll('.accordion[open]').forEach((acc, i) => openAccordions.push(i));
   renderAccordions();
+  const allAccordions = document.querySelectorAll('.accordion');
+  openAccordions.forEach(i => {
+    if (allAccordions[i]) allAccordions[i].setAttribute('open', '');
+  });
+
+  // Update tech table
   renderTechTable();
 }
 
-// ==================== STICKY SELECTOR ====================
+// ===================== SCROLL REVEAL =====================
 
-function handleStickySelector() {
-  const wrapper = document.getElementById('versionSelectorWrapper');
-  const header = document.getElementById('header');
-  const fichaSection = document.getElementById('ficha');
-  
-  function update() {
-    const headerH = header.offsetHeight;
-    const fichaTop = fichaSection.getBoundingClientRect().top;
-    const wrapperH = wrapper.offsetHeight;
-    
-    if (fichaTop > headerH + wrapperH) {
-      wrapper.classList.add('is-sticky');
-      wrapper.style.top = headerH + 'px';
-    } else {
-      wrapper.classList.remove('is-sticky');
-    }
-  }
-  
-  window.addEventListener('scroll', update, { passive: true });
-  update();
-}
-
-// ==================== REVEAL ====================
-
-function initReveal() {
+function observeReveal() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
       }
     });
-  }, { threshold: 0.1 });
-  
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal:not(.visible)').forEach(el => observer.observe(el));
 }
 
-// ==================== INIT ====================
+// ===================== STICKY SELECTOR LOGIC =====================
+
+function handleStickySelector() {
+  const selector = document.getElementById('versionSelector');
+  const fichaSection = document.getElementById('ficha-tecnica');
+  
+  const scrollHandler = () => {
+    const selectorRect = selector.getBoundingClientRect();
+    const fichaRect = fichaSection.getBoundingClientRect();
+    
+    if (fichaRect.top <= 64) {
+      selector.style.position = 'relative';
+      selector.style.top = 'auto';
+    } else {
+      selector.style.position = 'sticky';
+      selector.style.top = '64px';
+    }
+  };
+
+  window.addEventListener('scroll', scrollHandler, { passive: true });
+}
+
+// ===================== INIT =====================
 
 document.addEventListener('DOMContentLoaded', () => {
-  renderStats();
-  renderIntro();
   renderDetalles();
   renderAccordions();
   renderPerfiles();
   renderTechTable();
+  observeReveal();
   handleStickySelector();
-  initReveal();
 });
 </script>
 </body>
